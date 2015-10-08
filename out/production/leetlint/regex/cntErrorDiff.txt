@@ -1,0 +1,157 @@
+
+--- Module:   ..\app\ble\ble_peripheral.c (C)
+36 Error        181 [18]:       redefining the storage class of symbol 'bStatus_t' (static data vs. type), conflicts with line 218, file ..\..\..\..\Components\ble\include\bcomdef.h, module ..\app\ble\ble_app.c
+830 Info        218 [1]:        Location cited in prior message
+10 Error        181 [18]:       Expecting ';'
+19 Error        181 [79]:       Useless Declaration
+10 Error        198 [18]:       Expecting ';'
+19 Error        198 [68]:       Useless Declaration
+10 Error        207 [18]:       Expecting ';'
+19 Error        207 [69]:       Useless Declaration
+10 Error        214 [18]:       Expecting ';'
+19 Error        214 [53]:       Useless Declaration
+10 Error        227 [18]:       Expecting ';'
+19 Error        228 [100]:      Useless Declaration
+40 Error        35 [28]:        Undeclared identifier 'B_ADDR_LEN'
+18 Error        35 [29]:        Symbol 'ble_adv_data_t::brdAddr' redeclared (size) 
+38 Error        37 [16]:        Offset of symbol 'ble_adv_data_t::cntAny' inconsistent (conflicts with line 37, file ..\app\ble\ble_peripheral.c, module ..\app\ble\ble_app.c)
+830 Info        37 [1]: Location cited in prior message
+38 Error        38 [17]:        Offset of symbol 'ble_adv_data_t::battLvl' inconsistent (conflicts with line 38, file ..\app\ble\ble_peripheral.c, module ..\app\ble\ble_app.c)
+830 Info        38 [1]: Location cited in prior message
+38 Error        39 [17]:        Offset of symbol 'ble_adv_data_t::fwVerId' inconsistent (conflicts with line 39, file ..\app\ble\ble_peripheral.c, module ..\app\ble\ble_app.c)
+830 Info        39 [1]: Location cited in prior message
+38 Error        40 [17]:        Offset of symbol 'ble_adv_data_t::adaCode' inconsistent (conflicts with line 40, file ..\app\ble\ble_peripheral.c, module ..\app\ble\ble_app.c)
+830 Info        40 [1]: Location cited in prior message
+38 Error        41 [15]:        Offset of symbol 'ble_adv_data_t::discs' inconsistent (conflicts with line 41, file ..\app\ble\ble_peripheral.c, module ..\app\ble\ble_app.c)
+830 Info        41 [1]: Location cited in prior message
+38 Error        42 [15]:        Offset of symbol 'ble_adv_data_t::cntH1' inconsistent (conflicts with line 42, file ..\app\ble\ble_peripheral.c, module ..\app\ble\ble_app.c)
+830 Info        42 [1]: Location cited in prior message
+38 Error        43 [15]:        Offset of symbol 'ble_adv_data_t::maxH1' inconsistent (conflicts with line 43, file ..\app\ble\ble_peripheral.c, module ..\app\ble\ble_app.c)
+830 Info        43 [1]: Location cited in prior message
+38 Error        44 [15]:        Offset of symbol 'ble_adv_data_t::curH1' inconsistent (conflicts with line 44, file ..\app\ble\ble_peripheral.c, module ..\app\ble\ble_app.c)
+830 Info        44 [1]: Location cited in prior message
+38 Error        46 [19]:        Offset of symbol 'ble_adv_data_t::spare' inconsistent (conflicts with line 46, file ..\app\ble\ble_peripheral.c, module ..\app\ble\ble_app.c)
+830 Info        46 [1]: Location cited in prior message
+40 Error        59 [3]: Undeclared identifier 'GAP_ADTYPE_LOCAL_NAME_COMPLETE'
+40 Error        67 [5]: Undeclared identifier 'GAP_ADTYPE_FLAGS'
+40 Error        69 [5]: Undeclared identifier 'GAP_ADTYPE_FLAGS_GENERAL'
+40 Error        69 [32]:        Undeclared identifier 'GAP_ADTYPE_FLAGS_BREDR_NOT_SUPPORTED'
+40 Error        74 [5]: Undeclared identifier 'GAP_ADTYPE_MANUFACTURER_SPECIFIC'
+10 Error        111 [36]:       Expecting ',' or ')'
+101 Error       112 [1]:        Expected an identifier
+14 Error        112 [36]:       Symbol 'bleAdvertCtl(enum ble_advert_ctl_t)' previously defined (line 111, file ..\app\ble\ble_peripheral.c, module ..\app\ble\ble_app.c)
+830 Info        111 [1]:        Location cited in prior message
+516 Warning     112 [36]:       Symbol 'bleAdvertCtl(enum ble_advert_ctl_t)' has arg. type conflict (arg. no. 1 -- int/enum) with line 111, file ..\app\ble\ble_peripheral.c, module ..\app\ble\ble_app.c
+830 Info        111 [1]:        Location cited in prior message
+18 Error        114 [12]:       Symbol 'req' redeclared (auto vs. auto) line 114, file ..\app\ble\ble_peripheral.c, module ..\app\ble\ble_app.c
+830 Info        114 [1]:        Location cited in prior message
+40 Error        116 [7]:        Undeclared identifier 'bleTestMode'
+40 Error        118 [8]:        Undeclared identifier 'imAdaIdx'
+40 Error        118 [20]:       Undeclared identifier 'eAdaA1'
+40 Error        118 [32]:       Undeclared identifier 'sensorSte'
+40 Error        118 [66]:       Undeclared identifier 'eAdvertCtlOff'
+40 Error        119 [13]:       Undeclared identifier 'imAdaIdx'
+40 Error        119 [25]:       Undeclared identifier 'eAdaCnt'
+40 Error        119 [45]:       Undeclared identifier 'eAdvertCtlOn'
+18 Error        120 [13]:       Symbol 'osal_get_timeoutEx(unsigned char, unsigned short)' redeclared (nominal,signed/unsigned, Arg. no. 1: promotion, Arg. no. 2: promotion) conflicts with line 100, file ..\..\..\..\Components\osal\include\OSAL_Timers.h, module ..\app\ada\ada_a1.c
+830 Info        100 [1]:        Location cited in prior message
+40 Error        120 [32]:       Undeclared identifier 'bleTaskId'
+40 Error        120 [43]:       Undeclared identifier 'BLE_ADVERT_END_EVT'
+40 Error        128 [8]:        Undeclared identifier 'eAdvertCtlOff'
+30 Error        128 [8]:        Expected an integer constant
+408 Warning     128 [8]:        Type mismatch with switch expression
+40 Error        131 [8]:        Undeclared identifier 'eAdvertCtlOn'
+30 Error        131 [8]:        Expected an integer constant
+408 Warning     131 [8]:        Type mismatch with switch expression
+142 Error       131 [8]:        case constant '0' used previously in this switch
+40 Error        134 [12]:       Undeclared identifier 'bleIsConn'
+40 Error        139 [8]:        Undeclared identifier 'eAdvertCtlUpdate'
+30 Error        139 [8]:        Expected an integer constant
+408 Warning     139 [8]:        Type mismatch with switch expression
+142 Error       139 [8]:        case constant '0' used previously in this switch
+40 Error        140 [10]:       Undeclared identifier 'bleIsConn'
+18 Error        142 [24]:       Symbol 'im_store_count(unsigned char)' redeclared (nominal,signed/unsigned, Arg. no. 1: promotion) conflicts with line 139, file ..\app\data\im_store.h, module ..\app\ada\ada_a1.c
+830 Info        139 [1]:        Location cited in prior message
+40 Error        145 [25]:       Undeclared identifier 'imAdaIdx'
+40 Error        148 [11]:       Undeclared identifier 'collectCtl'
+40 Error        148 [55]:       Undeclared identifier 'collectCtl'
+18 Error        151 [23]:       Symbol 'im_store_max_shock(void)' redeclared (signed/unsigned,precision) conflicts with line 190, file ..\app\data\im_store.h, module ..\app\ada\ada_a1.c
+830 Info        190 [1]:        Location cited in prior message
+18 Error        154 [13]:       Symbol 'GAPRole_SetParameter(unsigned short, unsigned char, void *)' redeclared (signed/unsigned,precision, Arg. no. 1: promotion, Arg. no. 2: promotion) conflicts with line 181, file ..\..\Profiles\Roles\peripheral.h, module ..\app\ble\ble_app.c
+830 Info        181 [1]:        Location cited in prior message
+40 Error        154 [55]:       Undeclared identifier 'B_MAX_ADV_LEN'
+40 Error        162 [8]:        Undeclared identifier 'eAdvertCtlHalt'
+30 Error        162 [8]:        Expected an integer constant
+408 Warning     162 [8]:        Type mismatch with switch expression
+142 Error       162 [8]:        case constant '0' used previously in this switch
+40 Error        166 [8]:        Undeclared identifier 'eAdvertCtlUnhalt'
+30 Error        166 [8]:        Expected an integer constant
+408 Warning     166 [8]:        Type mismatch with switch expression
+142 Error       166 [8]:        case constant '0' used previously in this switch
+40 Error        167 [10]:       Undeclared identifier 'bleIsConn'
+18 Error        172 [13]:       Symbol 'curr' redeclared (auto vs. auto) line 172, file ..\app\ble\ble_peripheral.c, module ..\app\ble\ble_app.c
+830 Info        172 [1]:        Location cited in prior message
+18 Error        173 [9]:        Symbol 'GAPRole_GetParameter(unsigned short, void *)' redeclared (signed/unsigned,precision, Arg. no. 1: promotion) conflicts with line 198, file ..\..\Profiles\Roles\peripheral.h, module ..\app\ble\ble_app.c
+830 Info        198 [1]:        Location cited in prior message
+18 Error        177 [19]:       Symbol 'osal_start_timer16(unsigned char, unsigned short, unsigned short)' redeclared (signed/unsigned,precision, Arg. no. 1: promotion, Arg. no. 2: promotion, Arg. no. 3: promotion) conflicts with line 84, file ..\..\..\..\Components\osal\include\OSAL_Timers.h, module ..\app\ada\ada_a1.c
+830 Info        84 [1]: Location cited in prior message
+40 Error        177 [38]:       Undeclared identifier 'bleTaskId'
+40 Error        177 [49]:       Undeclared identifier 'BLE_ADVERT_END_EVT'
+40 Error        177 [69]:       Undeclared identifier 'bleCfg'
+40 Error        177 [76]:       Undeclared identifier 'advertTimeout'
+18 Error        178 [15]:       Symbol 'osal_stop_timerEx(unsigned char, unsigned short)' redeclared (signed/unsigned,precision, Arg. no. 1: promotion, Arg. no. 2: promotion) conflicts with line 95, file ..\..\..\..\Components\osal\include\OSAL_Timers.h, module ..\app\ada\ada_a1.c
+830 Info        95 [1]: Location cited in prior message
+40 Error        178 [33]:       Undeclared identifier 'bleTaskId'
+40 Error        178 [44]:       Undeclared identifier 'BLE_ADVERT_END_EVT'
+18 Error        180 [9]:        Symbol 'osal_clear_event(unsigned char, unsigned short)' redeclared (signed/unsigned,precision, Arg. no. 1: promotion, Arg. no. 2: promotion) conflicts with line 191, file ..\..\..\..\Components\osal\include\osal.h, module ..\app\ada\ada_a1.c
+830 Info        191 [1]:        Location cited in prior message
+40 Error        180 [26]:       Undeclared identifier 'bleTaskId'
+40 Error        180 [37]:       Undeclared identifier 'BLE_ADVERT_END_EVT'
+14 Error        199 [19]:       Symbol 'bleAdvertsOn(void)' previously defined (line 198, file ..\app\ble\ble_peripheral.c, module ..\app\ble\ble_app.c)
+830 Info        198 [1]:        Location cited in prior message
+18 Error        233 [9]:        Symbol 'GAP_SetParamValue(unsigned short, unsigned short)' redeclared (signed/unsigned,precision, Arg. no. 1: promotion, Arg. no. 2: promotion) conflicts with line 810, file ..\..\..\..\Components\ble\include\gap.h, module ..\app\ble\ble_app.c
+830 Info        810 [1]:        Location cited in prior message
+40 Error        233 [27]:       Undeclared identifier 'TGAP_CONN_PAUSE_PERIPHERAL'
+40 Error        235 [9]:        Undeclared identifier 'bleCfg'
+40 Error        235 [16]:       Undeclared identifier 'connIntMin'
+40 Error        237 [9]:        Undeclared identifier 'bleCfg'
+40 Error        237 [16]:       Undeclared identifier 'connIntMax'
+40 Error        239 [9]:        Undeclared identifier 'bleCfg'
+40 Error        239 [16]:       Undeclared identifier 'connLatency'
+18 Error        265 [9]:        Symbol 'GAPRole_StartDevice(struct gapRolesCBs_t *)' redeclared (signed/unsigned,precision) conflicts with line 207, file ..\..\Profiles\Roles\peripheral.h, module ..\app\ble\ble_app.c
+830 Info        207 [1]:        Location cited in prior message
+40 Error        266 [44]:       Undeclared identifier 'HCI_EXT_ENABLE_SL_OVERRIDE'
+18 Error        267 [9]:        Symbol 'LL_ReadBDADDR(unsigned char *)' redeclared (signed/unsigned,precision) conflicts with line 563, file ..\..\..\..\Components\ble\controller\include\ll.h, module ..\app\ble\ble_app.c
+830 Info        563 [1]:        Location cited in prior message
+40 Error        289 [10]:       Undeclared identifier 'bleIsConn'
+40 Error        291 [7]:        Undeclared identifier 'bleIsConn'
+63 Error        291 [19]:       Expected an lvalue
+40 Error        293 [11]:       Undeclared identifier 'collectCtl'
+40 Error        295 [9]:        Undeclared identifier 'bleIsReady'
+63 Error        295 [22]:       Expected an lvalue
+40 Error        297 [15]:       Undeclared identifier 'bleConnNoMsg'
+52 Error        297 [15]:       Expected an lvalue
+40 Error        297 [30]:       Undeclared identifier 'BLE_CONN_NO_MSG_MAX'
+18 Error        300 [16]:       Symbol 'im_data_upload_abort(unsigned char)' redeclared (signed/unsigned,precision, Arg. no. 1: promotion) conflicts with line 266, file ..\app\data\im_data_exec.h, module ..\app\ada\ada_a1.c
+830 Info        266 [1]:        Location cited in prior message
+18 Error        307 [15]:       Symbol 'osal_start_reload_timer16(unsigned char, unsigned short, unsigned short)' redeclared (signed/unsigned,precision, Arg. no. 1: promotion, Arg. no. 2: promotion, Arg. no. 3: promotion) conflicts with line 90, file ..\..\..\..\Components\osal\include\OSAL_Timers.h, module ..\app\ada\ada_a1.c
+830 Info        90 [1]: Location cited in prior message
+40 Error        307 [41]:       Undeclared identifier 'bleTaskId'
+40 Error        307 [52]:       Undeclared identifier 'BLE_WATCHDOG_EVT'
+40 Error        309 [13]:       Undeclared identifier 'bleIsReady'
+63 Error        309 [26]:       Expected an lvalue
+40 Error        312 [12]:       Undeclared identifier 'bleIsConn'
+40 Error        314 [18]:       Undeclared identifier 'eAdvertCtlUpdate'
+40 Error        315 [5]:        Undeclared identifier 'bleIsReady'
+40 Error        315 [18]:       Undeclared identifier 'bleIsConn'
+63 Error        315 [30]:       Expected an lvalue
+63 Error        315 [30]:       Expected an lvalue
+40 Error        318 [24]:       Undeclared identifier 'eAdvertCtlOn'
+40 Error        320 [9]:        Undeclared identifier 'bleTestMode'
+18 Error        320 [23]:       Symbol 'bleModemTest(unsigned char)' redeclared (void/nonvoid, Arg. no. 1: promotion) conflicts with line 286, file ..\app\ble\ble_app.c
+830 Info        286 [1]:        Location cited in prior message
+40 Error        320 [36]:       Undeclared identifier 'bleTestMode'
+40 Error        322 [29]:       Undeclared identifier 'bleTaskId'
+40 Error        322 [40]:       Undeclared identifier 'BLE_WATCHDOG_EVT'
+40 Error        323 [28]:       Undeclared identifier 'bleTaskId'
+40 Error        323 [39]:       Undeclared identifier 'BLE_WATCHDOG_EVT'

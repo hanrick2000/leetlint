@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="524fe358-20aa-4ba1-9897-694783761ce6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq1_tony\BestTimeStock1.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq1_tony\ConcatenationSubstr.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq1_tony\LenLastWord.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq1_tony\MaxBinaryTreeDepth.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq1_tony\MinBinaryTreeDepth.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq1_tony\PermuSequence.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq1_tony\SerDesBinaryTree.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq1_tony\SimplifyPath.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq1_tony\TreeNode.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq1_tony\UniBST2.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq1_tony\UniqueBST1.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\BinTreeHeightDiameter.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\BinTreeMaxSum.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\BucketSort.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\CoinChange.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\CountAndSay.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\FirstMissPos.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\FourSum.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\Graycode.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\InterleaveStr.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\IsSymmetric.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\JumpGame.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\LCA1337.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\LargestRecHisto.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\LargestRecHistoOneStack.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\LargestRecHistoTwoStack.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\LintMinAdjustmentCost.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\LongestContinuousSubstring.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\LongestNonRepeatedSubstr.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\MinWindowStr.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\NextPermutation.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\NumDistinctSubstr.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\PalindromeNumber.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\PathSum.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\PermutationII.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\Plusone.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\RecoverBST.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\RemoveDupSorted.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\ReverseNodesKGroup.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\Scramble9Chap.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\ScrambleString.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\SolveSudoku.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\SortColor.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\SubsetGankerII.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\SubsetI.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\SubsetIIN00t.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\SwapNodesPair.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\TextJustification.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\ThreeSum.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\TrappingRainBrute.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\ValidSudoku.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\WashingtonSort.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq2_tony\WordBreakReview.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\BSTOrderRecursive.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\BinaryTreeInorder.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\BinaryTreeMaxPathSum.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\BinaryTreePostorder.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\BinaryTreePreorder.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\BinaryTreeZigzag.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\CombinationSum.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\Combinations.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\ConstructBTPostIn.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\ConstructBTPreIn.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\DeepIterator.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\Editdistance.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\FindAllPathSum.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\FindKthSmallTwoSortedArray.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\FlattenBinaryTreeNineChapter.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\FlattenTree.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\FlattenTreebyStack.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\FlattenUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\FloodFill.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\HasPathSum.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\LetterPhoneCombination.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\Levelorder.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\LongestConsecutiveSequence.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\MaxSubarray.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\NqueenIGanker.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\PalindromePartitionIDPDP.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\PalindromePartitionIDPrecur.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\PartitionList.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\PopulateNextRightPointer.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\RegXMatching.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\RemoveDupSortArr.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\RemoveDupSortList.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\RemoveDuplicate.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\RemoveNthElemList.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\RestoreIP.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\RestoreIPAddrII.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\ReverseInt.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\SearchMatrix.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\SearchSortArrInsert.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\SearchSortArrRange.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\SortArrayToBST.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\SortListToBST.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\StringMultiply.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\SumRootLeafNum.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\SurroundRegion.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\TreeNode.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\TrianglePathSum.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\TrianglePathSumN00tDFSDP.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\TrianglePathSumN00tDFSDummy.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\UniquePath.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\UniquePathN00t.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\WordBreak1DP.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\WordBreakDummy.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq3_tony\WordBreakIIDP.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq4_tony\AddTwoNumbers.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq4_tony\AddTwoNumbersPlainOrder.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq4_tony\Anagrams.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq4_tony\Combination.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq4_tony\NumIslands.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq4_tony\Permutation.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq4_tony\PermutationII.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq4_tony\RemoveDuplicatesfromSortedArray.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq4_tony\RemoveDuplicatesfromSortedArrayII.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq4_tony\RemoveElement.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq4_tony\Subsets.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq4_tony\Subsets_n00tc.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq4_tony\testArrayList.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq4_tony\testHashMap.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq4_tony\testRecursion.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq5_tony\ClimbStairs.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq5_tony\FourSum.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq5_tony\InsertIntervals.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq5_tony\IsNumber.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq5_tony\LinkedListDemo.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq5_tony\Merge2SortedLists.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq5_tony\MergeIntervals.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq5_tony\MergeSortedArray.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq5_tony\Pow.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq5_tony\SetMatrixZeros.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq5_tony\StrStr.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq5_tony\StringToInteger.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq5_tony\TestArrayList.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq5_tony\ThreeSum.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq5_tony\ThreeSumClosest.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq5_tony\TwoSum.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq5_tony\ValidParentheses.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq5_tony\ValidateBST.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq5_tony\ValidatePalindrome.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\freq5_tony\WordLadder.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_1\BestTimetoBuyandSellStock.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_1\BestTimetoBuyandSellStockII.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_1\BestTimetoBuyandSellStockIII.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_1\BinaryTreeLevelOrderTraversalII.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_1\LengthofLastWord.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_1\LongestCommonPrefix.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_1\LongestValidParentheses.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_1\MaximalRectangle.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_1\MaximumDepthofBinaryTree.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_1\MinimumDepthofBinaryTree.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_1\PascalTriangle.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_1\PascalsTriangleII.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_1\SameTree.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_1\SimplifyPath.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_1\SubstringwithConcatenationofAllWords.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_1\ThreeSumClosest.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_1\ThreeSumClosest.java.dump" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_1\Triangle.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_1\UniqueBinarySearchTree2.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_1\ZigZagConversion.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\BalancedBinaryTree.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\BinaryTreeMaximumPathSum.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\CombinationSumII.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\ContainerWithMostWater.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\CountAndSay.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\DistinctSubsequence.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\FirstMissingPositive.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\FourSum.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\GrayCode.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\InterleavingString.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\JumpGame.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\JumpGame2.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\LargestRectangleinHistogram.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\LongestSubstringWithoutRepeatingCharacters.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\MinimumWindowSubstring.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\PalindromeNumber.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\PathSumII.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\Permutations2.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\PlusOne.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\PopulatingNextRightPointersinEachNodeII.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\RecoverBinarySearchTree.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\RemoveDuplicatesFromSortedArrayII.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\ReverseLinkedListII.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\ReverseNodesinkGroup.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\RotateImage.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\RotateList.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\SearchInsertPosition.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\SortColors.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\SpiralMatrix.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\SpiralMatrixII.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\SubsetsII.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\SymmetricTree.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\TrappingRainWater.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\UniqueBinarySearchTrees.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_2\ValidSudoku.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\BinaryTreeInorderTraversal.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\BinaryTreeZigzagLevelOrderTraversal.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\CombinationSum.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\ConstructBinaryTreefromInorderandPostorderTraversal.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\ConstructBinaryTreefromPreorderandInorderTraversal.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\ConvertSortedArraytoBinarySearchTree.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\ConvertSortedListtoBinarySearchTree.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\Divide2Integers.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\EditDistance.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\FlattenBinaryTreetoLinkedList.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\LetterCombinationsofaPhoneNumber.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\LongestConsecutiveSequence.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\MaximumSubarray.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\MedianofTwoSortedArrays.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\MinimumPathSum.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\MultiplyStrings.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\NQueen2.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\NQueens.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\PalindromePartitioningII.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\PartitionList.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\PathSum.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\PopulatingNextRightPointersinEachNode.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\RegularExpressionMatching.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\RemoveDuplicatesfromSortedArray.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\RemoveDuplicatesfromSortedList.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\RemoveDuplicatesfromSortedList2.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\RemoveNthNodeFromEnd.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\RestoreIPAddresses.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\ReverseInteger.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\SearchA2DMatrix.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\SearchForARange.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\SearchinRotatedSortedArray.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\SearchinRotatedSortedArrayII.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\SurroundedRegions.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\UniquePaths.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_3\UniquePaths2.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_4\AddTwoNumbers.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_4\Anagrams.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_4\BinaryAdd.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_4\BinaryTreeLevelOrderTraversal.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_4\Combinations.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_4\DecodeWays.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_4\GenerateParentheses.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_4\IntegerToRoman.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_4\MergeKLists.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_4\PalindromePartitioning.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_4\Permutations.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_4\RemoveElement.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_4\RomantoInteger.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_4\SingleNumber.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_4\Sqrt.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_4\Subsets.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_4\SumRoottoLeafNumbers.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_4\SwapNodesinPairs.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_4\WordSearch.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_5\ClimbStairs.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_5\ImptStrStr.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_5\InsertInterval.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_5\IsNumber.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_5\Merge2SortedList.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_5\MergeInterval.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_5\MergeSortedArray.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_5\Pow.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_5\SetMatrixZeroes.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_5\StringtoInteger.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_5\ThreeSum.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_5\ThreeSumClosest.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_5\TwoSum.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_5\ValidPalindrome.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_5\ValidParentheses.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_5\ValidateBST.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_5\WordLadder.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\frequency_5\test.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\interview\FlowingWater.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\learnJava\ArrayLIST.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\learnJava\BasicBBB.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\learnJava\CallbyValue.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\learnJava\EmptyForeach.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\learnJava\FileRead.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\learnJava\Hashstudy.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\learnJava\LearnIterable.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\learnJava\Linkedlistnull.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\learnJava\Loop.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\learnJava\NullList.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\learnJava\OracleTutorialInnerClass.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\learnJava\Parse.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\learnJava\StackQueue.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\learnJava\StudyRecursion.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\learnJava\SubStringStudy.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\learnJava\Test.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\learnJava\input.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\misc\BTtreePrinter.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\misc\BinarySearch.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\misc\MergeSortAlgs4.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\misc\QuickSortAlgs4.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\misc\SegmentString.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\misc\SleepsortRosettacode.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\misc\SpellAllWord.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\nineChap1\Permutation.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\nineChap1\StrStr.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\nineChap1\Subset.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\nineChap2_BinarySearch\BinarySearch.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\nineChap2_BinarySearch\FindBad.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\nineChap2_BinarySearch\FindPeak.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\nineChap2_BinarySearch\MedianTwoSort.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\nineChap2_BinarySearch\MergeSortArrList.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\nineChap2_BinarySearch\MergeSortII.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\nineChap2_BinarySearch\MinRotatedSortArr.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\nineChap2_BinarySearch\RecoverRotate.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\nineChap2_BinarySearch\RemoveDupSort.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\nineChap2_BinarySearch\Search2dMatrix.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\nineChap2_BinarySearch\Search2dMatrixII.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\nineChap2_BinarySearch\SearchInsert.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\nineChap2_BinarySearch\SearchRange.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\nineChap2_BinarySearch\SearchRotatedSort.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\nineChap3_BST\Hello.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\nineChap3_BST\InsertBST.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\nineChap3_BST\LCA1.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\nineChap3_BST\Preorder.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\nineChap3_BST\SerializeBFS.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\nineChap3_BST\ValidateBST.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\testingAns\RecoverBST.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\testingAns\ThreeSumGanker.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Fighting\leetlint\testingAns\ThreeSumN00t.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+    </list>
+    <ignored path="leetlint.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="leetlint" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/nineChap8_DSA/Arr2Tree.java" />
+      </list>
+    </option>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="312" />
+    <option name="width" value="964" />
+    <option name="height" value="768" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leetlint" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leetlint" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leetlint" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leetlint" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leetlint" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="recentsLimit" value="5" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RunManager" selected="Application.BalancedBinTree">
+    <configuration default="false" name="FindPeak" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="nineChap2_BinarySearch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="nineChap2_BinarySearch.FindPeak" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="leetlint" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="BalancedBinTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="nineChap3_BST.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="nineChap3_BST.BalancedBinTree" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="leetlint" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.FindPeak" />
+      <item index="1" class="java.lang.String" itemvalue="Application.BalancedBinTree" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Application.BalancedBinTree" />
+        <item index="1" class="java.lang.String" itemvalue="Application.FindPeak" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="524fe358-20aa-4ba1-9897-694783761ce6" name="Default" comment="" />
+      <created>1444334819489</created>
+      <option name="number" value="Default" />
+      <updated>1444334819489</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="312" y="0" width="964" height="768" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3287879" sideWeight="0.5042194" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287879" sideWeight="0.4957806" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nineChap2_BinarySearch/FindPeak.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interview/FactoringInt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32125604">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interview/FactoringNum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6086956">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>leetlint</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
