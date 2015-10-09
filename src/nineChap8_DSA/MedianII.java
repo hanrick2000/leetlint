@@ -69,7 +69,7 @@ public class MedianII {
       res.add(med);
     }
     // http://stackoverflow.com/a/23945015/3984911
-    int[] output = res.stream().mapToInt(i->i).toArray();
+    int[] output = res.stream().mapToInt(i->i).toArray();  // Fucking cool Stream API!
     return output;
   }
 }
