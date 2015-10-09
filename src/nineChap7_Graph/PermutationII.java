@@ -3,6 +3,7 @@ package nineChap7_Graph;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * Given a list of numbers with duplicate number in it. Find all unique permutations.
@@ -17,12 +18,12 @@ import java.util.List;
 public class PermutationII {
     /**
      * @param nums: A list of integers.
-     * @return: A list of unique permutations.
+     * @return A list of unique permutations.
      */
     public List<List<Integer>> permuteUnique(List<Integer> nums) {
         // write your code here
 //    ArrayList<ArrayList<Integer>> path = new ArrayList<ArrayList<Integer>>();
-        List<List<Integer>> path = new ArrayList<List<Integer>>();
+        List<List<Integer>> path = new ArrayList<>();
         if (nums == null || nums.size() == 0) {
             return path;
         }
@@ -34,7 +35,7 @@ public class PermutationII {
 //    helperIndx(path, list, nums, used);
         helperPre(path, list, nums, used);
 
-        path.forEach(System.out::println);
+        path.forEach(System.out::println); // stream API
         return path;
     }
 
@@ -71,7 +72,7 @@ public class PermutationII {
     private void helperIdxOfWrong(List<List<Integer>> result, List<Integer> list, List<Integer> nums, int[] used) {
         // only save leaf into result
         if (list.size() == nums.size()) {
-            result.add(new ArrayList<Integer>(list));
+            result.add(new ArrayList<>(list));
             return;
         }
         //
@@ -105,12 +106,11 @@ public class PermutationII {
 //    int[] not = new int[nums.size()];
         for (int i = 0; i < used.length; ++i) {
             if (used[i] == 1 ||
-                    (i > 0 && nums.get(i) == nums.get(i - 1) && used[i - 1] == 0)) {
+                    (i > 0 && Objects.equals(nums.get(i), nums.get(i - 1)) && used[i - 1] == 0)) {
                 continue;
             }
             used[i] = 1;
             list.add(nums.get(i));
-            System.out.println(list);
             helperIndx(path, list, nums, used);
             list.remove(list.size() - 1);
             used[i] = 0;
