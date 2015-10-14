@@ -1,5 +1,7 @@
 package freq3_tony;
 
+import misc.TreeNode;
+
 import java.util.Stack;
 
 /**

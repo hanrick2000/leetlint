@@ -1,12 +1,11 @@
 package nineChap3_BST;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 import misc.BTtreePrinter;
 import freq1_tony.SerDesBinaryTree;
-import freq1_tony.TreeNode;
+import misc.TreeNode;
 
 public class ValidateBST {
   public static void main(String[] args) {

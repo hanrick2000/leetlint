@@ -2,7 +2,7 @@ package nineChap3_BST;
 
 import misc.BTtreePrinter;
 import freq1_tony.SerDesBinaryTree;
-import freq1_tony.TreeNode;
+import misc.TreeNode;
 import java.util.*;
 
 public class LCA1 {

@@ -1,10 +1,11 @@
 package freq3_tony;
 
+import misc.TreeNode;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
-import freq3_tony.TreeNode;
 
 /**
  * 题目: 要求output是按照level来分.
@@ -39,11 +40,11 @@ public class Levelorder {
       List<Integer> res = new LinkedList<>();
       TreeNode curr = queue.remove();
       while (curr != null) {
-        res.add(curr.getvalue());
-        if (curr.getleft() != null)
-          queue.add(curr.getleft());
-        if (curr.getright() != null)
-          queue.add(curr.getright());
+        res.add(curr.value);
+        if (curr.left != null)
+          queue.add(curr.left);
+        if (curr.right != null)
+          queue.add(curr.right);
         curr = queue.remove();
       }
       // when hit null, it means level end.
@@ -69,11 +70,11 @@ public class Levelorder {
       Queue<TreeNode> queueTemp = new LinkedList<>();
       while (!queue.isEmpty()) {
         curr = queue.remove();
-        res.add(curr.getvalue());
-        if (curr.getleft() != null)
-          queueTemp.add(curr.getleft());
-        if (curr.getright() != null)
-          queueTemp.add(curr.getright());
+        res.add(curr.value);
+        if (curr.left != null)
+          queueTemp.add(curr.left);
+        if (curr.right != null)
+          queueTemp.add(curr.right);
       }
       // add res of one level
       resSet.add(res);
@@ -96,7 +97,7 @@ public class Levelorder {
 
   private TreeNode buildTree(int r) {
     root = new TreeNode(r);
-    root.setleft(new TreeNode(2));
+    root.left = (new TreeNode(2));
     // root.setleft(setleft(new TreeNode(1)));
     // root.left.right = new TreeNode(9);
     // root.right = new TreeNode(8);

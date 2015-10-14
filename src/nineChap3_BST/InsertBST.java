@@ -1,8 +1,6 @@
 package nineChap3_BST;
 
-import freq1_tony.TreeNode;
-
-import java.util.*;
+import misc.TreeNode;
 
 import misc.BTtreePrinter;
 

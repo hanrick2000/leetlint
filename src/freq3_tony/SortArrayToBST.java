@@ -1,4 +1,7 @@
 package freq3_tony;
+
+import misc.TreeNode;
+
 /**
  * 都是一类: 从1d数据结构转到2d数据结构
  * 
@@ -14,8 +17,8 @@ public class SortArrayToBST {
     int nodeValue = arr[mid];
     TreeNode node = new TreeNode(nodeValue);
 //    System.err.print(node.getvalue() + " ");
-    node.setleft(SortArrayToBST(arr, lo, mid-1));
-    node.setright(SortArrayToBST(arr, mid+1, hi));
+    node.left = (SortArrayToBST(arr, lo, mid-1));
+    node.right = (SortArrayToBST(arr, mid+1, hi));
     return node ;
   }
   /**

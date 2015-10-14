@@ -1,4 +1,4 @@
-package freq1_tony;
+package misc;
 
 public class TreeNode {
   public int value;

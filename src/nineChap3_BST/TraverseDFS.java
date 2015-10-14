@@ -3,7 +3,7 @@ package nineChap3_BST;
 import java.util.*;
 
 import misc.BTtreePrinter;
-import freq1_tony.TreeNode;
+import misc.TreeNode;
 
 public class TraverseDFS {
   public static void main(String[] args) {

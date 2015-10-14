@@ -1,7 +1,7 @@
 package nineChap3_BST;
 
 import misc.BTtreePrinter;
-import freq1_tony.TreeNode;
+import misc.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;

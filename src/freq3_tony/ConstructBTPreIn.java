@@ -1,5 +1,7 @@
 package freq3_tony;
 
+import misc.TreeNode;
+
 import java.util.*;
 
 /**
@@ -36,10 +38,10 @@ public class ConstructBTPreIn {
     if (start < end) {
       int mid = inOrdMap.get(preOrd[curRoot]);
       if (mid > start) {
-        root.setleft(BuildTree(curRoot + 1, start, mid - 1));
+        root.left = (BuildTree(curRoot + 1, start, mid - 1));
       }
       if (mid < end) {
-        root.setright(BuildTree(curRoot + (mid - start + 1), mid + 1, end));
+        root.right = (BuildTree(curRoot + (mid - start + 1), mid + 1, end));
       }
     }
     return root;

@@ -1,6 +1,6 @@
 package nineChap3_BST;
 
-import freq1_tony.TreeNode;
+import misc.TreeNode;
 import java.util.*;
 
 public class Preorder {

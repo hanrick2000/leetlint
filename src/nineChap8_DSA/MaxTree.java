@@ -1,50 +1,35 @@
 package nineChap8_DSA;
 
+import misc.TreeNode;
 import java.util.Stack;
 
-import misc.BTtreePrinter;
-import freq1_tony.TreeNode;
-
+/**
+ * Created by 1:59 AM on 10/13/2015.
+ */
 public class MaxTree {
-  public static void main(String[] args) {
-    int[] arr = new int[] {2, 5, 6, 0, 3, 1};
-    TreeNode root = maxTree(arr);
-    BTtreePrinter.printNode(root);
-  }
-
-  // 9 chap solution, need to fully understand it!
-  public static TreeNode maxTree(int[] arr) {
-    if (arr == null || arr.length == 0) {
-      return null;
-    }
-
-    Stack<TreeNode> stk = new Stack<>();
-    TreeNode curNode = null;
-    for (int i = 0; i <= arr.length; ++i) {
-      if (i < arr.length) {
-        curNode = new TreeNode(arr[i]);
-      }
-      if (i == arr.length) {
-        curNode = new TreeNode(Integer.MAX_VALUE);
-      }
-
-      while (!stk.isEmpty() && curNode.value > stk.peek().value) {
-
-        TreeNode nodeNow = stk.pop();
-        if (!stk.isEmpty()) {
-          TreeNode leftNow = stk.peek();
-          if (leftNow.value > curNode.value) {
-            curNode.left = nodeNow;
-          } else {
-            leftNow.right = nodeNow;
-          }
-        } else { // stack is empty
-          curNode.left = nodeNow;
+    public TreeNode maxTree(int[] A) {
+        // write your code here
+        if (A == null || A.length == 0) {
+            return null;
         }
-      }
-      stk.push(curNode);
 
+        Stack<TreeNode> decStk = new Stack<>();
+        TreeNode curNode;
+        for (int i = 0; i < A.length; ++i) {
+            if (i < A.length) {
+                curNode = new TreeNode(A[i]);
+            }
+            else {
+                curNode = new TreeNode(-1);
+            }
+
+            while (!decStk.isEmpty() && decStk.peek().value < curNode.value) {
+                TreeNode tmp = new TreeNode(decStk.pop().value);
+                curNode.left = tmp;
+                decStk.push(curNode);
+            }
+            decStk.push(new TreeNode(A[i]));
+        }
+        return null;
     }
-    return stk.peek().left;
-  }
 }

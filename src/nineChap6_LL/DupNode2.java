@@ -1,5 +1,7 @@
 package nineChap6_LL;
 
+import misc.ListNode;
+
 /**
  * Remove duplicate node from SORTED list II:
  * remove all duplicate node, include the 1st one. eg:

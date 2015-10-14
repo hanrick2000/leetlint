@@ -1,7 +1,4 @@
-package practiceBasic;
-
-import java.util.Arrays;
-import java.util.List;
+package Easy;
 
 /*-
  * In this package, I practice the basic while/for loop, to remember how to get 

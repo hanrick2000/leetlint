@@ -3,12 +3,12 @@ package nineChap3_BST;
 import java.util.*;
 
 import misc.BTtreePrinter;
-import freq1_tony.TreeNode;
+import misc.TreeNode;
 
 /**
- * 棰樼洰阈炬帴: http://www.lintcode.com/en/problem/binary-tree-serialization/ 鍒嗘瀽:
- * Lintcode鍜孡eetcode镄凷erialize涓嶅悓, 鍓嶈€呮槸BFS, 鍚庤€呮槸Pre-order DFS. 镓€浠int鍜孡eet镄勯鐩〃绀筑ST镄勬柟寮忛兘涓嶅悓! 鎼炵殑鎴戠殑valid
- * BST锅氶敊浜?
+ * 题目�о接: http://www.lintcode.com/en/problem/binary-tree-serialization/ 分析:
+ * Lintcode��Leetcode??Serialize��ͬ, 前��是BFS, 后��是Pre-order DFS. �آ�以Lint和Leet�Є题目表���ST�Є方式都不同! 搞的我的valid
+ * BST���错�?
  * 
  * @author tzhang
  *
@@ -36,7 +36,7 @@ public class SerializeBFS {
   }
 
   /**
-   * 瀛︿范锻靛懙鍚涚殑BFS鍐欐硶, 钥屼笖浣跨敤浜嗕竴涓猣lag鏉ュ垽鏂槸鍚︽槸链€鍚庝竴灞?
+   * 学䷶�͵呵君的BFS写法, Կ�且使用了一个flag来判断是否是����后一�?
    * http://hehejun.blogspot.com/2015/01/lintcodeserialization-and.html
    * 
    * @param root
@@ -57,7 +57,7 @@ public class SerializeBFS {
       for (int i = 0; i < size; ++i) {
         TreeNode cur = pre.poll();
         String thisnode = "";
-        if (cur == null) { // 浣撶幇浜唍ull node镄勪綔鐢?
+        if (cur == null) { // 体现了null node�Є作�?
           thisnode = "#";
         } else {
           thisnode = cur.value + "";
@@ -77,7 +77,7 @@ public class SerializeBFS {
   }
 
   /**
-   * 绗簩娆″湪lintcode閲岄溃鍐?
+   * 第二次在lintcode里����?
    * 
    * @param root
    * @return
@@ -123,8 +123,8 @@ public class SerializeBFS {
   }
 
   /**
-   * 绗竴娆″啓. Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException.
-   * 铡熷洜鍦ㄤ簬鍒ゆ柇token[idx]镄勬椂链椤鐞嗕简4娆? 鍙浠ｇ爜镄勭粨鏋勮璁＄殑涓嶅ソ浼氩镊撮棶棰?
+   * 第一次写. Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException.
+   * ա�因在于判断token[idx]�Є时��顤�理��4�? 可见代码�Є结构设计的不好�벯����问�?
    * 
    * @param ser
    * @return
@@ -168,7 +168,7 @@ public class SerializeBFS {
   }
 
   /**
-   * 绗簩娆″啓Lintcode, 杩樻槸链夊緢澶氩皬阌栾
+   * 第二次写Lintcode, 还是���很�벰����ﯯ
    * 
    * @param data
    * @return
@@ -260,7 +260,7 @@ public class SerializeBFS {
   }
 
   /**
-   * 绗竴娆″啓: BFS 妯＄増, 鍦ㄨ繖涓熀纭€涓婃敼浜? 浣嗘瘮璧峰懙锻靛悰镄勬潵璇村お澶嶆潅浜?
+   * 第一次写: BFS 模版, 在这个基硢�上改�? 但比起呵�͵君�Є来说太复杂�?
    * 
    * @param root
    * @return

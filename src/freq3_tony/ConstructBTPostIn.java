@@ -1,5 +1,7 @@
 package freq3_tony;
 
+import misc.TreeNode;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -38,12 +40,12 @@ public class ConstructBTPostIn {
   private TreeNode buildSubTreePost(int cur, int start, int end) {
     if (start > end)  return null;
     TreeNode root = new TreeNode(postOrd[cur]);
-    int mid = inOrdMap.get(root.getvalue());
+    int mid = inOrdMap.get(root.value);
     if (mid < end) { // 想象这里为什么不能是mid < start.
-      root.setright(buildSubTreePost(cur-1, mid+1, end));
+      root.right = (buildSubTreePost(cur-1, mid+1, end));
     }
     if (mid > start) {
-      root.setleft(buildSubTreePost(cur-(end-mid+1), start, mid-1));
+      root.left = (buildSubTreePost(cur-(end-mid+1), start, mid-1));
     }
     return root;
   }

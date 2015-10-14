@@ -1,5 +1,7 @@
 package nineChap6_LL;
 
+import misc.ListNode;
+
 /*-
  * reverse the LL(m-th to n-th) inside the whole list
  * eg: 1-2-3-4-5, m = 1, n = 3 => 1-4-3-2-5.

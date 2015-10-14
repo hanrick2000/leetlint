@@ -1,5 +1,7 @@
 package freq3_tony;
 
+import misc.TreeNode;
+
 import java.util.LinkedList;
 import java.util.List;
 
@@ -33,8 +35,8 @@ public class SortListToBST {
     if (lo > hi)  return null;
     int mid = lo + (hi - lo) / 2;
     TreeNode node = new TreeNode(list.get(mid));
-    node.setleft(DUMMYsortListBST(list, lo, mid - 1));
-    node.setright(DUMMYsortListBST(list, mid + 1, hi));
+    node.left = (DUMMYsortListBST(list, lo, mid - 1));
+    node.right = (DUMMYsortListBST(list, mid + 1, hi));
     return node;
   }
 
@@ -55,8 +57,8 @@ public class SortListToBST {
     // post的recursion
     TreeNode right = sortListBST(mid+1, hi);
     // after 2 个 recursion
-    root.setleft(left);
-    root.setright(right);
+    root.left = (left);
+    root.right = (right);
     return root;
   }
   

@@ -1,7 +1,7 @@
 package nineChap8_DSA;
 
 import misc.BTtreePrinter;
-import freq1_tony.TreeNode;
+import misc.TreeNode;
 public class Arr2Tree {
 //  private static class TreeNode {
 //    int label;

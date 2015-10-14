@@ -1,10 +1,9 @@
 package nineChap3_BST;
 
 import java.util.ArrayList;
-import java.util.Stack;
 
 import misc.BTtreePrinter;
-import freq1_tony.TreeNode;
+import misc.TreeNode;
 
 public class SearchRangeBST {
   private static ArrayList<Integer> result;

@@ -7,7 +7,7 @@ package freq1_tony;
  */
 import java.util.ArrayList;
 import java.util.List;
-import freq1_tony.TreeNode;
+import misc.TreeNode;
 
 public class UniBST2 {
 

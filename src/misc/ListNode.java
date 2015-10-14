@@ -1,10 +1,10 @@
-package nineChap6_LL;
+package misc;
 
 public class ListNode {
-  int val;
-  ListNode next;
+  public int val;
+  public ListNode next;
 
-  ListNode(int v) {
+  public ListNode(int v) {
     val = v;
     next = null;
   }

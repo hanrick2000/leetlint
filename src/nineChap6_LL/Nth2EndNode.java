@@ -1,5 +1,7 @@
 package nineChap6_LL;
 
+import misc.ListNode;
+
 /**
  * Remove the N-th node from the end.
  * Using slow/fast pointer, or precisely speaking, just two-pointers method

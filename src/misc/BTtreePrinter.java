@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import freq1_tony.TreeNode;
-
 /**
  * À´×ÔÓÚSOF: http://stackoverflow.com/questions/4965335/how-to-print-binary-tree-diagram
  * 

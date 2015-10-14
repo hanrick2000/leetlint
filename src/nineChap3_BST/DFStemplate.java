@@ -1,6 +1,6 @@
 package nineChap3_BST;
 
-import freq1_tony.TreeNode;
+import misc.TreeNode;
 
 public class DFStemplate {
   

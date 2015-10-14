@@ -1,5 +1,7 @@
 package nineChap6_LL;
 
+import misc.ListNode;
+
 public class RevLLII {
   private ListNode head;
 

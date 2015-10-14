@@ -1,5 +1,7 @@
 package freq3_tony;
 
+import misc.TreeNode;
+
 /**
  * http://www.ninechapter.com/solutions/flatten-binary-tree-to-linked-list/ 这里是使用九章的recursion,
  * 相比于n00t更简单.

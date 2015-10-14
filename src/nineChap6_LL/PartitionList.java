@@ -1,5 +1,7 @@
 package nineChap6_LL;
 
+import misc.ListNode;
+
 /**
  * after I done the partition array, now it comes the partition list (singly list)
  * 

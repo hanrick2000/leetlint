@@ -1,5 +1,7 @@
 package nineChap6_LL;
 
+import misc.ListNode;
+
 /**
  * The basic reverse linked list, no dummy, so need to keep track of pre, head
  * @author tzhang

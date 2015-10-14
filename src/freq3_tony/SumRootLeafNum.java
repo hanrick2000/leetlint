@@ -1,5 +1,7 @@
 package freq3_tony;
 
+import misc.TreeNode;
+
 /**
  * 晕. 要读懂题意. http://n00tc0d3r.blogspot.com/2013/06/sum-root-to-leaf-numbers.html 简单的Sum Path的变形:
  * 求所有root-to-leaf path的值的和. 例如 : 1 / \ 2 3

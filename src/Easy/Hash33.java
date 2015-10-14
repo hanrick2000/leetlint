@@ -1,4 +1,4 @@
-package practiceBasic;
+package Easy;
 
 /*-
  * Lintcode shows it as an easy problem. 

@@ -1,5 +1,7 @@
 package freq1_tony;
 
+import misc.TreeNode;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
