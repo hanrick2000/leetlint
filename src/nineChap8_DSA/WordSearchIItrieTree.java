@@ -92,8 +92,7 @@ public class WordSearchIItrieTree {
             for (int i = 0; i < 4; ++i) {
                 visited[x][y] = true;
                 // str += board[x][y];
-                TrieNode tmpRoot = root;  // this is the key point: remember the state before I
-                // goes down the recursion tree.
+                TrieNode tmpRoot = root;  // this is the key point: remember the state before I goes down the recursion tree.
                 root = root.subtree.get(board[x][y]); // ????????????????????!!!!!!!!!!!!!!!!!!!!!
                 if (root == null) {
                     t = 10;  // dbg why root becomes null pointer?

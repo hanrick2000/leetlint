@@ -1,20 +1,9 @@
 package freq5_tony;
 
+import misc.ListNode;
+
 public class Merge2SortedLists {
 
-  /**
-   * ListNode class
-   * @param args
-   */
-  public class ListNode{
-    int val;
-    ListNode next;
-    ListNode(int value){
-      val = value;
-      next = null;
-    }
-  }
-  
   public ListNode merge2SortedLists(ListNode l1, ListNode l2){
     ListNode p1 = l1;   // why?
     ListNode p2 = l2;;
