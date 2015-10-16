@@ -36,7 +36,7 @@ public class Hash33 {
      * 3. "Wrong answer or accepted?", 1000000007: I got overflow?
      */
     String str = "Wrong answer or accepted?";
-    int ans = hashCode(str.toCharArray(), 1_000_000_007);
+    int ans = hashCode(str.toCharArray(), 12582917); // 1_000_000_007);
     System.out.println(ans);
   }
 }

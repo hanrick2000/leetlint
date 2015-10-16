@@ -20,8 +20,48 @@ public class MajorityNumII {
         if (nums == null || nums.size() == 0) {
             return 0;
         }
+        int candidate1 = -1, candidate2 = -2;
+        int cnt1 = 0, cnt2 = 0;
+        for (int num : nums) {
+//            if (cnt1 == 0) {
+//                candidate1 = num;
+//                cnt1 = 1;
+//            }
+//            else if ()
+            if (candidate1 == num) {
+                cnt1++;
+            }
+            else if (candidate2 == num) {
+                cnt2++;
+            }
+            else if (cnt1 == 0) {
+                candidate1 = num;
+                cnt1++;
+            }
+            else if (cnt2 == 0) {
+                candidate2 = num;
+                cnt2++;
+            }
+            else {
+                cnt1--;
+                cnt2--;
+            }
+        }
 
-        return 0;
+        // if left 2 candidate, which one is the result?
+        if (cnt1 == 1 && cnt2 == 0)  return candidate1;
+        if (cnt1 == 0 && cnt2 == 1)  return candidate2;
+        cnt1 = 0;
+        cnt2 = 0;
+        for (int num : nums) {
+            if (num == candidate1) {
+                cnt1++;
+            }
+            else if (num == candidate2) {
+                cnt2++;
+            }
+        }
+        return cnt1 > cnt2 ? candidate1 : candidate2;
     }
 
     /**
