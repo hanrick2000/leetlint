@@ -27,6 +27,9 @@ public class ListNode {
    */
   public static ListNode buildList(int a[]) {
 //    int a[] = new int[]{1,1,2,3,3}; // {1, 2, 3, 3, 4, 4, 5};
+      if (a == null || a.length == 0)  {
+          return null;
+      }
     ListNode l[] = new ListNode[a.length];
     for (int i = 0; i < a.length; ++i) {
       l[i] = new ListNode(a[i]);
