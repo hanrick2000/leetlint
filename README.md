@@ -2,6 +2,9 @@
 
 > 熟练Leetcode/Lintcode/九章
 
+## 20151026
+* 加入了ACM的package, 用来做UVA之类的好题目.
+
 ## 20151021
 ### 复习Ladder Senior
 * Uber前复习完.
