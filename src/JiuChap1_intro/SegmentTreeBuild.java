@@ -1,13 +1,11 @@
-package JiuChap0_intro;
-
-import misc.SegmentTreeNode;
+package JiuChap1_intro;
 
 /**
  * Created this class in JiuChap0_intro at 12:40 AM, 10/26/2015.
  */
 public class SegmentTreeBuild {
   public static void main(String[] args0) {
-    int start = 0, end = 6;
+    int start = 1, end = 4;
     SegmentTreeBuild stb = new SegmentTreeBuild();
     SegmentTreeNode root = stb.build(start, end);
     stb.inOdr(root);
@@ -24,6 +22,9 @@ public class SegmentTreeBuild {
   }
 
   public SegmentTreeNode helper(int start, int end) {
+    if (start > end) {
+      return null;
+    }
     if (start == end) {
       return new SegmentTreeNode(start, end);
     }
@@ -43,7 +44,7 @@ public class SegmentTreeBuild {
     return root;
   }
 
-  public void inOdr(SegmentTreeNode root) {
+  private void inOdr(SegmentTreeNode root) {
     if (root == null) {
       return;
     }
@@ -51,5 +52,19 @@ public class SegmentTreeBuild {
     inOdr(root.left);
     System.out.println(root.start + " " + root.end);
     inOdr(root.right);
+  }
+
+  /**
+   * Definition of SegmentTreeNode for Build I.
+   */
+  private class SegmentTreeNode {
+    public int start, end;
+    public SegmentTreeNode left, right;
+
+    public SegmentTreeNode(int start, int end) {
+      this.start = start;
+      this.end = end;
+      this.left = this.right = null;
+    }
   }
 }

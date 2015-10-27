@@ -1,6 +1,9 @@
-package JiuChap0_intro;
+package JiuChap1_intro;
+
+import misc.SegmentTreeNode;
 
 /**
+ * http://www.lintcode.com/en/problem/segment-tree-query/
  * Created this class in JiuChap0_intro at 9:56 AM, 10/26/2015.
  */
 public class SegmentTreeQuery {
@@ -63,7 +66,7 @@ public class SegmentTreeQuery {
       }
     }
     if (end > mid) {
-      if (start >= mid) {
+      if (start >= mid+1) {
         maxR = query(root.right, start, end);
       }
       else {
@@ -100,18 +103,5 @@ public class SegmentTreeQuery {
   }
 
 
-  /**
-   * Definition of SegmentTreeNode for Query, have an extra field: max.
-   */
-  public class SegmentTreeNode {
-    public int start, end, max;
-    public SegmentTreeNode left, right;
 
-    public SegmentTreeNode(int start, int end, int max) {
-      this.start = start;
-      this.end = end;
-      this.max = max;
-      this.left = this.right = null;
-    }
-  }
 }
