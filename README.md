@@ -2,11 +2,15 @@
 
 > 熟练Leetcode/Lintcode/九章
 
+## 20151027
+* 加入了POJ50题package.
+
 ## 20151026
 * 加入了ACM的package, 用来做UVA之类的好题目.
 
 ## 20151021
 ### 复习Ladder Senior
+* 加入JiuChap_x作为senior ladder的package
 * Uber前复习完.
 * 整理Ladder 1的report.
 
