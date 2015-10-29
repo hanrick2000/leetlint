@@ -10,6 +10,29 @@ import java.util.ArrayList;
  */
 public class IntervalSum {
 
+  public static ArrayList<Long> simple(int[] A, ArrayList<Interval> queries) {
+    int[] preSum = new int[A.length];
+    ArrayList<Long> result = new ArrayList<>();
+    for (int i = 0; i < A.length; ++i) {
+      if (i == 0) {
+        preSum[i] = A[0];
+        continue;
+      }
+      preSum[i] = preSum[i-1] + A[i];
+    }
+
+    for (Interval itv : queries) {
+      if (itv.start == 0) {
+        result.add((long) preSum[itv.end]);
+      } else {
+        result.add((long) (preSum[itv.end] - preSum[itv.start-1]));
+      }
+    }
+    result.stream().forEach(System.out::println);
+    return result;
+  }
+
+
   public static void main(String[] args) {
     IntervalSum is = new IntervalSum();
     int[] data= new int[]{1,2,7,8,5};
@@ -17,7 +40,8 @@ public class IntervalSum {
     queries.add(new Interval(0,4));
     queries.add(new Interval(1,2));
     queries.add(new Interval(2,4));
-    is.intervalSum(data, queries);
+//    is.intervalSum(data, queries);
+    simple(data, queries);
   }
   /**
    *@param A, queries: Given an integer array and an query list
