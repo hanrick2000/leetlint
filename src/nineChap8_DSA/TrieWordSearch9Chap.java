@@ -3,11 +3,6 @@ package nineChap8_DSA;
 import java.util.*;
 
 public class TrieWordSearch9Chap {
-  /**
-   * @param board: A list of lists of character
-   * @param words: A list of string
-   * @return: A list of string
-   */
 
   class TrieNode {
     String s;
