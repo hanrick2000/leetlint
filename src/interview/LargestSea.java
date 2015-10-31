@@ -3,14 +3,15 @@ package interview;
 /**
  * 20151029
  * uSens interview with Yuan Wang
+ * Similar problem is: connected component label, maximum submatrix, maximum Square...
  * Created this class in interview at 11:36 PM, 10/29/2015.
  */
 public class LargestSea {
 
   public static void main(String[] args0) {
     int[][] M = new int[][]{
-        {1, 0, 1, 1, 0},
-        {0, 0, 1, 0, 0},
+        {1, 0, 0, 1, 0},
+        {0, 0, 1, 0, 1},
         {0, 0, 0, 1, 0},
         {1, 1, 1, 1, 1},
         {0, 0, 0, 0, 1},
@@ -18,7 +19,7 @@ public class LargestSea {
     };
 
     int res = new LargestSea().largestSea(M);
-    System.out.println(res);
+    System.out.println("Largest sea: "+res);
   }
 
   public int largestSea(int[][] M) {
@@ -36,14 +37,49 @@ public class LargestSea {
   int[] dx = new int[]{1, -1, 0, 0};
   int[] dy = new int[]{0, 0, -1, 1};
 
+  /**
+   * Right way to AC.
+   *
+   * @param M
+   * @param r
+   * @param c
+   * @param ans
+   * @return
+   */
   public int flood(int[][] M, int r, int c, int[] ans) {
+    if (!isValid(M, r, c)) {
+      return 0;
+    }
+
+    M[r][c] = 1;
+    int rs = 1;
+    for (int i = 0; i < 4; ++i) {
+      int rr = r + dx[i];
+      int cc = c + dy[i];
+        ans[0] += 1;
+        rs += flood(M, rr, cc, ans);
+      }
+
+    return ans[0] = rs;
+  }
+
+  /**
+   * I did it wrong in first time!
+   *
+   * @param M
+   * @param r
+   * @param c
+   * @param ans
+   * @return
+   */
+  public int floodWrong(int[][] M, int r, int c, int[] ans) {
     int rs = 0;
     for (int i = 0; i < 4; ++i) {
       int rr = r + dx[i];
       int cc = c + dy[i];
       if (isValid(M, rr, cc)) {
         M[rr][cc] = 1;
-        rs = flood(M, rr, cc, ans) + 1;
+        rs = floodWrong(M, rr, cc, ans) + 1;
       }
     }
 

@@ -9,7 +9,7 @@ import java.util.Map;
  * http://algs4.cs.princeton.edu/15uf/
  * Created this class in JiuChap2_UnionFind_Heap at 10:38 PM, 10/29/2015.
  */
-public class UnionFindAlgs4 {
+public class UnionFindDummy {
   Map<Node, Node> map;
 
   private static class Node {
@@ -25,7 +25,7 @@ public class UnionFindAlgs4 {
   }
 
 
-  UnionFindAlgs4() {
+  UnionFindDummy() {
     this.map = new HashMap<>();
   }
 
@@ -50,14 +50,21 @@ public class UnionFindAlgs4 {
   }
 
   /**
+   *
+   * @param p
+   */
+  public void compressed_find(Node p) {
+    // TODO
+  }
+
+  /**
    * BAD design of test. Should make Node to be static nested classes!!!!
    * https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html
    *
    * So I still need to review my knowledge in Java
    *
-   * @param ufa4
    */
-//  private void test(UnionFindAlgs4 ufa4) {
+//  private void test(UnionFindDummy ufa4) {
 //    Node oo = new Node(0);
 //    Node yi = new Node(1);
 //    Node er = new Node(2);
@@ -91,7 +98,7 @@ public class UnionFindAlgs4 {
 
   public static void main(String[] args) {
 //    Node oo = new Node(0, 1);
-    UnionFindAlgs4 ufa4 = new UnionFindAlgs4();
+    UnionFindDummy ufa4 = new UnionFindDummy();
     Node oo = new Node(0);
     Node yi = new Node(1);
     Node er = new Node(2);
