@@ -28,7 +28,11 @@ public class LargestSea {
     int[] ans = new int[1];
     for (int r = 0; r < ROW; ++r) {
       for (int c = 0; c < COL; ++c) {
-        res = Math.max(res, flood(M, r, c, ans));
+        int size = flood(M, r, c, ans);
+        if (size > 0) {
+          System.out.println(size + " : " + r + ", " + c);
+//        res = Math.max(res, flood(M, r, c, ans));
+        }
       }
     }
     return res;

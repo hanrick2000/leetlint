@@ -110,11 +110,12 @@ public class WeakConn9chap {
     for (int i : hashSet) {
       int fa = uf.find(i);
       if (!hashMap.containsKey(fa)) {
-        hashMap.put(fa, new ArrayList<Integer>());
+        hashMap.put(fa, new ArrayList<>());
       }
-      List<Integer> now = hashMap.get(fa);
-      now.add(i);
-      hashMap.put(fa, now);
+//      List<Integer> now = hashMap.get(fa);
+//      now.add(i);
+//      hashMap.put(fa, now);
+      hashMap.get(fa).add(i);
     }
     for (List<Integer> now : hashMap.values()) {
       Collections.sort(now);
