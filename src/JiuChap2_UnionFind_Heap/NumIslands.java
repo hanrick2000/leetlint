@@ -132,7 +132,7 @@ public class NumIslands {
 
 
 /* ------------------------------------------------------------------------------------------------
- *                                       Scott's code separator: below is the old method: BFS
+ *                        Scott's code separator: below is the old method: BFS
  * ------------------------------------------------------------------------------------------------
  */
 
