@@ -21,7 +21,7 @@ public class SimplePQ {
     if (idx == 0) {
       return -1;
     } else {
-      return idx / 2;
+      return (idx-1) / 2;
     }
   }
 

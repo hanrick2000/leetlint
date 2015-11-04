@@ -11,16 +11,38 @@ import java.util.PriorityQueue;
 public class Heapify {
   public static void main(String[] args) {
     int[] data = new int[]{3,2,1,4,5};
-    new Heapify().heapifyHeap(data);
+    new Heapify().heapifyOn(data);
     for (int d : data) {
       System.out.print(d + " ");
     }
   }
 
-  public void heapifyHeap(int[] A) {
+  /**
+   * best solution: O(n)! build tree from bottom-up!
+   * @param A
+   */
+  public void heapifyOn(int[] A) {
+    Heap heap = new Heap();
+    for (int a : A) {
+      heap.heap.add(a);
+    }
+    int leng = A.length;
+    for (int i = (leng-1)/2; i >= 0; i--) {
+      heap.siftdown(i);
+    }
+    int id = 0;
+    for (int a : heap.heap) {
+      A[id++] = a;
+    }
+  }
+
+  /**
+   * O(nlogn) solution, soso
+   * @param A
+   */
+  public void heapifyHeapNlogN(int[] A) {
     Heap pq = new Heap();
     for (int i : A) {
-
       pq.add(i);
       pq.printPQ();
     }
