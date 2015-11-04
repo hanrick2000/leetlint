@@ -8,11 +8,11 @@ import java.util.List;
  * Inspired by JiuZhang's Hash Heap, it's easier to resize than Algs4's array implement
  * Created this class in misc at 9:10 AM, 11/2/2015.
  */
-public class MinPQ {
+public class SimplePQ {
   List<Integer> heap;
   int size;
 
-  MinPQ() {
+  SimplePQ() {
     heap = new ArrayList<>();
     size = 0;
   }
@@ -110,7 +110,7 @@ public class MinPQ {
 
   public static void main(String[] args) {
     int[] data = new int[]{3,2,1,4,5};
-    new MinPQ().heapify(data);
+    new SimplePQ().heapify(data);
     for (int d : data) {
       System.out.print(d + " ");
     }

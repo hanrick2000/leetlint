@@ -510,7 +510,7 @@ public class GraphGenerator {
             degree[prufer[i]]++;
 
         // pq contains all vertices of degree 1
-        MinPQ<Integer> pq = new MinPQ<Integer>();
+        MinPQ<Integer> pq = new MinPQ<>();
         for (int v = 0; v < V; v++)
             if (degree[v] == 1) pq.insert(v);
 
