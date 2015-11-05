@@ -11,54 +11,64 @@ import java.util.Map;
 public class SlideMedianLint {
 
   public static void main(String[] args) {
-    int[] data = new int[]{1,2,7,8,5};
-    int k = 1;
+    int[] data = new int[] {142,38,100,53,22,84,168,50,194,136,111,13,47,45,151,164,126,47,106,124,183,8,87,38,91,121,102,46,82,195,53,18,11,165,61}; //{ 1, 2, 7, 7, 2, 10, 3, 4, 5 };
+    int k = 35;
     ArrayList<Integer> ans = new SlideMedianLint().medianSlidingWindow(data, k);
     System.out.println(ans);
   }
+
   /**
    * @param nums: A list of integers.
    * @return: The median of the element inside the window at each moving.
    */
   public ArrayList<Integer> medianSlidingWindow(int[] nums, int k) {
     // write your code here
-    if (nums == null || nums.length == 0) {
-      return null;
-    }
     ArrayList<Integer> result = new ArrayList<>();
+    if (nums == null || nums.length == 0) {
+      return result;
+    }
     int median = nums[0];
     HashHeap lmaxq = new HashHeap("max");
     HashHeap rminq = new HashHeap("min");
 
-    for (int i = 1; i < nums.length; ++i) {
-      if (lmaxq.size() + 1 + rminq.size() == k) {
-        lmaxq.poll();
+    for (int i = 0; i < nums.length; ++i) {
+      if (i != 0) {
+        if (nums[i] <= median) {
+          lmaxq.add(nums[i]);
+        } else {
+          rminq.add(nums[i]);
+        }
       }
 
-      if (nums[i] <= median) {
-        lmaxq.add(nums[i]);
-      }
-      else {
-        rminq.add(nums[i]);
+      if (i >= k) {
+        if (median == nums[i - k]) {
+          if (lmaxq.size() > 0) {
+            median = lmaxq.poll();
+          } else if (rminq.size() > 0) {
+            median = rminq.poll();
+          }
+        } else if (median < nums[i - k]) {
+          rminq.delete(nums[i - k]);
+        } else {
+          lmaxq.delete(nums[i - k]);
+        }
       }
 
       if (lmaxq.size() > rminq.size()) {
         rminq.add(median);
         median = lmaxq.poll();
-      }
-      else if (lmaxq.size()+1 < rminq.size()) {
+      } else if (lmaxq.size() + 1 < rminq.size()) {
         lmaxq.add(median);
         median = rminq.poll();
       }
 
-      if (lmaxq.size() + 1 + rminq.size() == k) {
+      if (i + 1 >= k) {
         result.add(median);
       }
     }
 
     return result;
   }
-
 
   class HashHeap {
     int size;
@@ -90,30 +100,27 @@ public class SlideMedianLint {
     int parent(int i) {
       if (i == 0) {
         return -1;
+      } else {
+        return (i - 1) / 2;
       }
-      else  return (i-1)/2;
     }
 
     int lson(int i) {
-      return 2*i+1;
+      return 2 * i + 1;
     }
 
     int rson(int i) {
-      return 2*i+2;
+      return 2 * i + 2;
     }
 
     /**
      * Less != compare. So less return boolean, compare return int!
-     * @param p
-     * @param q
-     * @return
      */
     boolean less(int p, int q) {
       if (mode == "min") {
-        return p<=q;
-      }
-      else {
-        return q<=p;
+        return p <= q;
+      } else {
+        return q < p;
       }
     }
 
@@ -134,6 +141,9 @@ public class SlideMedianLint {
         if (less(heap.get(i), heap.get(parentid))) {
           exch(i, parentid);
         }
+        else {
+          break;
+        }
         i = parentid;
       }
     }
@@ -143,16 +153,15 @@ public class SlideMedianLint {
         int left = lson(i);
         int right = rson(i);
         int son = -1;
-        if (right >= heap.size() || less(heap.get(left), heap.get(right))) {  // the less delegate the min/max.
+        if (right >= heap.size() || less(heap.get(left),
+            heap.get(right))) {  // the less delegate the min/max.
           son = left;
-        }
-        else {
+        } else {
           son = right;
         }
         if (less(heap.get(son), heap.get(i))) {
           exch(son, i);
-        }
-        else {
+        } else {
           break;
         }
         i = son;
@@ -164,29 +173,32 @@ public class SlideMedianLint {
       if (hash.containsKey(now)) {
         int nowId = hash.get(now).id;
         int nowNum = hash.get(now).num;
-        Node node = new Node(nowId, nowNum+1);
+        Node node = new Node(nowId, nowNum + 1);
         hash.put(now, node);
-      }
-      else {
+      } else {
         heap.add(now);
-        hash.put(now, new Node(heap.size()-1, 0));
-        swim(heap.size()-1);
+        hash.put(now, new Node(heap.size() - 1, 1));
+        swim(heap.size() - 1);
       }
     }
 
     void delete(int now) {
       size--;
       if (hash.get(now).num > 1) {
-        hash.put(now, new Node(hash.get(now).id, hash.get(now).num-1));
-      }
-      else { // unique now to be removed
+        hash.put(now, new Node(hash.get(now).id, hash.get(now).num - 1));
+      } else { // unique now to be removed
         int nowId = hash.get(now).id;
-        exch(nowId, heap.size()-1);
+        exch(nowId, heap.size() - 1);
         hash.remove(now);
-        heap.remove(heap.size()-1);
+        heap.remove(heap.size() - 1);
         if (heap.size() > nowId) {
-          if (mode == "min")  sink(nowId);
-          else  swim(nowId);
+          //if (mode == "min") {
+          //  sink(nowId);
+          //} else {
+          //  swim(nowId);
+          //}
+          swim(nowId);
+          sink(nowId);
         }
       }
     }
@@ -201,5 +213,4 @@ public class SlideMedianLint {
       return heap.get(0);
     }
   }
-
 }

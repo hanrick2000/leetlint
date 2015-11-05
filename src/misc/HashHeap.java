@@ -70,7 +70,7 @@ public class HashHeap {
       return p <= q;
     }
     else {
-      return q <= p;
+      return q < p;
     }
   }
 
@@ -90,6 +90,9 @@ public class HashHeap {
       int parentId = parent(i);
       if (less(heap.get(i), heap.get(parentId))) {
         exch(i, parentId);
+      }
+      else {
+        break; // I missed this
       }
       i = parentId;
     }
