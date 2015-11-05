@@ -11,6 +11,7 @@ import java.util.Map;
  * Created this class in misc at 12:09 AM, 11/4/2015.
  */
 public class HashHeap {
+  String mode;
   List<Integer> heap;
   Map<Integer, Node> hash;  // learn how to use HashMap! the key is the number, and the value is the pointer(aka idx)
   int size;  // to solve duplicate value, so size is the real size while heap.size is distinct val's number
@@ -30,15 +31,22 @@ public class HashHeap {
     }
   }
 
-  public HashHeap() {
+  public HashHeap(String MODE) {
+    mode = MODE;
     heap = new ArrayList<>();
     hash = new HashMap<>();
     size = 0;
   }
 
-  int peak() {
+  public int peak() {
     return heap.get(0);
   }
+
+  public boolean isEmpty() {
+    return heap.size() == 0;
+  }
+
+  public int size() {return size; }
 
   int parent(int id) {
     if (id == 0) {
@@ -58,7 +66,12 @@ public class HashHeap {
   }
 
   boolean less(int p, int q) {
-    return p < q;
+    if (mode == "min") {
+      return p <= q;
+    }
+    else {
+      return q <= p;
+    }
   }
 
   void exch(int i, int j) {
@@ -75,7 +88,7 @@ public class HashHeap {
   void swim(int i) {
     while (parent(i) > -1) {
       int parentId = parent(i);
-      if (less(heap.get(i), (heap.get(parentId)))) {
+      if (less(heap.get(i), heap.get(parentId))) {
         exch(i, parentId);
       }
       i = parentId;
@@ -103,7 +116,7 @@ public class HashHeap {
     }
   }
 
-  void add(int now) {
+  public void add(int now) {
     size++;
     if (hash.containsKey(now)) {
       Node hashnow = hash.get(now);
@@ -112,27 +125,44 @@ public class HashHeap {
     else {
       heap.add(now);
       hash.put(now, new Node(heap.size()-1, 1));
+      swim(heap.size()-1);
     }
-    swim(heap.size()-1);
   }
 
-  void remove(int now) {
+  /**
+   * Always double check if it's the last one to remove!
+   *
+   * @param now
+   */
+  public void remove(int now) {
     size--;
     Node hashnow = hash.get(now);
     int id = hashnow.id;
     int num = hashnow.num;
-    if (id > 1) {
+    if (num > 1) {  // I was wrongly put id here last time...
       hash.put(now, new Node(id, num-1));
     }
     else {
       exch(id, heap.size()-1);
       heap.remove(heap.size()-1);
       hash.remove(now);
-      sink(id);
+      if (heap.size() > id) {  // need to check if valid: say, now the heap is {4}, but 4's id is still 1, can't do heap.get(0)!
+        if (mode == "max") swim(id);  // Now I know why 9chap called swim, it's for maxPQ case.
+        else sink(id);
+      }
     }
   }
 
+  public int pop() {
+    int root = peak();
+    remove(root);
+    return root;
+  }
+
   void printPQ() {
+    if (heap.size() == 0) {
+      System.out.println("HashHeap is empty!");
+    }
     for (int v : heap) {
       System.out.print(v + " ");
     }
@@ -154,10 +184,13 @@ public class HashHeap {
   }
 
   public static void main(String[] args) {
-    int[] data = new int[] {10,17,13,20,23, 27};
-    HashHeap test = new HashHeap();
+    int[] data = new int[] {1, 1, 3}; // {10,17,13,20,23,23};
+    HashHeap test = new HashHeap("min");
     test.heapify(data);
-    test.remove(17);
+    //test.remove(17);
+    test.remove(3);
+    test.remove(3);
+    test.remove(1);
     test.printPQ();
   }
 }

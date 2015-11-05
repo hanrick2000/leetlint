@@ -5,15 +5,14 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.PriorityQueue;
-import java.util.Queue;
 
 public class MedianII {
-  Queue<Integer> RminPQ;
-  Queue<Integer> LmaxPQ;
+  PriorityQueue<Integer> RminPQ;
+  PriorityQueue<Integer> LmaxPQ;
   Integer med = null;
 
   public static void main(String[] args) {
-    int[] input = new int[] {4, 5, 1, 3, 2, 6, 0};
+    int[] input = new int[] {1,2,3,4,5}; // {4, 5, 1, 3, 2, 6, 0};
     MedianII m2 = new MedianII();
     System.out.println(Arrays.toString(m2.median2(input)));
   }
