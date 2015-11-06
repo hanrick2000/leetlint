@@ -1,7 +1,7 @@
 package learnJava;
 
 /**
- * For Java param, it ALWAYS pass-by-value
+ * For Java param, it ALWAYS pass-by-val
  * @author tzhang
  *
  */

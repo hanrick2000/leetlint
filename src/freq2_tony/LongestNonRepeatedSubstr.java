@@ -20,7 +20,7 @@ public class LongestNonRepeatedSubstr {
 
   /**
    * N00t的解法: 用一个hashmap来记录所有的char出现的位置. 如果当前的char出现过而且在当前string内. 则update length. 因为Java是pass by
-   * value, 所以primitive是对内修改. 所以要传入object, 这样可以对内修改reference, 一次改变String.
+   * val, 所以primitive是对内修改. 所以要传入object, 这样可以对内修改reference, 一次改变String.
    * 
    * @param s
    * @return

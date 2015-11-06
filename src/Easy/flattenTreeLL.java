@@ -52,7 +52,7 @@ public class flattenTreeLL {
             return;
         }
 
-        list.add(root.value);
+        list.add(root.val);
         pre(root.left, list);
         pre(root.right, list);
     }

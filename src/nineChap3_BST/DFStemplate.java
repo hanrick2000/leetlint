@@ -32,7 +32,7 @@ public class DFStemplate {
     }
     
     if (root.left == null && root.right == null) {
-      return root.value;
+      return root.val;
     }
     
     // divide
@@ -42,7 +42,7 @@ public class DFStemplate {
     // conquer
     System.out.println("Left and right are: " + left + " " + right);
     
-    return left+right + root.value;
+    return left+right + root.val;
   }
   
   /*
@@ -69,7 +69,7 @@ public class DFStemplate {
   }
   
   private static void process(TreeNode root) {
-    System.out.println("Processing " + root.value);
+    System.out.println("Processing " + root.val);
   }
 
   public void testdfsTraverse(TreeNode root) {
@@ -83,7 +83,7 @@ public class DFStemplate {
   
   public void testlcaDC(TreeNode root, TreeNode A, TreeNode B) {
     TreeNode lcaANS = lcaDC(root, A, B);
-    System.out.println("The LCA of " + A.value + " and " + B.value + " is: " + lcaANS.value);
+    System.out.println("The LCA of " + A.val + " and " + B.val + " is: " + lcaANS.val);
   }
 
   public static void main(String[] args) {

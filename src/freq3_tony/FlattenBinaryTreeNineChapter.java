@@ -55,10 +55,10 @@ public class FlattenBinaryTreeNineChapter {
   public FlattenBinaryTreeNineChapter() {
     TreeNode root = BuildTree();
     flatten(root);
-    System.out.println(root.value + " " + lastNode.value);
+    System.out.println(root.val + " " + lastNode.val);
     TreeNode node = root;
     while (node != null) {
-      System.out.print(node.value + " ");
+      System.out.print(node.val + " ");
       node = node.right;
     }
   }

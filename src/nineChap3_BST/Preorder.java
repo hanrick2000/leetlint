@@ -25,7 +25,7 @@ public class Preorder {
   }
 
   /**
-   * The recursion in Traverse has no return value, so I had to make a dfs helper, and a wrapper for
+   * The recursion in Traverse has no return val, so I had to make a dfs helper, and a wrapper for
    * it.
    * 
    * @param root
@@ -47,7 +47,7 @@ public class Preorder {
     if (root == null) {
       return;
     }
-    result.add(root.value);
+    result.add(root.val);
     dfs(root.left, result);
     dfs(root.right, result);
   }
@@ -71,7 +71,7 @@ public class Preorder {
     ArrayList<Integer> rights = preOrderDC(root.right);
 
     // "conquer" : 
-    res.add(root.value);
+    res.add(root.val);
     res.addAll(lefts);
     res.addAll(rights);
     return res;

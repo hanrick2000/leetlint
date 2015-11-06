@@ -1,7 +1,7 @@
 package freq3_tony;
 
 /**
- * Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the
+ * Write an efficient algorithm that searches for a val in an m x n matrix. This matrix has the
  * following properties: 也就是面试不会直接让你写binary search. 总会有点变形. 这里就是一个变形题. 其实就是2次Binary search. 虽然意思很简单.
  * 其实写的时候就像Qsort. 很容易出错. 还是得熟练. 而且和之前的(哪一???)题很像, 要深入理解left, right在while跳出来之后的关系.
  * 

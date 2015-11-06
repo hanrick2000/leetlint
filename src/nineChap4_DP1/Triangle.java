@@ -13,7 +13,7 @@ public class Triangle {
   public static void main(String[] args) {
     tri = new ArrayList<ArrayList<Integer>>();
     /*
-     * ÓÃAnonymous Child ClassÀ´init ArrayList
+     * ï¿½ï¿½Anonymous Child Classï¿½ï¿½init ArrayList
      * http://mangstacular.blogspot.com/2013/04/4-ways-to-initialize-list-in-java.html
      */
     ArrayList<Integer> level1 = new ArrayList<Integer>() {
@@ -82,7 +82,7 @@ public class Triangle {
    * @param x
    * @param y
    * @param sum : keep updating the current sum
-   * @param min : as the output so make it an array object for call-by-value
+   * @param min : as the output so make it an array object for call-by-val
    */
   public static void minPathTraverseWalkUp(int x, int y, int sum, int[] min) {
     // System.out.println("we are at: " + x + "," + y);
@@ -159,7 +159,7 @@ public class Triangle {
 
   /**
    * Top down approach for DP. State: F[x][y] means the min path from (0,0) to (x,y). DP is to reuse
-   * computed states, so Top-down is using upper level to calculate lower levels value.
+   * computed states, so Top-down is using upper level to calculate lower levels val.
    * 
    * @param triangle
    * @return

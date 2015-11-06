@@ -20,7 +20,7 @@ public class SubsetI {
     /*-
      * This is helper function to subset I: distinct nums input
      * Also I had 2 mistakes: 1. I added list.contains, learned from permutation
-     *                        2. the goal is to not choose the value has been chosen, so i+1, not pos+1
+     *                        2. the goal is to not choose the val has been chosen, so i+1, not pos+1
      *
      * @param result
      * @param list

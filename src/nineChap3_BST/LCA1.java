@@ -28,7 +28,7 @@ public class LCA1 {
     BTtreePrinter.printNode(yi);
 
     TreeNode ans = lcaBU(yi, sa, wu);
-    System.out.println(ans.value);
+    System.out.println(ans.val);
 
     List<String> ser = new ArrayList<String>();
     SerDesBinaryTree.writeBinTree(yi, ser);
@@ -55,7 +55,7 @@ public class LCA1 {
     TreeNode left = lcaBU(root.left, A, B);
     TreeNode right = lcaBU(root.right, A, B);
     // "conquer"
-    // System.out.print(root.value + " ");
+    // System.out.print(root.val + " ");
     if (left != null && right != null) {
       return root;
     } else

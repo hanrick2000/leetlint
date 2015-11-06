@@ -1,7 +1,7 @@
 package nineChap2;
 
 /**
- * Given a sorted array of integers, find the starting and ending position of a given target value.
+ * Given a sorted array of integers, find the starting and ending position of a given target val.
  *
  * @author ttt
  *

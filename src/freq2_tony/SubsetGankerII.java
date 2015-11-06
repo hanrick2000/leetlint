@@ -27,7 +27,7 @@ public class SubsetGankerII {
     if (num == null)
       return null;
     Arrays.sort(num);
-    return helperGankerII(num, num.length - 1, new int[1]); // 因为array也是一个object, 是pass by value.
+    return helperGankerII(num, num.length - 1, new int[1]); // 因为array也是一个object, 是pass by val.
                                                         // 即array的handle
   }
 

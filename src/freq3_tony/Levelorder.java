@@ -40,7 +40,7 @@ public class Levelorder {
       List<Integer> res = new LinkedList<>();
       TreeNode curr = queue.remove();
       while (curr != null) {
-        res.add(curr.value);
+        res.add(curr.val);
         if (curr.left != null)
           queue.add(curr.left);
         if (curr.right != null)
@@ -70,7 +70,7 @@ public class Levelorder {
       Queue<TreeNode> queueTemp = new LinkedList<>();
       while (!queue.isEmpty()) {
         curr = queue.remove();
-        res.add(curr.value);
+        res.add(curr.val);
         if (curr.left != null)
           queueTemp.add(curr.left);
         if (curr.right != null)
@@ -85,12 +85,12 @@ public class Levelorder {
   }
 
   // private class TreeNode {
-  // private int value;
+  // private int val;
   // private TreeNode left;
   // private TreeNode right;
   //
   // public TreeNode(int val) {
-  // this.value = val;
+  // this.val = val;
   // N++;
   // }
   // }

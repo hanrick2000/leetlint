@@ -19,12 +19,12 @@ public class SumRootLeafNum {
     if (node == null)
       return false;
     if (node.left == null && node.right == null) {
-      if (node.value == sum)
+      if (node.val == sum)
         return true;
     }
-    if (sumRLNttttttt(node.left, sum - node.value * 10))
+    if (sumRLNttttttt(node.left, sum - node.val * 10))
       return true;
-    if (sumRLNttttttt(node.right, sum - node.value * 10))
+    if (sumRLNttttttt(node.right, sum - node.val * 10))
       return true;
     return false;
   }
@@ -35,17 +35,17 @@ public class SumRootLeafNum {
       return sum + path;
     }
     if (node.left != null) {
-      sum = sumNumHelper(node.left, path * 10 + node.left.value, sum);
+      sum = sumNumHelper(node.left, path * 10 + node.left.val, sum);
     }
     if (node.right != null) {
-      sum = sumNumHelper(node.right, path * 10 + node.right.value, sum);
+      sum = sumNumHelper(node.right, path * 10 + node.right.val, sum);
     }
     return sum;
   }
   
   public int sumNumbers(TreeNode root) {
     if (root == null)  return 0;
-    return sumNumHelper(root, root.value, 0);
+    return sumNumHelper(root, root.val, 0);
   }
 
   public TreeNode buildTree() {
@@ -62,7 +62,7 @@ public class SumRootLeafNum {
   public SumRootLeafNum() {
     buildTree();
 //    boolean result = sumRLNttttttt(root, 13);
-    int result = sumNumbers(node); //sumNumHelper(root, root.value, 0);
+    int result = sumNumbers(node); //sumNumHelper(root, root.val, 0);
     System.out.println(result);
   }
 

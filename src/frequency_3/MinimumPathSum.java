@@ -4,17 +4,17 @@ package frequency_3;
 //find a path from top left to bottom right which minimizes the sum of all numbers along its path.
 //
 //Note: You can only move either down or right at any point in time.
-//¸øÄãÒ»¸ö¾ØÕó ÀïÃæ ºÃ¶à·Ç¸ºÊı
-//È»ºóÒªÄã´Ó×óÉÏµ½ÓÒÏÂÕÒÒ»Ìõpath Ê¹µÃpathµÄÄÚµÄºÏ×îĞ¡ È»ºó·µ»ØºÍ
+//ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ã¶ï¿½Ç¸ï¿½ï¿½ï¿½
+//È»ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½path Ê¹ï¿½ï¿½pathï¿½ï¿½ï¿½ÚµÄºï¿½ï¿½ï¿½Ğ¡ È»ï¿½ó·µ»Øºï¿½
 
-//¾ÅÕÂDPÄ£°å matrixDP Ô¤´¦Àí¾ØÕó¡£×îºó·µ»Øsum[rows-1][cols-1] 
-//sumÕâ¸ö¾ØÕóÀïÃ¿Ò»¸ñ¶¼´æ×óÉÏ×ßµ½Õâ²½ËùĞèµÄ×îÉÙsum¡£
-//1.ÏÈinitial Á½¸ö±ß  sum[0][col] = sum[0][col - 1] + grid[0][col];
-//È»ºó2.DP (Ë«ÖØÑ­»· È»ºó    sum[row][col]=Math.min(sum[row-1][col],sum[row][col-1])+grid[row][col];) Math.minµÄ´æÔÚ ÓĞÒòÎª Ö»ÄÜ´Ó×óÉÏµ½ÓÒÏÂ£¬ËùÒÔµ±Ç°¸ñ×ÓµÄsum. ÊÇµ½ÎÒÕâ¸ö½Úµã×îÉÙµÄpath 
+//ï¿½ï¿½ï¿½ï¿½DPÄ£ï¿½ï¿½ matrixDP Ô¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ó·µ»ï¿½sum[rows-1][cols-1] 
+//sumï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¿Ò»ï¿½ñ¶¼´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ßµï¿½ï¿½â²½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½sumï¿½ï¿½
+//1.ï¿½ï¿½initial ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  sum[0][col] = sum[0][col - 1] + grid[0][col];
+//È»ï¿½ï¿½2.DP (Ë«ï¿½ï¿½Ñ­ï¿½ï¿½ È»ï¿½ï¿½    sum[row][col]=Math.min(sum[row-1][col],sum[row][col-1])+grid[row][col];) Math.minï¿½Ä´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Îª Ö»ï¿½Ü´ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ï¿½Â£ï¿½ï¿½ï¿½ï¿½Ôµï¿½Ç°ï¿½ï¿½ï¿½Óµï¿½sum. ï¿½Çµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½ï¿½Ùµï¿½path 
 
 public class MinimumPathSum {
 	public int minPathSum(int[][] grid) {
-		// 2d matrixÀï grid.length==0ºÍ grid[0].length==0 ÀïÃæ¶¼ÊÇÏàµ±ÓÚ¿Õ¼¯ ²»ÄÜ´æÔªËØ
+		// 2d matrixï¿½ï¿½ grid.length==0ï¿½ï¿½ grid[0].length==0 ï¿½ï¿½ï¿½æ¶¼ï¿½ï¿½ï¿½àµ±ï¿½Ú¿Õ¼ï¿½ ï¿½ï¿½ï¿½Ü´ï¿½Ôªï¿½ï¿½
 		if (grid == null || grid.length == 0 || grid[0].length == 0) {
 			return 0;
 		}
@@ -26,7 +26,7 @@ public class MinimumPathSum {
 		sum[0][0] = grid[0][0];
 		 
 		for (int row = 1; row < rows; row++) {
-			// Ç°Ò»¸öµÄsum¼Ó±¾¸ögrid[][]µÄ value¾ÍÊÇ±¾¸ñµÄsum
+			// Ç°Ò»ï¿½ï¿½ï¿½ï¿½sumï¿½Ó±ï¿½ï¿½ï¿½grid[][]ï¿½ï¿½ valï¿½ï¿½ï¿½Ç±ï¿½ï¿½ï¿½ï¿½sum
 			sum[row][0] = sum[row - 1][0] + grid[row][0];
 		}
 
@@ -36,8 +36,8 @@ public class MinimumPathSum {
 		// dp
 		for (int row = 1; row < rows; row++) {
 			for (int col = 1; col < cols; col++) {
-				//ÒòÎª ÓĞ Math.minµÄ´æÔÚ ÓĞÒòÎª Ö»ÄÜ´Ó×óÉÏµ½ÓÒÏÂ£¬ËùÒÔµ±Ç°¸ñ×Ó
-				//µÄsum. ÊÇµ½ÎÒÕâ¸ö½Úµã×îÉÙµÄpath 
+				//ï¿½ï¿½Îª ï¿½ï¿½ Math.minï¿½Ä´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Îª Ö»ï¿½Ü´ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ï¿½Â£ï¿½ï¿½ï¿½ï¿½Ôµï¿½Ç°ï¿½ï¿½ï¿½ï¿½
+				//ï¿½ï¿½sum. ï¿½Çµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½ï¿½Ùµï¿½path 
          sum[row][col]=Math.min(sum[row-1][col],sum[row][col-1])+grid[row][col];
           }
 		}

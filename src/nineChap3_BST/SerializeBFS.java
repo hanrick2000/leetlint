@@ -60,7 +60,7 @@ public class SerializeBFS {
         if (cur == null) { // 体现了null node�Є作�?
           thisnode = "#";
         } else {
-          thisnode = cur.value + "";
+          thisnode = cur.val + "";
         }
         ans = ans.length() == 0 ? ans + thisnode : ans + ", " + thisnode;
 
@@ -99,7 +99,7 @@ public class SerializeBFS {
         if (head == null) {
           thisnode = "#";
         } else {
-          thisnode = head.value + ""; // simple way to cast int into string
+          thisnode = head.val + ""; // simple way to cast int into string
         }
         result =
             result.length() == 0 ? result + thisnode : result + ", " + thisnode;
@@ -235,7 +235,7 @@ public class SerializeBFS {
       int size = parents.size();
       for (int i = 0; i < size; ++i) {
         TreeNode head = parents.poll();
-        level.add(head.value);
+        level.add(head.val);
         if (!token[idx].equals("#")) {
           head.left = new TreeNode(Integer.parseInt(token[idx]));
           parents.offer(head.left);
@@ -280,7 +280,7 @@ public class SerializeBFS {
       int size = queue.size();
       for (int i = 0; i < size; ++i) {
         TreeNode cur = queue.poll();
-        level.add(cur.value);
+        level.add(cur.val);
         // if (cur == sentinalNode) { // isLeaf(cur)
         // continue;
         // }

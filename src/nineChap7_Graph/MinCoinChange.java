@@ -30,7 +30,7 @@ public class MinCoinChange {
     int[] opt = new int[V+1];
     int minVal;
     for (int i = 1; i <= V; ++i) {
-      minVal = i;  // the max value is using all 1 cent.
+      minVal = i;  // the max val is using all 1 cent.
       for (int j = 0; j < m; ++j) {
         if (dx[j] <= i) {
           /**

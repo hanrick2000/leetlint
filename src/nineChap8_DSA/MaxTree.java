@@ -23,8 +23,8 @@ public class MaxTree {
                 curNode = new TreeNode(-1);
             }
 
-            while (!decStk.isEmpty() && decStk.peek().value < curNode.value) {
-                TreeNode tmp = new TreeNode(decStk.pop().value);
+            while (!decStk.isEmpty() && decStk.peek().val < curNode.val) {
+                TreeNode tmp = new TreeNode(decStk.pop().val);
                 curNode.left = tmp;
                 decStk.push(curNode);
             }

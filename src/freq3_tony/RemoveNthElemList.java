@@ -23,7 +23,7 @@ public class RemoveNthElemList {
     // aux = new int[] {};
     while (node != null) {
       aux.add(node.value);
-      // System.out.println(node.value + ", " + size);
+      // System.out.println(node.val + ", " + size);
       node = node.next;
       size++;
     }

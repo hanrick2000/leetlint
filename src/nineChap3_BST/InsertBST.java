@@ -46,11 +46,11 @@ public class InsertBST {
    */
   public static void insertBST1(TreeNode root, TreeNode xin) {
     if (root == null) { //
-      // root.value = 99;// will show up java.lang.NullPointerException
-      root = new TreeNode(99); // no exception, but no update, why? it only update value, not link!
+      // root.val = 99;// will show up java.lang.NullPointerException
+      root = new TreeNode(99); // no exception, but no update, why? it only update val, not link!
       return;
     }
-    if (root.value > xin.value) {
+    if (root.val > xin.val) {
       insertBST1(root.left, xin);
     } else {
       insertBST1(root.right, xin);
@@ -66,13 +66,13 @@ public class InsertBST {
    */
   public static void insertBST2(TreeNode root, TreeNode xin) {
     if (root.left == null && root.right == null) {
-      if (root.value < xin.value) {
+      if (root.val < xin.val) {
         root.right = xin;
       } else
         root.left = xin;
       return;
     }
-    if (root.value > xin.value) {
+    if (root.val > xin.val) {
       if (root.left == null) { //
         root.left = xin;
         return;
@@ -88,7 +88,7 @@ public class InsertBST {
   }
 
   /**
-   * The best way to solve it is by D&C, that the recursion has return value, which used to update
+   * The best way to solve it is by D&C, that the recursion has return val, which used to update
    * the link.
    *
    * @param root
@@ -101,7 +101,7 @@ public class InsertBST {
                   // the recursion call.
       return root;
     }
-    if (root.value > xin.value)
+    if (root.val > xin.val)
       root.left = insertBST(root.left, xin); //
     else
       root.right = insertBST(root.right, xin);

@@ -41,7 +41,7 @@ public class OracleTutorialInnerClass {
       
       public Integer next() {
           
-          // Record a value of an even index of the array
+          // Record a val of an even index of the array
           Integer retValue = Integer.valueOf(arrayOfInts[nextIndex]);
           
           // Get the next even element

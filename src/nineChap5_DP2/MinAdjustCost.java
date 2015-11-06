@@ -37,7 +37,7 @@ public class MinAdjustCost {
     }
     int aLen = A.size();
     int[][] F = new int[aLen + 1][101]; // the min cost to adjust first i items with the ith item to
-                                        // new value j.
+                                        // new val j.
 
     // for (int i = 0; i < aLen+1; ++i) {
     // F[i][0]

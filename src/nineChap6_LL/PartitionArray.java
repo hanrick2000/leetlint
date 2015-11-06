@@ -20,7 +20,7 @@ public class PartitionArray {
   /**
    * first try, OK, followed the classical while with 2 while
    * 
-   * @param a: since it is array, so an object, so pass-by-value, so will update.
+   * @param a: since it is array, so an object, so pass-by-val, so will update.
    * @param sentinel
    */
   public void partitionArraya(int[] a, int sentinel) {

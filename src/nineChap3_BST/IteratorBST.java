@@ -33,7 +33,7 @@ public class IteratorBST {
     Solution iterator = new Solution(root);
     while (iterator.hasNext()) {
       TreeNode node = iterator.next();
-      System.out.println(node.value);
+      System.out.println(node.val);
     }
   }
 

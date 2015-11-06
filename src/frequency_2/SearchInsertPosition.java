@@ -1,30 +1,30 @@
 package frequency_2;
 
-//Given a sorted array and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
+//Given a sorted array and a target val, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
 //
 //You may assume no duplicates in the array.
 //
 //Here are few examples.
-//[1,3,5,6], 5 ¡ú 2
-//[1,3,5,6], 2 ¡ú 1
-//[1,3,5,6], 7 ¡ú 4
-//[1,3,5,6], 0 ¡ú 0 
+//[1,3,5,6], 5 ï¿½ï¿½ 2
+//[1,3,5,6], 2 ï¿½ï¿½ 1
+//[1,3,5,6], 7 ï¿½ï¿½ 4
+//[1,3,5,6], 0 ï¿½ï¿½ 0 
 
-//±¾À´ÊÇºÍÆÕÍ¨µÄbinary search ÊÇÒ»ÑùµÄ,µ«ÊÇÈç¹ûÃ»ÕÒµ½µÄ»°²»ÊÇ·µ»Ø-1
-//¶øÊÇ·µ»Ø ÄãÕâ¸ötargetÈç¹ûÒª²åÔÚÊı×éÀïµÄ ²åÔÚµÄÄÇ¸öÏÂ±êµÄÎ»ÖÃ
-//ËùÒÔ¾ÅÕÂËã·¨BSÄ£°å ¾ÍÊÇÎªÁËºÜºÃµÄmeetÕâ¸öÎÊÌâ¶øÀ´µÄ¡£
+//ï¿½ï¿½ï¿½ï¿½ï¿½Çºï¿½ï¿½ï¿½Í¨ï¿½ï¿½binary search ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Òµï¿½ï¿½Ä»ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½-1
+//ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½targetï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Úµï¿½ï¿½Ç¸ï¿½ï¿½Â±ï¿½ï¿½Î»ï¿½ï¿½
+//ï¿½ï¿½ï¿½Ô¾ï¿½ï¿½ï¿½ï¿½ã·¨BSÄ£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Îªï¿½ËºÜºÃµï¿½meetï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¡ï¿½
 
 public class SearchInsertPosition {
 	public int searchInsert(int[] A, int target) {
 		int start = 0;
 		int end = A.length - 1;
 		int mid;
-		// A ÊÇsorted
+		// A ï¿½ï¿½sorted
 		if (target < A[0]) {
 			return 0;
 		}
-		// ¾ÅÕÂbsÄ£°å,ÕÒ±ÈtargetĞ¡µÄ×î´óµÄÄÇ¸öÊı Èç¹ûÏàµÈ¾ÍÕÒµ½ÁË
-		// Èç¹û²»ÏàµÈ£¬ÄÇÃ´²åÈëµÄÎ»×ÓÓ¦¸Ã¾ÍÔÚÕâ¸öÊıµÄÏÂ±êµÄºóÒ»Î»¡£
+		// ï¿½ï¿½ï¿½ï¿½bsÄ£ï¿½ï¿½,ï¿½Ò±ï¿½targetĞ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½È¾ï¿½ï¿½Òµï¿½ï¿½ï¿½
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È£ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½Ó¦ï¿½Ã¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â±ï¿½Äºï¿½Ò»Î»ï¿½ï¿½
 		while (start + 1 < end) {
 			mid = start + (end - start) / 2;
 			if (A[mid] == target) {

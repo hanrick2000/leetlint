@@ -26,14 +26,14 @@ public class FindAllPathSum {
     if (root == null) {
       return;
     }
-    path.add(root.value);  // 很好理解, 花了图就知道, 是happening down the tree.
-    if (root.left == null && root.right == null && sum == root.value) {
+    path.add(root.val);  // 很好理解, 花了图就知道, 是happening down the tree.
+    if (root.left == null && root.right == null && sum == root.val) {
       // 因为Java都是pass by reference. 所以任何对于path的改动都会影响到resSet
       ArrayList<Integer> currPath = new ArrayList<Integer>(path);
       resSet.add(currPath);
     }
-    findPathSum(root.left, sum-root.value, path, resSet);
-    findPathSum(root.right, sum-root.value, path, resSet);
+    findPathSum(root.left, sum-root.val, path, resSet);
+    findPathSum(root.right, sum-root.val, path, resSet);
     path.remove(path.size()-1);   // 很好理解, 即画了图之后就只到, 这时候就真的happen up the tree, 吐出来. 
   }
 }

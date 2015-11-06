@@ -9,7 +9,7 @@ import java.util.*;
  * 1. result param in recursion method is the one to keep recording all temp result along the
  * DFS, so it should not reset.
  * 2. in the other hand, state param is something like the: root, pos, etc. These param need to
- * update when goes down the recursion tree, but need to reset the original value(the value right
+ * update when goes down the recursion tree, but need to reset the original val(the val right
  * before goes down the tree) when it goes up the recursion tree.
  */
 public class WordSearchIItrieTree {

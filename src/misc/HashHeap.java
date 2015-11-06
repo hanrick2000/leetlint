@@ -13,8 +13,8 @@ import java.util.Map;
 public class HashHeap {
   String mode;
   List<Integer> heap;
-  Map<Integer, Node> hash;  // learn how to use HashMap! the key is the number, and the value is the pointer(aka idx)
-  int size;  // to solve duplicate value, so size is the real size while heap.size is distinct val's number
+  Map<Integer, Node> hash;  // learn how to use HashMap! the key is the number, and the val is the pointer(aka idx)
+  int size;  // to solve duplicate val, so size is the real size while heap.size is distinct val's number
 
   class Node {
     Integer id;  // the idx
@@ -183,7 +183,7 @@ public class HashHeap {
       A[id++] = v;
     }
     this.printPQ();
-    //hh.printPQ(); // FT, I forgot to add "hh." before printPQ, therefore it's printing nothing since class value not object!!!
+    //hh.printPQ(); // FT, I forgot to add "hh." before printPQ, therefore it's printing nothing since class val not object!!!
   }
 
   public static void main(String[] args) {

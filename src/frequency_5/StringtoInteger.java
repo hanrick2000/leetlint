@@ -16,7 +16,7 @@ import java.lang.reflect.Array;
 // The function first discards as many whitespace characters as necessary until the first
 // non-whitespace character is found. Then, starting from this character, takes an optional initial
 // plus or minus sign followed by as many numerical digits as possible, and interprets them as a
-// numerical value.
+// numerical val.
 //
 // The string can contain additional characters after those that form the integral number, which are
 // ignored and have no effect on the behavior of this function.
@@ -25,10 +25,10 @@ import java.lang.reflect.Array;
 // no such sequence exists because either str is empty or it contains only whitespace characters, no
 // conversion is performed.
 //
-// If no valid conversion could be performed, a zero value is returned. If the correct value is out
+// If no valid conversion could be performed, a zero val is returned. If the correct val is out
 // of the range of representable values, INT_MAX (2147483647) or INT_MIN (-2147483648) is returned.
 
-// ÕâÌâ¿¼ÑĞÔÚÒªÇóºÜ¶àµÄÇé¿öÏÂ ÊÇ·ñÄÜ×öµ½ÌõÀíÇåÎú ÓĞÌõ²»ÎÉ
+// ï¿½ï¿½ï¿½â¿¼ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½Ü¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 public class StringtoInteger {
   public static int atoi(String str) {
     str = str.trim();
@@ -38,21 +38,21 @@ public class StringtoInteger {
     }
     boolean isPositive = true;
     for (int i = 0; i < str.length(); i++) {
-      // ÔÚµÚÒ»Î»µÄ×´Ì¬ÏÂÏÈ´¦ÀíµÚÒ»Î» ×¢ÒâÕâÖÖĞ´·¨ ºÜÇÉÃî Âß¼­ºÜÇåÎú
+      // ï¿½Úµï¿½Ò»Î»ï¿½ï¿½×´Ì¬ï¿½ï¿½ï¿½È´ï¿½ï¿½ï¿½ï¿½Ò»Î» ×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ´ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
       if (i == 0 && (str.charAt(i) == '+' || str.charAt(i) == '-')) {
         if (str.charAt(i) == '-') {
           isPositive = false;
         }
         continue;
-      } // continueµÄÒâË¼ÊÇ continueÏÂÃæµÄ¶¼²»Ö´ĞĞÁË Ö±½Ó½øĞĞÏÂÒ»ÂÖÑ­»·
-      // Äã¿´ ÀûÓÃASCII Âë±È´óĞ¡,Äã²»ÓÃ°É¾ßÌåµÄÂë±³³öÀ´
-      // Ö»Òª±È0Ğ¡ ±È9´óµÄ ¶¼²»ÊÇÊı×Ö,±ÜÃâÁËÊ¹ÓÃÕıÔò±í´ïÊ½
-      // ¶øÇÒÖ»ÓĞstring¿ÉÒÔÓÃÕıÔò£¬char²»¿ÉÒÔÖ±½ÓÓÃ
+      } // continueï¿½ï¿½ï¿½ï¿½Ë¼ï¿½ï¿½ continueï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½Ö´ï¿½ï¿½ï¿½ï¿½ Ö±ï¿½Ó½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ñ­ï¿½ï¿½
+      // ï¿½ã¿´ ï¿½ï¿½ï¿½ï¿½ASCII ï¿½ï¿½È´ï¿½Ğ¡,ï¿½ã²»ï¿½Ã°É¾ï¿½ï¿½ï¿½ï¿½ï¿½ë±³ï¿½ï¿½ï¿½ï¿½
+      // Ö»Òªï¿½ï¿½0Ğ¡ ï¿½ï¿½9ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½
+      // ï¿½ï¿½ï¿½ï¿½Ö»ï¿½ï¿½stringï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½charï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½
       if (str.charAt(i) < '0' || str.charAt(i) > '9') {
         break;
       }
-      // ÕâÀï¸üÇÉÃîÁË ÒòÎªÊÇ´Ó×óµ½ÓÒ¶ÁÈ¡ ÉÏ´ÎµÄÖµx10+±¾´ÎµÄÖµ ¾ÍÊÇcurrentÖµ
-      // eg£º123= /1/1*10+2/12x10+3 =123
+      // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Îªï¿½Ç´ï¿½ï¿½ï¿½ï¿½Ò¶ï¿½È¡ ï¿½Ï´Îµï¿½Öµx10+ï¿½ï¿½ï¿½Îµï¿½Öµ ï¿½ï¿½ï¿½ï¿½currentÖµ
+      // egï¿½ï¿½123= /1/1*10+2/12x10+3 =123
       value = 10 * value + str.charAt(i) - '0';
     }
     if (isPositive == false) {
@@ -64,7 +64,7 @@ public class StringtoInteger {
       return Integer.MIN_VALUE;
     } else {
       return (int) value;
-    }// ·´ÕıÒÑ¾­ÔÚÕı³£int·¶Î§ÄÚÁË
+    }// ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½intï¿½ï¿½Î§ï¿½ï¿½ï¿½ï¿½
 
   }
 

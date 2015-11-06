@@ -4,7 +4,7 @@
 //
 // Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
 // Output: 7 -> 0 -> 8
-// 和CC150 2_4完全一样
+// 锟斤拷CC150 2_4锟斤拷全一锟斤拷
 package frequency_4;
 
 import java.util.LinkedList;
@@ -15,7 +15,7 @@ public class AddTwoNumbers {
   }
 
   public ListNode addTwoNumbers(ListNode l1, ListNode l2, int carry) {
-    // carry 是进到上一位的数字 value是本位
+    // carry 锟角斤拷锟斤拷锟斤拷一位锟斤拷锟斤拷锟斤拷 val锟角憋拷位
     if (l1 == null && l2 == null && carry == 0) {
       return null;
     }
@@ -27,14 +27,14 @@ public class AddTwoNumbers {
     if (l2 != null) {
       value = value + l2.val;
     }
-    // 先设为0 然后如果value大于等于10 carry设为1
+    // 锟斤拷锟斤拷为0 然锟斤拷锟斤拷锟絭al锟斤拷锟节碉拷锟斤拷10 carry锟斤拷为1
     carry = 0;
     if (value > 9) {
       carry = 1;
       value = value % 10;
     }
-    // 更新正确的result的value
-    result.val = value; // 这样是ok的 因为 就算n1 n2都是null value=carry; 也执行过了
+    // 锟斤拷锟斤拷锟斤拷确锟斤拷result锟斤拷val
+    result.val = value; // 锟斤拷锟斤拷锟斤拷ok锟斤拷 锟斤拷为 锟斤拷锟斤拷n1 n2锟斤拷锟斤拷null val=carry; 也执锟叫癸拷锟斤拷
     ListNode following =
         addTwoNumbers(l1 == null ? null : l1.next, l2 == null ? null : l2.next, carry);
     result.next = following;

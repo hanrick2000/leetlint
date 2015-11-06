@@ -76,7 +76,7 @@ public class ProductPrimes {
 
     /**
      * Finally got it right, I'm still using subset template to do this problem, note the way I use
-     * cur as the value in circle as the DFS diagram
+     * cur as the val in circle as the DFS diagram
      *
      * @param path
      * @param nums

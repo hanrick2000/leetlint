@@ -45,7 +45,7 @@ public class DistinceSubsequnce {
 
   /**
    * 1d rolling DP, notice the F[j] means the previous row, so the inner loop should go from end to
-   * front so as to use previous row's value without update
+   * front so as to use previous row's val without update
    * 
    * @param S
    * @param T

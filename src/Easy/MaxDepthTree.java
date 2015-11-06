@@ -43,7 +43,7 @@ public class MaxDepthTree {
     /**
      * http://blog.csdn.net/linhuanmars/article/details/19660209
      * As mentioned by Ganker, minDepth need to care about null node since it should be ignored, but max depth always go
-     * for the larger value, so it's simpler!
+     * for the larger val, so it's simpler!
      *
      * @param node
      * @return

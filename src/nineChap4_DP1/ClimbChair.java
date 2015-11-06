@@ -17,7 +17,7 @@ public class ClimbChair {
   }
 
   /**
-   * Divide and Conquer, recursion with return value
+   * Divide and Conquer, recursion with return val
    * 
    * @param n
    * @return

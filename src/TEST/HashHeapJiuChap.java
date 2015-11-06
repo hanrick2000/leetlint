@@ -195,7 +195,7 @@ public class HashHeapJiuChap {
       A[id++] = v;
     }
     this.printPQ();
-    //hh.printPQ(); // FT, I forgot to add "hh." before printPQ, therefore it's printing nothing since class value not object!!!
+    //hh.printPQ(); // FT, I forgot to add "hh." before printPQ, therefore it's printing nothing since class val not object!!!
   }
 
   public static void main(String[] args) {

@@ -1,20 +1,20 @@
 package frequency_3;
-//Given a sorted array of integers, find the starting and ending position of a given target value.
+//Given a sorted array of integers, find the starting and ending position of a given target val.
 //Your algorithm's runtime complexity must be in the order of O(log n).
 //If the target is not found in the array, return [-1, -1].
 //For example,
-//Given [5, 7, 7, 8, 8, 10] and target value 8,
+//Given [5, 7, 7, 8, 8, 10] and target val 8,
 //return [3, 4].
-//ÔÚÒ»¸öÓĞÖØ¸´ÖµµÄsorted arrayÀïÃæ ÕÒkey ·µ»ØÕâ¸ökeyµÄËùÓĞÏÂ±ê 
-//ÓÃ2´ÎBS Ò»´ÎÕÒ×óÏÂ±ê Ò»´ÎÕÒÓÒÏÂ±ê
-//ÔõÃ´±£Ö¤ÕÒµ½µÄÊÇ×î×ó/×îÓÒÄØ£¿  
-//±È·½ËµÕÒ×ó¾ÍÊÇÔÚA[mid]=targetÊ±ºò end=mid ÕâÑù¾Í±£Ö¤ÔÚ´ğ°¸·¶Î§ÄÚmidÔ½À´Ô½×ó±ß Ö±µ½start+1<end Ìø³ö
-// ×îºóÔÚ¼ì²éifµÄÊ±ºòstart¾ÍÊÇresult[0].¡£³ı·Ç´ËÊ±start²»ÊÇÁË ÄÇÃ´ËµÃ÷Ö»ÓĞÒ»¸öÊı×Ö·ûºÏ´ğ°¸ ¾ÍÊÇA[end]=end
-// ·´Ö®ÒàÈ»
+//ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ø¸ï¿½Öµï¿½ï¿½sorted arrayï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½key ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½keyï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â±ï¿½ 
+//ï¿½ï¿½2ï¿½ï¿½BS Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â±ï¿½ Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â±ï¿½
+//ï¿½ï¿½Ã´ï¿½ï¿½Ö¤ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½ï¿½Ø£ï¿½  
+//ï¿½È·ï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½A[mid]=targetÊ±ï¿½ï¿½ end=mid ï¿½ï¿½ï¿½ï¿½ï¿½Í±ï¿½Ö¤ï¿½Ú´ğ°¸·ï¿½Î§ï¿½ï¿½midÔ½ï¿½ï¿½Ô½ï¿½ï¿½ï¿½ Ö±ï¿½ï¿½start+1<end ï¿½ï¿½ï¿½ï¿½
+// ï¿½ï¿½ï¿½ï¿½Ú¼ï¿½ï¿½ifï¿½ï¿½Ê±ï¿½ï¿½startï¿½ï¿½ï¿½ï¿½result[0].ï¿½ï¿½ï¿½ï¿½ï¿½Ç´ï¿½Ê±startï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã´Ëµï¿½ï¿½Ö»ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½A[end]=end
+// ï¿½ï¿½Ö®ï¿½ï¿½È»
 public class SearchForARange {
 
 	public int[] searchRange(int[] A, int target) {
-	     //ÓÃ2·Ö·¨(sorted-lgn) 9ÕÂËã·¨µÄÄ£°å
+	     //ï¿½ï¿½2ï¿½Ö·ï¿½(sorted-lgn) 9ï¿½ï¿½ï¿½ã·¨ï¿½ï¿½Ä£ï¿½ï¿½
 	      if(A.length==0||A==null){
 	          int[] result={-1,-1};
 	          return result;
@@ -23,10 +23,10 @@ public class SearchForARange {
 	      int start=0;
 	      int end=A.length-1;
 	      int mid=0;
-	      //ÕÒ´ğ°¸µÄ×óÏÂ±ê
+	      //ï¿½Ò´ğ°¸µï¿½ï¿½ï¿½ï¿½Â±ï¿½
 	      while(start+1<end){
 	         mid=start+(end-start)/2;
-	          //ËùÒÔµ±mid=tergetÊ±ºò end=midÁË ¾ÍÈÃĞÂmidÔÚÍùÀÏmidµÄ×ó±ßÕÒ  
+	          //ï¿½ï¿½ï¿½Ôµï¿½mid=tergetÊ±ï¿½ï¿½ end=midï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½midï¿½ï¿½ï¿½ï¿½ï¿½ï¿½midï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  
 	          if(A[mid]==target){
 	              end=mid;
 	               
@@ -50,7 +50,7 @@ public class SearchForARange {
 	      while(start+1<end){
 	    	  mid=start+(end-start)/2;
 	    	  if(A[mid]==target){
-	    		  start=mid; //	    ËùÒÔµ±mid=tergetÊ±ºò start=midÁË ¾ÍÈÃĞÂmidÔÚÍùÀÏmidµÄÓÒ±ßÕÒ
+	    		  start=mid; //	    ï¿½ï¿½ï¿½Ôµï¿½mid=tergetÊ±ï¿½ï¿½ start=midï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½midï¿½ï¿½ï¿½ï¿½ï¿½ï¿½midï¿½ï¿½ï¿½Ò±ï¿½ï¿½ï¿½
 	    	  }else if(A[mid]<target){
 	    		  start=mid;
 	    	  }else{

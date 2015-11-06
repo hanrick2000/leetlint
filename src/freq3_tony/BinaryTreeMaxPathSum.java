@@ -39,7 +39,7 @@ public class BinaryTreeMaxPathSum {
     
     // code after recursion call happening UP the tree
     data.path = Math.max(0, Math.max(l.path, r.path));  // Max Partial path sum有三种可能: 左, 右, 不左不右
-    data.sum = Math.max(Math.max(l.sum, r.sum), l.path+root.value+r.path); // current max path sum有三种可能: arch, 左, 右.
+    data.sum = Math.max(Math.max(l.sum, r.sum), l.path+root.val +r.path); // current max path sum有三种可能: arch, 左, 右.
     return data;
   }
 }

@@ -32,7 +32,7 @@ public class PermutationII {
   private void dfs(int[] num, boolean[] used, ArrayList<Integer> item,
       ArrayList<ArrayList<Integer>> res) {
     if (item.size() == num.length) {
-      res.add(new ArrayList<Integer>(item)); // 现在已经很熟悉, 因为pass-by-value, 所以必须clone一个来赋值.
+      res.add(new ArrayList<Integer>(item)); // 现在已经很熟悉, 因为pass-by-val, 所以必须clone一个来赋值.
       return;
     }
     for (int i = 0; i < num.length; i++) {

@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * À´×ÔÓÚSOF: http://stackoverflow.com/questions/4965335/how-to-print-binary-tree-diagram
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½SOF: http://stackoverflow.com/questions/4965335/how-to-print-binary-tree-diagram
  * 
  * @author tzhang
  *
@@ -33,7 +33,7 @@ public class BTtreePrinter {
     List<TreeNode> newNodes = new ArrayList<TreeNode>();
     for (TreeNode node : nodes) {
       if (node != null) {
-        System.out.print(node.value);
+        System.out.print(node.val);
         newNodes.add(node.left);
         newNodes.add(node.right);
       } else {

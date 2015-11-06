@@ -99,7 +99,7 @@ public class IntervalSumII {
     return sumL + sumR;
   }
   /**
-   * @param index, value: modify A[index] to value.
+   * @param index, val: modify A[index] to val.
    */
   public void modify(int index, int value) {
     // write your code here

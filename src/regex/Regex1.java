@@ -18,10 +18,10 @@ public class Regex1 {
     // Now create matcher object.
     Matcher m = r.matcher(line);
     if (m.find()) {
-      System.out.println("Found value: " + m.group(0));
-      System.out.println("Found value: " + m.group(1));
-      System.out.println("Found value: " + m.group(2));
-      System.out.println("Found value: " + m.group(3));
+      System.out.println("Found val: " + m.group(0));
+      System.out.println("Found val: " + m.group(1));
+      System.out.println("Found val: " + m.group(2));
+      System.out.println("Found val: " + m.group(3));
     } else {
       System.out.println("NO MATCH");
     }

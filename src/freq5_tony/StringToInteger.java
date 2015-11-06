@@ -3,7 +3,7 @@ package freq5_tony;
 public class StringToInteger {
 
   public static int atoi(String str){
-    str = str.trim();   // Remember to give return value.
+    str = str.trim();   // Remember to give return val.
     char flag = '+';
     int index = 0;
     if (str.charAt(0) == '-'){

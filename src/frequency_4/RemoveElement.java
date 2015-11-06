@@ -1,12 +1,12 @@
 package frequency_4;
 
-// Given an array and a value, remove all instances of that value in place and return the new
+// Given an array and a val, remove all instances of that val in place and return the new
 // length.
 //
 // The order of elements can be changed. It doesn't matter what you leave beyond the new length.
-// É¾³ýÊý×éÄÚ¸ø¶¨ÖµµÄÔªËØ È»ºó·µ»ØÉ¾³ýºóµÄ³¤¶È
-// ´ÏÃ÷µÄ×ö·¨£º Á½¸öÖ¸Õë¶¼´Ó0¿ªÊ¼£¬´Ó×óÏòÓÒÕÒ++£¬Èç¹û²»µÈÓÚelem ¾Íi j¶¼++ A[i]=A[J]
-// Èç¹ûµÈÓÚelem¾ÍÖ»j++ i²»¶¯.ÏÂÒ»´ÎÔÙµ½²»Í¬µÄÊ±ºòÒÀ¾É A[i]=A[j];
+// É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½ï¿½ï¿½Öµï¿½ï¿½Ôªï¿½ï¿½ È»ï¿½ó·µ»ï¿½É¾ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½ï¿½
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ë¶¼ï¿½ï¿½0ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½++ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½elem ï¿½ï¿½i jï¿½ï¿½++ A[i]=A[J]
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½elemï¿½ï¿½Ö»j++ iï¿½ï¿½ï¿½ï¿½.ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ùµï¿½ï¿½ï¿½Í¬ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ A[i]=A[j];
 import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -31,7 +31,7 @@ public class RemoveElement {
     System.out.print(l);
   }
 }
-// ÕâÐ´·¨²»ºÃ Ì«ÀÛ×¸
+// ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ì«ï¿½ï¿½×¸
 // if(A.length==0){return 0;}
 // LinkedList<Integer> temp=new LinkedList<Integer>();
 // for(int i=0;i<A.length;i++){

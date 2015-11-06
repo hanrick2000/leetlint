@@ -29,13 +29,13 @@ public class Linkedlistnull {
 //    er = new node(100);
 //    test2(er);
     plusdc(yi);
-//    System.out.println(er.value);
+//    System.out.println(er.val);
     node.printlist(yi);
   }
 
   public static void test1(node root) {
     node tmp = root;
-//    tmp.value = 99;
+//    tmp.val = 99;
     root = new node(100);
   }
   
@@ -47,7 +47,7 @@ public class Linkedlistnull {
   public static node plus1(node root) {
     if (root == null)
       return null;
-    // root.value = 99;
+    // root.val = 99;
     node tmp = root;
     root = new node(root.value + 1);
     root.next = tmp.next;

@@ -115,7 +115,7 @@ public class MaxSubarray {
         midRightMax = sum;
     }
 
-    // get the max value from the left, right and across mid
+    // get the max val from the left, right and across mid
     maxSum = Math.max(maxSum, midLeftMax + midRightMax + arr[mid]);
 
     return maxSum;

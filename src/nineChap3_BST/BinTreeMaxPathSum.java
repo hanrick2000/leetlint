@@ -42,11 +42,11 @@ public class BinTreeMaxPathSum {
     int[] left = maxPathSum(root.left);
     int[] right = maxPathSum(root.right);
 
-    int singlePath = Math.max(left[0], right[0]) + root.value;
+    int singlePath = Math.max(left[0], right[0]) + root.val;
     singlePath = Math.max(singlePath, 0);
 
     int arcPath = Math.max(left[1], right[1]);
-    arcPath = Math.max(arcPath, left[0] + right[0] + root.value);
+    arcPath = Math.max(arcPath, left[0] + right[0] + root.val);
 
     return new int[] {singlePath, arcPath};
   }

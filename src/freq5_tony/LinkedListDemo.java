@@ -32,7 +32,7 @@ public class LinkedListDemo {
 //    System.out.println("ll after deleting first and last: "
 //     + ll);
 //
-//    // get and set a value
+//    // get and set a val
 //    Object val = ll.get(2);
 //    ll.set(2, (String) val + " Changed");
 //    System.out.println("ll after change: " + ll);

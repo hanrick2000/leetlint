@@ -15,7 +15,7 @@ public class EditDistance {
     if (word2 == null || word2.length() == 0) {
       return word1.length();
     }
-    int[][] F = new int[word1.length()+1][word2.length()+1]; // F[i][j] means the edit value of i elem, j elem.
+    int[][] F = new int[word1.length()+1][word2.length()+1]; // F[i][j] means the edit val of i elem, j elem.
     
     F[0][0] = 0;
     for (int i = 1; i < word1.length()+1; ++i) {

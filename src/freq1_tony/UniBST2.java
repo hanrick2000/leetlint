@@ -115,7 +115,7 @@ public class UniBST2 {
       for (int i = 0; i < n - l; ++i) { // starting number
         ArrayList<ArrayList<TreeNode>> numTrees = allNumTrees.get(i); // 因为T[i][l]. 所以内层循环来get(i).
         ArrayList<TreeNode> trees = new ArrayList<TreeNode>();
-        for (int k = i; k <= i + l; ++k) { // root value
+        for (int k = i; k <= i + l; ++k) { // root val
           if (k == i) { // case 1: root是左边界. 所以接上所有T[k+1][l-1]的root为右子树
             for (TreeNode right : allNumTrees.get(k + 1).get(l - 1)) {
               TreeNode root = new TreeNode(k + 1);

@@ -88,7 +88,7 @@ public class ThreeSum {
             int c = len-1;
             while (b < c) {
                 int sum = numbers[a]+numbers[b]+numbers[c];
-//                ArrayList<Integer> list = new ArrayList<>();  // only have valid value when sum == 0, so put list in that scope
+//                ArrayList<Integer> list = new ArrayList<>();  // only have valid val when sum == 0, so put list in that scope
                 if (sum == 0) {
                     ArrayList<Integer> list = new ArrayList<>();
                     list.add(numbers[a]);

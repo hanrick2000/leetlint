@@ -73,7 +73,7 @@ public class SerDesBinaryTree {
     if (root == null)
       output.add("# ");
     else {
-      output.add(root.value + " ");
+      output.add(root.val + " ");
       writeBinTree(root.left, output);
       writeBinTree(root.right, output);
     }

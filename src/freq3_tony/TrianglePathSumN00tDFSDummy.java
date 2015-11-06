@@ -37,7 +37,7 @@ public class TrianglePathSumN00tDFSDummy {
       // minSum2 = DFSmethod1(triangle, row + 1, column, sum, minSum);
       // minSum2 = DFSmethod1(triangle, row + 1, column + 1, sum, minSum);
       /*
-       * 这里为什么要返回minSum呢? 这是因为Java pass-by-value. 只能修改object, 不能改primitive.
+       * 这里为什么要返回minSum呢? 这是因为Java pass-by-val. 只能修改object, 不能改primitive.
        * 所以"right Path"要想继承"left path"的结果, 就要让left path返回结果, 再做为right path的输入即可. 而DP解法中,
        * 使用array或者N00t的
        */

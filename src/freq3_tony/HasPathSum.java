@@ -74,11 +74,11 @@ public class HasPathSum {
         || hasPathSumDFS(root.right, sum - root.value);
   }
 
-  // 九章算法DFS模版. 为什么不像dfs解法那样sum-root.value? 当然可以. 改了之后如下.
+  // 九章算法DFS模版. 为什么不像dfs解法那样sum-root.val? 当然可以. 改了之后如下.
   public boolean hasPathSumJiuZhang(TreeNode root, int sum) {
     if (root == null)
       return false;
-    // sum = sum-root.value;
+    // sum = sum-root.val;
     if (root.left == null && root.right == null) {
       System.out.println(root.value + " " + sum);
       if (sum == root.value)  // 注意recursion到这里的时候, 

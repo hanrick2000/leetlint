@@ -28,12 +28,12 @@ public class MaxTree {
         curNode = new TreeNode(Integer.MAX_VALUE);
       }
 
-      while (!stk.isEmpty() && curNode.value > stk.peek().value) {
+      while (!stk.isEmpty() && curNode.val > stk.peek().val) {
 
         TreeNode nodeNow = stk.pop();
         if (!stk.isEmpty()) {
           TreeNode leftNow = stk.peek();
-          if (leftNow.value > curNode.value) {
+          if (leftNow.val > curNode.val) {
             curNode.left = nodeNow;
           } else {
             leftNow.right = nodeNow;

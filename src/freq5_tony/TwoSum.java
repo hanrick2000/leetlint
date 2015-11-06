@@ -43,15 +43,13 @@ public class TwoSum {
   /**
    * solution 3: use hashtable (implicit quick sort) and O(1) for put/get. In CS108, everything in
    * Java is pointer.
-   * 
-   * @param int[] input_array
-   * @param int target
+   *
    * @return int ret[] should has only 2 elements since unique pair per input array.
    */
   public static int[] twoSum3(int[] input, int target) {
     int[] ret = new int[2];
     HashMap<Integer, Integer> tony = new HashMap<Integer, Integer>();
-    // for this map, we use input value as key, and index as Mapped value.
+    // for this map, we use input val as key, and index as Mapped val.
     for (int i = 0; i < input.length; i++) {
       if (tony.containsKey(input[i])) {
         int index = tony.get(input[i]);
@@ -71,7 +69,7 @@ public class TwoSum {
     // int[] ret = new int[2];
     ArrayList<Integer> ret = new ArrayList<Integer>();
     HashMap<Integer, Integer> tony = new HashMap<Integer, Integer>();
-    // for this map, we use input value as key, and index as Mapped value.
+    // for this map, we use input val as key, and index as Mapped val.
     for (int i = 0; i < input.length; i++) {
       if (tony.containsKey(input[i])) {
         int index = tony.get(input[i]);

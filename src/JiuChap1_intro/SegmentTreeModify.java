@@ -19,8 +19,8 @@ public class SegmentTreeModify {
     SegmentTreeNode.inOdr(root);
   }
   /**
-   *@param root, index, value: The root of segment tree and
-   *@ change the node's value with [index, index] to the new given value
+   *@param root, index, val: The root of segment tree and
+   *@ change the node's val with [index, index] to the new given val
    *@return: void
    */
   public void modify(SegmentTreeNode root, int index, int value) {
@@ -47,5 +47,5 @@ public class SegmentTreeModify {
     root.max = Math.max(root.left.max, root.right.max);
   }
 
-  // public void modify(SegmentTreeQuery.SegmentTreeNode root, int index, int value)
+  // public void modify(SegmentTreeQuery.SegmentTreeNode root, int index, int val)
 }

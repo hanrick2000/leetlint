@@ -43,7 +43,7 @@ public class WashingtonSort {
   // Sorts the elements of the given array using the "quick sort"
   // algorithm, which divides the input up into two partitions
   // based on which elements are less-than and greater-than a given
-  // chosen "pivot" value.
+  // chosen "pivot" val.
   // This implementation chooses the first element as the pivot.
   public static void quickSort(int[] a) {
     quickSort(a, 0, a.length - 1);
@@ -56,7 +56,7 @@ public class WashingtonSort {
       return; // base case; EZ mode
     }
 
-    // pick a "pivot" value (first element)
+    // pick a "pivot" val (first element)
     int pivot = a[min];
 
     // move the pivot to the end
@@ -267,7 +267,7 @@ public class WashingtonSort {
   // queues by ones digit, then tens, ... until sorted.
   @SuppressWarnings("unchecked")
   public static void radixSort(int[] a) {
-    // initialize array of 10 queues for digit value 0-9
+    // initialize array of 10 queues for digit val 0-9
     Queue<Integer>[] buckets = (Queue<Integer>[]) new Queue[10];
     for (int i = 0; i < buckets.length; i++) {
       buckets[i] = new ArrayDeque<Integer>();
@@ -285,7 +285,7 @@ public class WashingtonSort {
   // of queues based on their digit at the given place.
   // For example, if digit == 2, uses the tens digit, so array
   // {343, 219, 841, 295} would be put in queues #4, 1, 4, 9.
-  // Returns true if any elements have a non-zero digit value.
+  // Returns true if any elements have a non-zero digit val.
   private static boolean toBuckets(int[] a, int digit, Queue<Integer>[] buckets) {
     boolean nonZero = false;
     for (int element : a) {

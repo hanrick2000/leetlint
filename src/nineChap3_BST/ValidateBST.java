@@ -65,7 +65,7 @@ public class ValidateBST {
       return true;
     }
     boolean left = isValidBST(root.left, pre);
-    if (pre[0] != null && pre[0].value <= root.value) { // pre[0] != null is not pre != null
+    if (pre[0] != null && pre[0].val <= root.val) { // pre[0] != null is not pre != null
       return false;
     }
     pre[0] = root;
@@ -87,7 +87,7 @@ public class ValidateBST {
     boolean l = true, r = true;
 
     if (root.left != null) {
-      if (root.left.value >= root.value) {
+      if (root.left.val >= root.val) {
         l = false;
       } else {
         l = isValidBSTwrong(root.left);
@@ -95,7 +95,7 @@ public class ValidateBST {
     }
 
     if (root.right != null) {
-      if (root.right.value <= root.value) {
+      if (root.right.val <= root.val) {
         r = false;
       } else {
         r = isValidBSTwrong(root.right);

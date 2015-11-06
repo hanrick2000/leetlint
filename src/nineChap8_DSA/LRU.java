@@ -55,7 +55,7 @@ public class LRU {
   }
 
   // @param key, an integer
-  // @param value, an integer
+  // @param val, an integer
   // @return nothing
   public void set(int key, int value) {
     // step 1: check if the key is already in LRU

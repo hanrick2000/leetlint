@@ -2,10 +2,10 @@ package nineChap5_DP2;
 
 /**
  * http://www.lintcode.com/en/problem/backpack-ii/
- * Given n items with size Ai and value Vi, and a backpack with size m. What's the maximum value can you put into the backpack?
+ * Given n items with size Ai and val Vi, and a backpack with size m. What's the maximum val can you put into the backpack?
  * <p>
  * eg:
- * Given 4 items with size [2, 3, 5, 7] and value [1, 5, 2, 4], and a backpack with size 10. The maximum value is 9.
+ * Given 4 items with size [2, 3, 5, 7] and val [1, 5, 2, 4], and a backpack with size 10. The maximum val is 9.
  */
 public class BackpackII {
     public static void main(String[] args) {
@@ -19,8 +19,8 @@ public class BackpackII {
 
     /**
      * @param m: An integer m denotes the size of a backpack
-     * @param A & V: Given n items with size A[i] and value V[i]
-     * @return: The maximum value
+     * @param A & V: Given n items with size A[i] and val V[i]
+     * @return: The maximum val
      */
     public static int backpackII1(int m, int[] A, int[] V) {
         if (A == null || A.length == 0 || V == null || A.length != V.length) {
@@ -41,7 +41,7 @@ public class BackpackII {
             F[i][0] = 0;
         }
         for (int j = 1; j < m + 1; ++j) { // notice the range starts from 1! NOTICE: no overwritten
-            F[0][j] = Integer.MIN_VALUE; // why: to find the max value, so init to -infinity.
+            F[0][j] = Integer.MIN_VALUE; // why: to find the max val, so init to -infinity.
         }
 
         int ans = -1; // global optimal
@@ -60,8 +60,8 @@ public class BackpackII {
 
     /**
      * @param m: An integer m denotes the size of a backpack
-     * @param A  & V: Given n items with size A[i] and value V[i]
-     * @return: The maximum value
+     * @param A  & V: Given n items with size A[i] and val V[i]
+     * @return: The maximum val
      */
     public static int backPackII2(int m, int[] A, int V[]) {
         // write your code here

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /*-
- * Similar to subset I, but here the set has duplicate value.
+ * Similar to subset I, but here the set has duplicate val.
  * @author tzhang
  *
  */

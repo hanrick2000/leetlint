@@ -40,7 +40,7 @@ public class ConstructBTPostIn {
   private TreeNode buildSubTreePost(int cur, int start, int end) {
     if (start > end)  return null;
     TreeNode root = new TreeNode(postOrd[cur]);
-    int mid = inOrdMap.get(root.value);
+    int mid = inOrdMap.get(root.val);
     if (mid < end) { // 想象这里为什么不能是mid < start.
       root.right = (buildSubTreePost(cur-1, mid+1, end));
     }

@@ -29,7 +29,7 @@ public class MaxPQ<Key extends Comparable<Key>> {
 
     public Key delMax() {
         Key max = pq[1];
-        // pq[1] = pq[N--]; // why not direct give the value? Since always prefer to use I/O api to
+        // pq[1] = pq[N--]; // why not direct give the val? Since always prefer to use I/O api to
         // access the object's instance
         exch(1, N--);
         pq[N + 1] = null;

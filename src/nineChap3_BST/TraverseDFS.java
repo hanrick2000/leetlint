@@ -51,7 +51,7 @@ public class TraverseDFS {
   public static void pre(TreeNode root) {
     if (root == null)
       return;
-    System.out.print(root.value + " ");
+    System.out.print(root.val + " ");
     pre(root.left);
     pre(root.right);
   }
@@ -60,7 +60,7 @@ public class TraverseDFS {
     if (root == null)
       return;
     inorder(root.left);
-    System.out.print(root.value + " ");
+    System.out.print(root.val + " ");
     inorder(root.right);
   }
 
@@ -69,7 +69,7 @@ public class TraverseDFS {
       return;
     post(root.left);
     post(root.right);
-    System.out.print(root.value + " ");
+    System.out.print(root.val + " ");
   }
 
   /**
@@ -90,7 +90,7 @@ public class TraverseDFS {
       int size = parents.size();
       for (int i = 0; i < size; i++) {
         TreeNode head = parents.poll();
-        level.add(head.value);
+        level.add(head.val);
         if (head.left != null)
           parents.offer(head.left);
         if (head.right != null)
@@ -116,14 +116,14 @@ public class TraverseDFS {
    * 
    * @param root
    * @param level
-   * @param path
+   * @param result
    */
   public static void levelDFS(TreeNode root, int level, List<List<Integer>> result) {
     if (root == null) 
       return;
     if (result.size() < level)
       result.add(new ArrayList<Integer>());
-    result.get(level-1).add(root.value);
+    result.get(level-1).add(root.val);
     levelDFS(root.left, level+1, result);
     levelDFS(root.right, level+1, result);
   }
@@ -133,7 +133,7 @@ public class TraverseDFS {
    * 
    * @param root
    * @param level
-   * @param path
+   * @param result
    */
   public static void levelDFSserialize(TreeNode root, int level, List<List<Integer>> result) {
 //    if (root == null) 
@@ -145,7 +145,7 @@ public class TraverseDFS {
       return;
     }
     else 
-      result.get(level-1).add(root.value);
+      result.get(level-1).add(root.val);
     levelDFSserialize(root.left, level+1, result);
     levelDFSserialize(root.right, level+1, result);
   }

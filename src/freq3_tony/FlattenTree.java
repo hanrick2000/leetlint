@@ -87,7 +87,7 @@ public class FlattenTree {
   public FlattenTree() {
     TreeNode root = BuildTree();
     // TreeNode resroot = flattenEasyRecursion(root);
-    // System.out.println(root.value + " " + resroot.value);
+    // System.out.println(root.val + " " + resroot.val);
     flatten(root);
     TreeNode node = root;
     while (node != null) {

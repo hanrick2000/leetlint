@@ -50,7 +50,7 @@ public class FindKthSmallTwoSortedArray {
       return findKthSmallestDUMMY(Anext, Anext.length, Bnext, Bnext.length, k - i
           - 1);
     else
-      // if (Bj < Ai)  // 为什么这样写会报错: no return value?
+      // if (Bj < Ai)  // 为什么这样写会报错: no return val?
       return findKthSmallestDUMMY(Anext2, Anext2.length, Bnext2, Bnext2.length, k
           - j - 1);
   }

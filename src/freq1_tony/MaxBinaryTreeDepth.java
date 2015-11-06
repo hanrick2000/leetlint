@@ -103,7 +103,7 @@ public class MaxBinaryTreeDepth {
       ++dep;
       for (int i = 0; i < size; ++i) {
         TreeNode head = queue.poll();
-        level.add(head.value);
+        level.add(head.val);
         if (head.left != null) {
           queue.offer(head.left);
         }

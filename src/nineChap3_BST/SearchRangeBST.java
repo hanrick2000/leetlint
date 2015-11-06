@@ -55,13 +55,13 @@ public class SearchRangeBST {
   public static void helper(TreeNode root, int k1, int k2) {
     if (root == null)
       return;
-    if (root.value > k1) {
+    if (root.val > k1) {
       helper(root.left, k1, k2);
     }
-    if (root.value >= k1 && root.value <= k2) {
-      result.add(root.value);
+    if (root.val >= k1 && root.val <= k2) {
+      result.add(root.val);
     }
-    if (root.value < k2) {
+    if (root.val < k2) {
       helper(root.right, k1, k2);
     }
   }

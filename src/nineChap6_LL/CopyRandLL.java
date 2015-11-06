@@ -138,7 +138,7 @@ public class CopyRandLL {
    ****************************************************/
 
   /**
-   * JiuZhang solution, Very good in call-by-value
+   * JiuZhang solution, Very good in call-by-val
    * 
    * @param head
    */
@@ -196,8 +196,8 @@ public class CopyRandLL {
 
 
   /*
-   * review the basic Java: call by value!
-   * So I can change the head's value, but not reference to a new Node!
+   * review the basic Java: call by val!
+   * So I can change the head's val, but not reference to a new Node!
    */
   public void getNext(RandomListNode head) {
     System.out.println(head.label);
@@ -217,7 +217,7 @@ public class CopyRandLL {
 
   public static void main(String[] args) {
     CopyRandLL crll = new CopyRandLL();
-    // crll.playCpyNext(); review call-by-value on solutionJiuZhang's copyNext
+    // crll.playCpyNext(); review call-by-val on solutionJiuZhang's copyNext
     RandomListNode.print(crll.copyRandomList(crll.head));
   }
 }

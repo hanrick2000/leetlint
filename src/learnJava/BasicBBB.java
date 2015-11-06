@@ -13,7 +13,7 @@ public class BasicBBB {
 
   /**
    * http://stackoverflow.com/questions/16567622/what-is-the-result-of-an-assignment-expression-in-c
-   * The result of assignment expression is the value of assigned variable!!! not true or false!
+   * The result of assignment expression is the val of assigned variable!!! not true or false!
    * @param x
    */
   public static void resultOfAssignStemnt(int x) {

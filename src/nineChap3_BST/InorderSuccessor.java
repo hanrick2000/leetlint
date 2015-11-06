@@ -25,7 +25,7 @@ public class InorderSuccessor {
     TreeNode successor = null;
     TreeNode ancestor = root;
     while (ancestor != p) {
-      if (ancestor.value > p.value) {
+      if (ancestor.val > p.val) {
         successor = ancestor;
         ancestor = ancestor.left;
       } else {
@@ -76,6 +76,6 @@ public class InorderSuccessor {
     BTtreePrinter.printNode(root);
 
     TreeNode ans = inorderSuccessor(root, yi);
-    System.out.println(ans.value);
+    System.out.println(ans.val);
   }
 }

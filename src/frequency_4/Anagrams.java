@@ -12,10 +12,10 @@ import java.util.Set;
 //Note: All inputs will be in lower-case.
 
 
-//¾ÍÊÇ¸øÄãn¸östring È»ºó·µ»ØÀïÃæ»¥ÎªanagramµÄ´Ê ±È·½Ëµ abc def bca ¾Í·µ»Ø abc bca
-//²»ÒªÏÝÈëÎóÇø ²»ÓÃÐ´ÅÐ¶Ï2¸östringÊÇ·ñÎªanagramµÄ·½·¨                                                          
-///ÓÃhashmap×ö keyÊÇsortedºóµÄstring valueÊÇ Arraylist<String> ´æ·Å»¥Îªanagramµ«ÊÇµÄÔ­Ê¼string
-//±È·½Ëµ key£º abcd  valueÀïÊÇ bcda  ºÍ dbca
+//ï¿½ï¿½ï¿½Ç¸ï¿½ï¿½ï¿½nï¿½ï¿½string È»ï¿½ó·µ»ï¿½ï¿½ï¿½ï¿½æ»¥Îªanagramï¿½Ä´ï¿½ ï¿½È·ï¿½Ëµ abc def bca ï¿½Í·ï¿½ï¿½ï¿½ abc bca
+//ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ð´ï¿½Ð¶ï¿½2ï¿½ï¿½stringï¿½Ç·ï¿½Îªanagramï¿½Ä·ï¿½ï¿½ï¿½                                                          
+///ï¿½ï¿½hashmapï¿½ï¿½ keyï¿½ï¿½sortedï¿½ï¿½ï¿½string valï¿½ï¿½ Arraylist<String> ï¿½ï¿½Å»ï¿½Îªanagramï¿½ï¿½ï¿½Çµï¿½Ô­Ê¼string
+//ï¿½È·ï¿½Ëµ keyï¿½ï¿½ abcd  valï¿½ï¿½ï¿½ï¿½ bcda  ï¿½ï¿½ dbca
 
 public class Anagrams {
 
@@ -29,21 +29,21 @@ for(String s:strs){
 	Arrays.sort(chars);
 	String key=new String(chars);
 	//key is sorted word
-	//Èç¹ûmapÀïÃ»´æÕâ¸ösorted word
+	//ï¿½ï¿½ï¿½mapï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½sorted word
 	if(!map.containsKey(key)){
     		temp=new ArrayList<String>();
-    		temp.add(s);//×¢Òâ ArraylistÀï¼ÓµÄ ÊÇÔ­Ê¼µÄÎ´ÅÅÐòs ²»ÊÇanagram
+    		temp.add(s);//×¢ï¿½ï¿½ Arraylistï¿½ï¿½Óµï¿½ ï¿½ï¿½Ô­Ê¼ï¿½ï¿½Î´ï¿½ï¿½ï¿½ï¿½s ï¿½ï¿½ï¿½ï¿½anagram
 	 map.put(key,temp);
 	}else{
 	map.get(key).add(s);}}
 
-//ÒòÎªmapÀïµÄkeyÊÇsorted¹ýºóµÄ´Ê 
-//Ã¿¸ösorted´Ê¿´¿´ËûµÄÔ­Ê¼sÓÐ¼¸¸ö ´óÓÚ2¸öµÄ»°¾ÍÊÇ»¥Îªanagram 
+//ï¿½ï¿½Îªmapï¿½ï¿½ï¿½keyï¿½ï¿½sortedï¿½ï¿½ï¿½ï¿½Ä´ï¿½ 
+//Ã¿ï¿½ï¿½sortedï¿½Ê¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô­Ê¼sï¿½Ð¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½ï¿½Ä»ï¿½ï¿½ï¿½ï¿½Ç»ï¿½Îªanagram 
 //
 for(String s:map.keySet()){
-      //ÊÇvalue ÄÇ¸öarraylist
+      //ï¿½ï¿½val ï¿½Ç¸ï¿½arraylist
 	if(map.get(s).size()>1){
-		//±éÀú arraylist
+		//ï¿½ï¿½ï¿½ï¿½ arraylist
 		for(String string:map.get(s)){
 			result.add(string);
 		}

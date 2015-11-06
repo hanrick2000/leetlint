@@ -45,7 +45,7 @@ public class PathSum {
   }
 
   /**
-   * Path sum II的辅助函数. 即dfs() method. 注意if(root.value == sum) 里面不应该加上 return; // 如果有return则会得到: [[5,
+   * Path sum II的辅助函数. 即dfs() method. 注意if(root.val == sum) 里面不应该加上 return; // 如果有return则会得到: [[5,
    * 4, 11, 2], [5, 4, 8, 9, 4, 5]]
    * 
    * @param root

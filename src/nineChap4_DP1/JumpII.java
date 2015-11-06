@@ -9,7 +9,7 @@ public class JumpII {
   }
 
   /**
-   * The same DP as i did in Jump I, the only diff is that I'm looking for the min value.
+   * The same DP as i did in Jump I, the only diff is that I'm looking for the min val.
    * 
    * @param A
    * @return

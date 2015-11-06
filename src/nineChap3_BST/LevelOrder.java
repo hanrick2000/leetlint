@@ -58,7 +58,7 @@ public class LevelOrder {
       int size = parents.size();
       for (int i = 0; i < size; ++i) {
         TreeNode head = parents.poll();
-        level.add(head.value);
+        level.add(head.val);
         if (head.left != null)
           parents.offer(head.left);
         if (head.right != null)

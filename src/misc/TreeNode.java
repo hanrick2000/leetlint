@@ -1,12 +1,12 @@
 package misc;
 
 public class TreeNode {
-  public int value;
+  public int val;
   public TreeNode left;
   public TreeNode right;
 
   public TreeNode(int v) {
-    value = v;
+    val = v;
   }
 
   public TreeNode() {} // 注意public和不写(default)不同!
@@ -16,12 +16,12 @@ public class TreeNode {
   }
 
   public String toString() {
-    int s = value;
+    int s = val;
     return Integer.toString(s);
   }
 
   public boolean equals(Object object) {
-    if (object instanceof TreeNode && ((TreeNode) object).value == this.value) {
+    if (object instanceof TreeNode && ((TreeNode) object).val == this.val) {
       return true;
     } else {
       return false;

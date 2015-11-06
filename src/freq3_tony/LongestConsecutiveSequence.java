@@ -17,7 +17,7 @@ public class LongestConsecutiveSequence {
   /**
    * coding关键在于理解与设计, 之后只是写下来实现而已. 不要不清楚自己要做什么之前就开始写.
    * 
-   * @param map : key?value? key是其中一个边界, value是这个边界的长度.
+   * @param map : key?val? key是其中一个边界, value是这个边界的长度.
    * @param l : l既是这个range的key, 又是这个range的边界点
    * @param r
    * @return : 返回merge之后的长度. 他的left/right边界分别就是l,r这2个输入值.
