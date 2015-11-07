@@ -74,7 +74,6 @@ public class BalancedBinTree {
    * @return
    */
   public static boolean isBalancedWrong(TreeNode root) {
-    // TODO Auto-generated method stub
     if (root == null)
       return true;
     // if (root.left == null || root.right == null)

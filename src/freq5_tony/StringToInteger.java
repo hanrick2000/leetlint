@@ -27,7 +27,6 @@ public class StringToInteger {
     return (int) ret;
   }
   public static void main(String[] args) {
-    // TODO Auto-generated method stub
     String inp = "  -238    ";
     System.out.println(atoi(inp));
     

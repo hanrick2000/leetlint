@@ -16,7 +16,7 @@ import java.util.Arrays;
 //
 // This is because the new interval [4,9] overlaps with [3,5],[6,7],[8,10]
 //
-// ÆäÊµ±¾ÖÊÊÇ Èç¹û²»ĞèÒªmerge ¾ÍÖ±½Ó²åÈë£¬Èç¹ûĞèÒªÈÚºÏ¾ÍÈÚºÏµ½µ×£¬ ºÍÉÏÒ»ÌâÓĞµãÏàËÆ¡£
+// ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªmerge ï¿½ï¿½Ö±ï¿½Ó²ï¿½ï¿½ë£¬ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ÚºÏ¾ï¿½ï¿½ÚºÏµï¿½ï¿½×£ï¿½ ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ğµï¿½ï¿½ï¿½ï¿½Æ¡ï¿½
 public class InsertInterval {
 
   public ArrayList<Interval> insert(ArrayList<Interval> intervals, Interval newInterval) {
@@ -25,8 +25,8 @@ public class InsertInterval {
     Arrays.sort(i, new IntervalComparator());
 
     for (int j = 1; j < i.length; j++) {
-      // ºËĞÄÒµÎñÂß¼­
-      // ×¢Òâ£¬ÒòÎª¿ÉÄÜ´æÔÚ [[1,4],[2,3]] ÕâÖÖ ËùÒÔ endÒªÈ¡¾öÓÚ´óµÄÄÇ¸ö
+      // ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½ß¼ï¿½
+      // ×¢ï¿½â£¬ï¿½ï¿½Îªï¿½ï¿½ï¿½Ü´ï¿½ï¿½ï¿½ [[1,4],[2,3]] ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ endÒªÈ¡ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½Ç¸ï¿½
       if (i[j].start <= i[j - 1].end) {
         Interval updated =
             new Interval(i[j - 1].start, i[j].end > i[j - 1].end ? i[j].end : i[j - 1].end);
@@ -52,5 +52,3 @@ public class InsertInterval {
   }
 
 }
-
-// Interval ºÍ intervalComparatorÒÑ¾­ÔÚ±¾°üµÄÆäËûÀà¶¨ÒåÁË

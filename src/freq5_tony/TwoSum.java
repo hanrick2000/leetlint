@@ -16,7 +16,6 @@ public class TwoSum {
    * http://www.programcreek.com/2012/12/leetcode-solution-of-two-sum-in-java/
    */
   public static int[] twoSum1(int[] input, int target) {
-    // TODO Auto-generated constructor stub
     int[] ret = new int[2]; // because this is 2sum -_-|||
     for (int i = 0; i < input.length; i++) {
       for (int j = i + 1; j < input.length; j++) {

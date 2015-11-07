@@ -46,7 +46,6 @@ public class Anagrams {
   }
 
   public static void main(String[] args) {
-    // TODO Auto-generated method stub
 //    System.out.println("I got: " + generateLabel("tonyjing"));
 //    System.out.println("I got: " + generateLabel("jinytong"));
     String[] input = {"tea","and","ace","ad","eat","dan"};

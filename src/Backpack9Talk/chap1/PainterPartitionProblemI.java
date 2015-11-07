@@ -8,7 +8,7 @@ package Backpack9Talk.chap1;
  *
  * Created this class in Backpack9Talk.chap1 at 11:34 PM, 10/21/2015.
  */
-public class PainterPartitionProblem {
+public class PainterPartitionProblemI {
     public static void main(String[] args) {
         // TODO
     }

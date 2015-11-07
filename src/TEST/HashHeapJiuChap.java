@@ -31,7 +31,6 @@ public class HashHeapJiuChap {
   }
 
   public HashHeapJiuChap(String mod) { // 传入min 表示最小堆，max 表示最大堆
-    // TODO Auto-generated constructor stub
     heap = new ArrayList<Integer>();
     mode = mod;
     hash = new HashMap<Integer, Node>();

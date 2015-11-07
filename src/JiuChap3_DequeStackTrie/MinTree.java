@@ -7,7 +7,7 @@ import misc.TreeNode;
 /**
  * Expression tree == MinTree
  * So I reviewed maxTree and write 9chap's algs, very good design. Also draw with invariant
- * 
+ *
  * Created this class in JiuChap3_DequeStackTrie at 9:24 AM, 11/6/2015.
  */
 public class MinTree {

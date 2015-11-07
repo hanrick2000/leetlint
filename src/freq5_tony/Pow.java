@@ -90,7 +90,6 @@ public class Pow {
    * @param args
    */
   public static void main(String[] args) {
-    // TODO Auto-generated method stub
     System.out.println(new Pow().pow(-2, -3));
 
     System.out.println(new Pow().pow(2, -2));

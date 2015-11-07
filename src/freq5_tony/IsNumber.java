@@ -65,7 +65,6 @@ public class IsNumber {
   }
 
   public static void main(String[] args) {
-    // TODO Auto-generated method stub
     String str = new String("  3.7E8");
     System.out.println(new IsNumber().isNumber(str));
     str = new String("  3.7E.8");

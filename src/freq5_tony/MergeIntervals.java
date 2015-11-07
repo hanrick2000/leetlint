@@ -45,7 +45,6 @@ public class MergeIntervals {
   }
 
   public static void main(String[] args) {
-    // TODO Auto-generated method stub
     Interval i1 = new Interval(1, 4);
     Interval i2 = new Interval(0, 2);
     Interval i3 = new Interval(3, 5);

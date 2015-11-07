@@ -49,7 +49,6 @@ public class testRecursion {
   }
   
   public static void main(String[] args) {
-    // TODO Auto-generated method stub
 //    ListNode dummy = new ListNode(0);
 //    triangle(3, dummy);
 //    displayListNode(dummy);

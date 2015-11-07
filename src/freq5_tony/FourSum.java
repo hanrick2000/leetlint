@@ -16,7 +16,6 @@ public class FourSum {
    * loops: i and j.
    */
   public ArrayList<ArrayList<Integer>> fourSum(int[] input, int target) {
-    // TODO Auto-generated constructor stub
     ArrayList<ArrayList<Integer>> ret = new ArrayList<>();
     HashSet<ArrayList<Integer>> hashSet = new HashSet<>();
     Arrays.sort(input);

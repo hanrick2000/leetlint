@@ -36,7 +36,6 @@ public class InsertIntervals {
     return result;
   }
   public static void main(String[] args) {
-    // TODO Auto-generated method stub
     Interval i1 = new Interval(4, 5);
     Interval i2 = new Interval(0, 2);
     Interval i3 = new Interval(7, 9);

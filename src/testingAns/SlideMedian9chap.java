@@ -92,7 +92,6 @@ public class SlideMedian9chap {
     }
 
     public HashHeap(String mod) {
-      // TODO Auto-generated constructor stub
       heap = new ArrayList<Integer>();
       mode = mod;
       hash = new HashMap<Integer, Node>();

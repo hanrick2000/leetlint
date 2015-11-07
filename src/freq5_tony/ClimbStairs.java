@@ -3,7 +3,6 @@ package freq5_tony;
 public class ClimbStairs {
 
   public int climbStairs(int stairs) {
-    // TODO Auto-generated constructor stub
     int[] uniqueWays = new int[stairs + 1];
     uniqueWays[0] = 1;
     uniqueWays[1] = 1;

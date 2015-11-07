@@ -27,7 +27,6 @@ public class ValidatePalindrome {
    * @param args
    */
   public static void main(String[] args) {
-    // TODO Auto-generated method stub
     String str = "A man, a Plan, a CANal: PanaMA";
     System.out.println(validatePalindrome(str));
   }
