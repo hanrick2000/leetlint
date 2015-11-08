@@ -27,10 +27,10 @@ public class ExpTreeBuildLint {
 
     for (int i = 0; i <= expression.length; ++i) {
       if (i != expression.length) {
-        if (expression[i] == "(") {
+        if (expression[i].equals("(")) {
           base += 10;
           continue;
-        } else if (expression[i] == ")") {
+        } else if (expression[i].equals(")")) {
           base -= 10;
           continue;
         }
@@ -63,9 +63,9 @@ public class ExpTreeBuildLint {
   }
 
   private static int getPriority(String s, int base) {
-    if (s == "+" || s == "-") {
+    if (s.equals("+") || s.equals("-")) {
       return 1 + base;
-    } else if (s == "*" || s == "/") {
+    } else if (s.equals("*") || s.equals("/")) {
       return 2 + base;
     } else {
       return Integer.MAX_VALUE;
