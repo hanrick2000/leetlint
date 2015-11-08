@@ -16,16 +16,16 @@ public class AddSearchWord {
 
   public void verify() {
     TrieTree trie = new TrieTree();
-    //String[] words = new String[] { "to", "tea", "ted", "ten", "ind" };
-    //for (String word : words) {
-    //  trie.addWord(word);
-    //}
+    String[] words = new String[] { "to", "tea", "ted", "ten", "ind" };
+    for (String word : words) {
+      trie.addWord(word);
+    }
 
     //System.out.println(trie.search("too"));
     //System.out.println(trie.search("tow"));
     //System.out.println(trie.search("tea"));
     //System.out.println(trie.search("te."));
-    //System.out.println(trie.search(".nd"));
+    //System.out.println(trie.search("in."));
 
     //trie.addWord("a");
     //System.out.println(trie.search("."));
@@ -39,15 +39,15 @@ public class AddSearchWord {
     trie.addWord("adder");
     trie.addWord("addee");
     System.out.println(trie.search("r.n"));
-    //System.out.println(trie.search("ru.n.e"));
-    //System.out.println(trie.search("add"));
-    //System.out.println(trie.search("add."));
-    //System.out.println(trie.search("adde."));
-    //System.out.println(trie.search(".an."));
-    //System.out.println(trie.search("...s"));
-    //System.out.println(trie.search("....e."));
-    //System.out.println(trie.search("......."));
-    //System.out.println(trie.search("..n.r"));
+    System.out.println(trie.search("ru.n.e"));
+    System.out.println(trie.search("add"));
+    System.out.println(trie.search("add."));
+    System.out.println(trie.search("adde."));
+    System.out.println(trie.search(".an."));
+    System.out.println(trie.search("...s"));
+    System.out.println(trie.search("....e."));
+    System.out.println(trie.search("......."));
+    System.out.println(trie.search("..n.r"));
   }
 
   private class TrieNode {
@@ -115,8 +115,12 @@ public class AddSearchWord {
     */
 
     public boolean find(String word, int idx, TrieNode root) {
-      if (idx == word.length() && root.isString) {
-        return true;
+      if (idx == word.length()) {
+        if (root.isString) {
+          return true;
+        } else {
+          return false;
+        }
       }
 
       boolean idxLevel = false;
@@ -129,9 +133,9 @@ public class AddSearchWord {
         } else {
           if (key != ch) {
             //return false;
-            idxLevel |= false;
+            continue;
           } else {
-            System.out.println("true at: " + ch + " index: " + idx);
+            //System.out.println("true at: " + ch + " index: " + idx);
             idxLevel |= find(word, idx + 1, root.subtree.get(ch));
           }
         }
