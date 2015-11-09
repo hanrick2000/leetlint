@@ -1,4 +1,4 @@
-package TwoPointers;
+package JiuChap4_TwoPointers;
 
 /**
  * http://www.lintcode.com/en/problem/minimum-window-substring/

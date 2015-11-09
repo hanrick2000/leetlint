@@ -1,10 +1,12 @@
-package TwoPointers;
+package JiuChap4_TwoPointers;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
  * http://www.lintcode.com/en/problem/longest-substring-without-repeating-characters/
+ * I learned the 2 pointers (forwarding case) template. The importance is in Time complexity analysis->O(n).
+ * The critical part in using the template is to fine defined the CONDITION.
  * Created this class in TwoPointers at 8:03 PM, 11/8/2015.
  */
 public class LongSubstringWithoutRepeatChar {
