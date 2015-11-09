@@ -114,33 +114,74 @@ public class AddSearchWord {
     }
     */
 
+    /**
+     * My solution, failed in TLE. Never try-and-error! Only code after full algs is designed.
+     */
+    //public boolean find(String word, int idx, TrieNode root) {
+    //  if (idx == word.length()) {
+    //    if (root.isString) {
+    //      return true;
+    //    } else {
+    //      return false;
+    //    }
+    //  }
+    //
+    //  boolean idxLevel = false;
+    //  for (Character key : root.subtree.keySet()) {
+    //    char ch = word.charAt(idx);
+    //    if (ch == '.') {
+    //      for (TrieNode nd : root.subtree.values()) {
+    //        idxLevel |= find(word, idx + 1, nd);
+    //      }
+    //    } else {
+    //      if (key != ch) {
+    //        //return false;
+    //        continue;
+    //      } else {
+    //        //System.out.println("true at: " + ch + " index: " + idx);
+    //        idxLevel |= find(word, idx + 1, root.subtree.get(ch));
+    //      }
+    //    }
+    //  }
+    //  return idxLevel;
+    //}
+
+    /**
+     * 9chap's solution, actually, as http://www.meetqun.com/thread-9248-1-1.html said, it is a simple Trie + DFS
+     * However, I messed the DFS part, I got the idea, as Beeder's Ski solution, a global var for all branch find if
+     * there is a '.'. But I also include normal case in it, so messed up.
+     * @param word
+     * @param idx
+     * @param root
+     * @return
+     */
     public boolean find(String word, int idx, TrieNode root) {
       if (idx == word.length()) {
-        if (root.isString) {
-          return true;
-        } else {
-          return false;
-        }
+        return root.isString;
       }
 
-      boolean idxLevel = false;
-      for (Character key : root.subtree.keySet()) {
-        char ch = word.charAt(idx);
-        if (ch == '.') {
-          for (TrieNode nd : root.subtree.values()) {
-            idxLevel |= find(word, idx + 1, nd);
+      char c = word.charAt(idx);
+      if (root.subtree.containsKey(c)) {
+        if (idx == word.length()-1 && root.subtree.get(c).isString) {
+          return true;
+        }
+        return find(word, idx+1, root.subtree.get(c));
+      } else if (c == '.') {
+        //boolean rs = false;
+        for (TrieNode nd : root.subtree.values()) {
+          if (idx == word.length()-1 && nd.isString) {
+            return true;
           }
-        } else {
-          if (key != ch) {
-            //return false;
-            continue;
-          } else {
-            //System.out.println("true at: " + ch + " index: " + idx);
-            idxLevel |= find(word, idx + 1, root.subtree.get(ch));
+          //rs |= find(word, idx+1, nd);  // if true, directly return it! Since it is not a largestSea problem.
+          if (find(word, idx+1, nd)) {
+            return true;
           }
         }
+        return false;
       }
-      return idxLevel;
+      else {
+        return false;
+      }
     }
 
     public boolean find(String word) {
