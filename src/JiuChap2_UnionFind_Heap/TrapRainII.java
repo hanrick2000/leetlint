@@ -3,6 +3,7 @@ package JiuChap2_UnionFind_Heap;
 import java.util.PriorityQueue;
 
 /**
+ * Beautiful heap utilization, and the idea of trap-rain-water-i
  * http://www.lintcode.com/en/problem/trapping-rain-water-ii/
  * Created this class in JiuChap2_UnionFind_Heap at 10:04 AM, 11/4/2015.
  */
@@ -20,9 +21,11 @@ public class TrapRainII {
     System.out.println(ans);
   }
 
-  int[] dx = new int[]{1, -1, 0, 0};
-  int[] dy = new int[]{0, 0, -1, 1};
+  static final int[] dx = new int[]{1, -1, 0, 0};
+  static final int[] dy = new int[]{0, 0, -1, 1};
+
   /**
+   * 9 chap's solution
    * @param heights: a matrix of integers
    * @return: an integer
    */
@@ -51,7 +54,7 @@ public class TrapRainII {
 
     int ans = 0;
     while (!minq.isEmpty()) {
-      Cell now = minq.poll();
+      Cell now = minq.poll();  // get the shortest bar
       for (int i = 0; i < 4; ++i) {
         int xx = now.x + dx[i];
         int yy = now.y + dy[i];
