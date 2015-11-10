@@ -1,6 +1,7 @@
 package JiuChap4_TwoPointers;
 
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * http://www.lintcode.com/en/problem/minimum-window-substring/
@@ -11,9 +12,51 @@ public class MinWindowSubstring {
     String source = "ADOBECODEBANC";
     String target = "ABC";
     MinWindowSubstring ms = new MinWindowSubstring();
-    String output = ms.minWindow(source, target);
+    String output = ms.minWindowLint(source, target);
     System.out.println(output);
   }
+
+  public String minWindowLint(String source, String target) {
+    // write your code
+    if (source == null || source.length() == 0 || target == null || target.length() == 0) {
+      return "";
+    }
+
+    int hitcount = 0;
+    int minWindow = Integer.MAX_VALUE;
+    int start = 0;
+    Map<Character, Integer> Thash = new HashMap<>();
+    for (char c : target.toCharArray()) {
+      Thash.put(c, Thash.containsKey(c) ? Thash.get(c) + 1 : 1);
+    }
+
+    for (int l = 0, r = 0; r < source.length(); ++r) {
+      char cur = source.charAt(r);
+      if (!Thash.containsKey(cur)) {
+        continue;
+      }
+      Thash.put(cur, Thash.get(cur)-1);
+      if (Thash.get(cur) >= 0)  hitcount++;
+
+      while (hitcount == target.length()) {
+        if (minWindow > r - l + 1) {
+          start = l;
+          minWindow = r - l + 1;
+        }
+        char preChar = source.charAt(l);
+        if (Thash.containsKey(preChar)) {
+          Thash.put(preChar, Thash.get(preChar) + 1);
+          if (Thash.get(preChar) > 0) {
+            hitcount--;
+          }
+        }
+        l++;
+      }
+    }
+
+    return source.substring(start, start + minWindow);
+  }
+
 
   /**
    * http://xmruibi.github.io/2015/10/08/minimum-window-substring/
@@ -38,7 +81,7 @@ public class MinWindowSubstring {
       if (!dict.containsKey(cur)) continue;
 
       dict.put(cur, dict.get(cur) - 1);
-      if (dict.get(cur) >= 0) hitCount++;
+      if (dict.get(cur) >= 0) hitCount++;  // if still >= 0, then it's valid count
 
       // check the windows has amount of this char more than it in target string
       // loop until the amount back to normal, but always reduce the prev index char
