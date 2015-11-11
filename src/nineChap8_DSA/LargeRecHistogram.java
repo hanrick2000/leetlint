@@ -2,14 +2,16 @@ package nineChap8_DSA;
 
 import java.util.Stack;
 
-/*-
+/**
+ * http://www.lintcode.com/en/problem/largest-rectangle-in-histogram/
  * This is an example of using Stack!
  * Remember the conclusion(though the proof of this idea take some time to understand)
- *      :Use stack to find 1st smaller number to the left to each number, 
- * @author tzhang
+ *      :Use stack to find 1st smaller number to the left to each number.
+ * Created at 10:41 AM on 11/11/15.
+ * @ Maximum rectangle in Matrix.
  *
  */
-public class LargeRecInstogram {
+public class LargeRecHistogram {
   public static void main(String[] args) {
     int[] rec = new int[] {2, 1, 5, 6, 2, 3};
     int ans;
