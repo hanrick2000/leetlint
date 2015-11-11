@@ -15,7 +15,7 @@ public class MaximumRectangle {
         {1, 0, 0, 1, 0}
     };
     MaximumRectangle ms = new MaximumRectangle();
-    int ans = ms.maximalRectangle(M);
+    int ans = ms.maxReclichen(M);
     System.out.println(ans);
   }
 
@@ -87,6 +87,7 @@ public class MaximumRectangle {
         int w;
         if (!incStk.isEmpty()) {
           w = i - incStk.peek() - 1;
+          //w = i - j;  WRONG: because the index in stack is not continuous, only heights[i] are continuous increasing!
         } else {
           w = i;
         }
