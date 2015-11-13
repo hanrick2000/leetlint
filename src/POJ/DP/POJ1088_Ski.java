@@ -1,4 +1,4 @@
-package POJ.random;
+package POJ.DP;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -127,8 +127,6 @@ public class POJ1088_Ski {
       }
     }
     System.out.println("Beeder:" + ans);
-
-
 
     return;
   }
