@@ -7,7 +7,7 @@ package JiuChap5_DynProg;
 public class CoinsInLintI {
   public static void main(String[] args) {
     CoinsInLintI cl1= new CoinsInLintI();
-    for (int i = 0; i < 6; ++i) {
+    for (int i = 0; i < 16; ++i) {
       System.out.println(cl1.firstWillWin(i));
     }
   }
