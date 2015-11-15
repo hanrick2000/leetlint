@@ -5,12 +5,14 @@ import edu.princeton.cs.algs4.StdRandom;
 /**
  * Created at 6:15 PM on 11/14/15.
  */
-public class QuickSort {
+public class QuickSortAlgs4 {
   public static void main(String[] args) {
-    int[] A = new int[]{3,3,2};
-    QuickSort qs = new QuickSort();
+    int[] A = new int[]{5,3,7,1,2};
+    QuickSortAlgs4 qs = new QuickSortAlgs4();
     qs.quickSort(A);
-    //qs.quickSortGeek(A, 0, 2);
+    //int par = qs.partitionTTT(A, 0, A.length-1);
+    //System.out.println(par);
+    //qs.quickSortGeek(A, 0, A.length-1);
     for (int i = 0; i < A.length; ++i) {
       System.out.print(A[i] + " ");
     }
@@ -37,7 +39,7 @@ public class QuickSort {
    * @return
    */
   public int partitionTTT(int[] A, int start, int end) {
-    int l = start, r = end;
+    int l = start+1, r = end;  // must add 1 so pivot not modified.
     int pivotal = A[start];
     while (l <= r) {
       while (A[l] < pivotal) {  // l stay the same, that caused forever loop.
@@ -115,8 +117,9 @@ public class QuickSort {
       return;
 
     // pick the pivot
-    int middle = low + (high - low) / 2;
-    int pivot = arr[middle];
+    //int middle = low + (high - low) / 2;
+    //int pivot = arr[middle];
+    int pivot = arr[low];
 
     // make left < pivot and right > pivot
     int i = low, j = high;
