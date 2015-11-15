@@ -7,29 +7,41 @@ import java.util.Arrays;
  */
 public class MedianQuickSearch {
   public static void main(String[] args) {
-    int[] A = new int[]{2,1,3}; // {21, 2, 1, 5, 10, 12, 14};
+    int[] A = new int[]{2,2,2}; //{3, 2, 1, 5, 10, 12, 14};
     MedianQuickSearch mqs = new MedianQuickSearch();
     //int par = mqs.partitionALgs(A, 0, A.length-1);
-    int par = mqs.partition(A);
-    System.out.println(par);
+    //int par = mqs.partition(A, 0, A.length-1);
+    int par = mqs.median(A);
+    System.out.println(par + " " + A[par]);
     for (int i : A)
       System.out.print(i+" ");
-
   }
-
 
   public int median(int[] A) {
     int n = A.length;
-    int median = recursion(A, 0, n);
+    int median = recursion(A, 0, n-1, n/2);
     return median;
   }
 
-  public int recursion(int[] A, int l, int r) {
-    int peak = A[l];
-    while (l + 1 < r) {
-
+  /**
+   * Recursion based median find with recursion.
+   * @param A
+   * @param l
+   * @param r
+   * @param medianIdx
+   * @return
+   */
+  public int recursion(int[] A, int l, int r, int medianIdx) {
+    int par = partition(A, l, r);
+    if (par == medianIdx) {
+      return par;
     }
-    return -1;
+    else if (par < medianIdx) {
+      return recursion(A, par+1, r, medianIdx);
+    }
+    else {
+      return recursion(A, l, par-1, medianIdx);
+    }
   }
 
   /**
@@ -37,16 +49,22 @@ public class MedianQuickSearch {
    * learn from http://algs4.cs.princeton.edu/23quicksort/Quick.java.html
    * @param A
    */
-  private int partition(int[] A) {
-    int pivotal = A[0];
-    int lo = 0, hi = A.length-1;
-    int l = lo+1, r = hi;
+  private int partition(int[] A, int lo, int hi) {
+    int pivotal = A[lo];
+    //int lo = 0, hi = A.length-1;
+    int l = lo, r = hi+1;  // l = lo or lo+1?
     while (true) {
-      while (l < A.length && pivotal > A[l]) {
-        l++;
+      //while (l < A.length && pivotal > A[l]) {
+      //  l++;
+      //}
+      //while (r > 0 && pivotal < A[r]) {
+      //  r--;
+      //}
+      while (pivotal > A[++l]) {
+        if (l == hi)  break;
       }
-      while (r > 0 && pivotal < A[r]) {
-        r--;
+      while (pivotal < A[--r]) {
+        if (r == lo)  break;
       }
       if (l >= r) {
         break;
@@ -57,7 +75,7 @@ public class MedianQuickSearch {
     //  l = A.length-1;
     //}
     //exch(A, 0, l);
-    System.out.println(lo + " " + r);
+    //System.out.println(lo + " " + r);
     exch(A, lo, r);
     return r;
   }
