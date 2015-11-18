@@ -15,6 +15,7 @@ public class PostOffice {
   }
 
   /**
+   * 9chap's simple DP: O(n^3) solution.
    * @param A an integer array
    * @param k an integer
    * @return an integer

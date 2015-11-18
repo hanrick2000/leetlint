@@ -93,7 +93,7 @@ public class SlideWinMax {
         if (i+1 > k) {
           maxPQ.remove(nums[i - k]);
         }
-        result.add(maxPQ.peak());
+        result.add(maxPQ.peek());
       }
     }
     return result;

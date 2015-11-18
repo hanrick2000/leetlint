@@ -25,7 +25,7 @@ public class FindPeakII {
   /**
    * O(nlgn) solution, and there is a O(n) solution
    * @param A: An integer matrix
-   * @return: The index of the peak
+   * @return: The index of the peek
    */
   public List<Integer> findPeakII(int[][] A) {
     // write your code here

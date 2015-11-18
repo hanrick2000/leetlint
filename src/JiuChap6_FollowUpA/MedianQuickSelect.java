@@ -1,14 +1,12 @@
 package JiuChap6_FollowUpA;
 
-import java.util.Arrays;
-
 /**
  * Question before the nuts & bolts Created at 12:52 PM on 11/14/15.
  */
-public class MedianQuickSearch {
+public class MedianQuickSelect {
   public static void main(String[] args) {
     int[] A = new int[]{2,2,2}; //{3, 2, 1, 5, 10, 12, 14};
-    MedianQuickSearch mqs = new MedianQuickSearch();
+    MedianQuickSelect mqs = new MedianQuickSelect();
     //int par = mqs.partitionALgs(A, 0, A.length-1);
     //int par = mqs.partition(A, 0, A.length-1);
     int par = mqs.median(A);
@@ -24,6 +22,8 @@ public class MedianQuickSearch {
   }
 
   /**
+   * This is the quick select implementation, as shown in Wiki, the qsort is O(nlogn) and qselect is
+   *  O(n) since it has only recursion for one side each time.
    * Recursion based median find with recursion.
    * @param A
    * @param l

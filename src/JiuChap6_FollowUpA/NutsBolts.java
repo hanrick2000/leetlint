@@ -10,8 +10,8 @@ public class NutsBolts {
   public static void main(String[] args) {
     NutsBolts nb = new NutsBolts();
     NBComparator nbcmp = new NBComparator();
-    String[] nuts = {"ab", "bc", "dd", "gg"};
-    String[] bolts = {"AB", "GG", "DD", "BC"};
+    String[] nuts = {"bd", "bd", "bd"}; // {"ab", "bc", "dd", "gg"};
+    String[] bolts = {"BD", "BD", "BD"}; // {"AB", "GG", "DD", "BC"};
     //int ans = nbcmp.cmp(bolts[1], nuts[1]);
     //System.out.println(ans);
 

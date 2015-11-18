@@ -83,7 +83,7 @@ public class BuildOutline {
     ArrayList<Integer> now = null;
     for (Edge edge : edges) {
       if (edge.isStart) {
-        if (heap.isEmpty() || edge.height > heap.peak()) {
+        if (heap.isEmpty() || edge.height > heap.peek()) {
           now = new ArrayList<>(Arrays.asList(edge.pos, edge.height));
           res.add(now);
         }
@@ -91,12 +91,12 @@ public class BuildOutline {
       }
       else {
         heap.remove(edge.height);
-        if (heap.isEmpty() || edge.height > heap.peak()) {
+        if (heap.isEmpty() || edge.height > heap.peek()) {
           if (heap.isEmpty()) {
             now = new ArrayList<>(Arrays.asList(edge.pos, 0));
           }
           else {
-            now = new ArrayList<>(Arrays.asList(edge.pos, heap.peak()));
+            now = new ArrayList<>(Arrays.asList(edge.pos, heap.peek()));
           }
           res.add(now);
         }

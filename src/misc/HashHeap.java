@@ -38,7 +38,7 @@ public class HashHeap {
     size = 0;
   }
 
-  public int peak() {
+  public int peek() {  // peek the root: min or max, depend on the heap.
     return heap.get(0);
   }
 
@@ -70,7 +70,7 @@ public class HashHeap {
       return p <= q;
     }
     else {
-      return q < p;
+      return p > q;
     }
   }
 
@@ -128,8 +128,9 @@ public class HashHeap {
     else {
       heap.add(now);
       hash.put(now, new Node(heap.size()-1, 1));
-      swim(heap.size()-1);
+      //swim(heap.size()-1);
     }
+    swim(heap.size()-1);
   }
 
   /**
@@ -150,14 +151,16 @@ public class HashHeap {
       heap.remove(heap.size()-1);
       hash.remove(now);
       if (heap.size() > id) {  // need to check if valid: say, now the heap is {4}, but 4's id is still 1, can't do heap.get(0)!
-        if (mode == "max") swim(id);  // Now I know why 9chap called swim, it's for maxPQ case.
-        else sink(id);
+        //if (mode == "max") swim(id);  // Now I know why 9chap called swim, it's for maxPQ case.
+        //else sink(id);
+        swim(id);
+        sink(id);
       }
     }
   }
 
   public int pop() {
-    int root = peak();
+    int root = peek();
     remove(root);
     return root;
   }

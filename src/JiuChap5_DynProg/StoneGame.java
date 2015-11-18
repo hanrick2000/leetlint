@@ -8,13 +8,14 @@ package JiuChap5_DynProg;
 public class StoneGame {
   public static void main(String[] args) {
     StoneGame sg = new StoneGame();
-    int[] stones = new int[]{1,1,1,1}; // {4, 4, 5, 9};
+    int[] stones = new int[]{1,1,1,1}; //{4, 4, 5, 9};  //
     int ans = sg.stoneGame(stones);
     System.out.println(ans);
   }
 
   /**
    * I followed the O(n^3) DP, from type00A's lec note
+   * Updated with O(n^2) DP, simply using the property of 2D/1D DP's rectangle inequality.
    * @param A an integer array
    * @return an integer
    */
@@ -40,9 +41,8 @@ public class StoneGame {
     int ans = Integer.MAX_VALUE;
     //for (int i = 1; i <= n; ++i) {
     //  for (int j = i+1; j <= n; ++j) {
-    //    for (int k = i; k < j; ++k) {
-    //      P[i][j] = Math.min(P[i][k], P[k+1][j]) + W[j] - W[i-1];
-    //    }
+    //    //http://www.cloudlunar.com/view/CodeVS/1048
+    //    HOW???????
     //  }
     //}
 
