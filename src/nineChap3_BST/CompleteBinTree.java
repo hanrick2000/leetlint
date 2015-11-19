@@ -1,4 +1,4 @@
-package Easy;
+package nineChap3_BST;
 
 import java.util.LinkedList;
 import java.util.Queue;
