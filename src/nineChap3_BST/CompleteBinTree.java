@@ -2,6 +2,7 @@ package nineChap3_BST;
 
 import java.util.LinkedList;
 import java.util.Queue;
+import misc.BTtreePrinter;
 import misc.TreeNode;
 
 /**
@@ -14,12 +15,14 @@ public class CompleteBinTree {
     root.left = new TreeNode(10);
     root.right = new TreeNode(15);
     root.left.left = new TreeNode(20);
-    root.left.right = new TreeNode(25);
+    //root.left.right = new TreeNode(25);
     root.right.left = new TreeNode(30);
     root.right.right = new TreeNode(35);
 
     CompleteBinTree i = new CompleteBinTree();
     System.out.println("Breadth First Search : ");
+    BTtreePrinter printer = new BTtreePrinter();
+    printer.printNode(root);
     boolean ans = i.isComplete(root);
     System.out.println(ans);
   }
@@ -32,23 +35,29 @@ public class CompleteBinTree {
     if (root == null) {
       return false;
     }
-    Queue<TreeNode> bfs = new LinkedList<>();
-    bfs.offer(root);
+    Queue<TreeNode> bfsQ = new LinkedList<>();
+    bfsQ.offer(root);
+    int flag = -1;
+    while (!bfsQ.isEmpty()) {
+      int len = bfsQ.size();
+      for (int i = 0; i < len; ++i) {
+        TreeNode cur = bfsQ.poll();
+        if (cur == null) {
+          if (flag == -1) {
+            flag = 0;
+          }
+          continue;
+        }
+        else {
+          if (flag == 0) {
+            return false;
+          }
+        }
 
-    // TODO
-    //while (!bfs.isEmpty()) {
-    //  TreeNode node = bfs.poll();
-    //  System.out.println(node.val);
-    //  if (node.left != null) {
-    //    bfs.offer(node.left);
-    //  }
-    //  else {
-    //    return false;
-    //  }
-    //  if (node.right != null) {
-    //    bfs.offer(node.right);
-    //  }
-    //}
+        bfsQ.offer(cur.left);
+        bfsQ.offer(cur.right);
+      }
+    }
     return true;
   }
 }
