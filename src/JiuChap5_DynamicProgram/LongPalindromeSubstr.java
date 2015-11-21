@@ -1,4 +1,4 @@
-package JiuChap5_DynProg;
+package JiuChap5_DynamicProgram;
 
 /**
  * Created at 3:21 PM on 11/12/15.

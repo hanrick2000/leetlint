@@ -1,4 +1,4 @@
-package JiuChap5_DynProg;
+package JiuChap5_DynamicProgram;
 
 /**
  * poj 1738 An old Stone Game

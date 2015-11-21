@@ -36,6 +36,7 @@ public class LCA1 {
   }
 
   /*-
+   * http://algorithm.yuanbin.me/zh-cn/binary_tree/lowest_common_ancestor.html
    * 1337 and ninechap's solution: bottom-up which is easier than top-down.
    * http://articles.leetcode.com/2011/07/lowest-common-ancestor-of-a-binary-tree-part-i.html
    * 

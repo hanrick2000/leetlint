@@ -1,4 +1,4 @@
-package JiuChap5_DynProg;
+package JiuChap5_DynamicProgram;
 
 /**
  * http://www.geeksforgeeks.org/dynamic-programming-set-3-longest-increasing-subsequence/ Created at

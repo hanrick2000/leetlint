@@ -1,4 +1,4 @@
-package JiuChap5_DynProg;
+package JiuChap5_DynamicProgram;
 
 /**
  * http://www.lintcode.com/en/problem/best-time-to-buy-and-sell-stock-iv/

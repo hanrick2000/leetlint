@@ -1,4 +1,4 @@
-package JiuChap5_DynProg;
+package JiuChap5_DynamicProgram;
 
 import java.util.Arrays;
 import java.util.Stack;

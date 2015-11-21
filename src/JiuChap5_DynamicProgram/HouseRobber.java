@@ -1,4 +1,4 @@
-package JiuChap5_DynProg;
+package JiuChap5_DynamicProgram;
 
 /**
  * http://www.lintcode.com/en/problem/house-robber/ Created by Administrator on 11/10/15.

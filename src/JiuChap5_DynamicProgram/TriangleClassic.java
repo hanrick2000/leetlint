@@ -1,4 +1,4 @@
-package JiuChap5_DynProg;
+package JiuChap5_DynamicProgram;
 
 /**
  * Liu, RuJia classical backtracking, iteration, vs memorization DP

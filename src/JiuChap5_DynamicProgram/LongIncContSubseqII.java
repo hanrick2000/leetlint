@@ -1,6 +1,4 @@
-package JiuChap5_DynProg;
-
-import java.util.Arrays;
+package JiuChap5_DynamicProgram;
 
 /**
  * http://www.lintcode.com/en/problem/longest-increasing-continuous-subsequence-ii/
