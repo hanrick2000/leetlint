@@ -1,7 +1,5 @@
 package JiuChap1_intro;
 
-//import edu.princeton.cs.algs4.SegmentTree;
-
 import misc.SegmentTreeNode;
 
 /**

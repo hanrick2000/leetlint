@@ -76,6 +76,7 @@ public class SegmentTreeQuery {
 
     return Math.max(maxL, maxR);
   }
+
   public int queryMy(SegmentTreeNode root, int start, int end) {
     // write your code here
     if (start == root.start && end == root.end) {

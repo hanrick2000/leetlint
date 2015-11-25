@@ -45,7 +45,7 @@ public class Permutation {
             result.add(new ArrayList<>(list));
             return;
         }
-//    result.add(new ArrayList<Integer>(list)); I can also save nodes
+//    result.add(new ArrayList<>(list)); I can also save nodes
 
         //
         /*for (int num : nums) {

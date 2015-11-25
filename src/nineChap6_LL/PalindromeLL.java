@@ -8,9 +8,12 @@ import misc.ListNode;
  */
 public class PalindromeLL {
   public static void main(String[] args) {
-    int[] test = new int[]{1,2,2,1};
+    int[] test = new int[]{1,2}; //{1,2,3,2,1}; //
     ListNode root = ListNode.buildList(test);
-    boolean isPali = new PalindromeLL().isPalindrome(root);
+    PalindromeLL pll = new PalindromeLL();
+    ListNode slow = pll.findMid(root);
+    System.out.println(slow.val);
+    boolean isPali = pll.isPalindrome(root);
     System.out.println(isPali);
   }
 
@@ -19,8 +22,12 @@ public class PalindromeLL {
       return true;
     }
 
-    ListNode head2 = reverse(head).next;
-    reverse(head).next = null;
+    ListNode brk = findMid(head);
+    ListNode head2 = reverse(brk);
+
+
+    //ListNode head2 = reverse(head).next;
+    //reverse(head).next = null;
 
     while (head != null) {
       if (head.val != head2.val) {
@@ -33,7 +40,7 @@ public class PalindromeLL {
     return true;
   }
 
-  private ListNode findMid(ListNode head) {
+  public ListNode findMid(ListNode head) {
     if (head == null || head.next == null) {
       return head;
     }
