@@ -10,9 +10,9 @@ import java.util.Queue;
 public class StackQueue {
   public static void main(String[] args) {
     // -------------------------------------------Stack
-    // Stack<Integer> s = new Stack<>();  // ²»ºÃ
+    // Stack<Integer> s = new Stack<>();  // ï¿½ï¿½ï¿½ï¿½
     // LinkedList<Integer> s = new LinkedList<Integer>(); // Ganker
-    Deque<Integer> s = new ArrayDeque<Integer>();  // ×îÍÆ¼öÐ´·¨
+    Deque<Integer> s = new ArrayDeque<Integer>();  // ï¿½ï¿½ï¿½Æ¼ï¿½Ð´ï¿½ï¿½
     s.push(1);
     s.push(2);
     s.push(3);
@@ -32,6 +32,18 @@ public class StackQueue {
     System.out.println();
     while (!q.isEmpty())
       System.out.print(q.poll() + " ");
+
+    // -------------------------------------------Stack
+    // Ganker's simplify path using linkedlist as stack
+    LinkedList<Integer> stk = new LinkedList<>();
+    stk.push(4);
+    stk.push(3);
+    stk.push(2);
+    stk.push(1);
+    //Integer[] holder = stk.toArray(new Integer[stk.size()]);
+    while (!stk.isEmpty()) {
+      stk.pop();
+    }
 
   }
 }

@@ -10,11 +10,14 @@ import java.util.List;
 public class FindPeakII {
   public static void main(String[] args) {
     int[][] nums = {
-        {1, 2, 3, 6, 5},
-        {16, 41, 23, 22, 6},
-        {15, 17, 24, 21, 7},
-        {14, 18, 19, 20, 10},
-        {13, 14, 11, 10, 9}
+        //{1, 2, 3, 6, 5},
+        //{16, 41, 23, 22, 6},
+        //{15, 17, 24, 21, 7},
+        //{14, 18, 19, 20, 10},
+        //{13, 14, 11, 10, 9}
+        {1,5,3},
+        {4,10,9},
+        {2,8,7}
     };
     List<Integer> peaks = new FindPeakII().findPeakII(nums);
     for (int p : peaks) {
@@ -32,7 +35,8 @@ public class FindPeakII {
     int R = A.length, C = A[0].length;
     int l = 1, r = R - 2;
     List<Integer> result = new ArrayList<>();
-    while (l + 1 < r) {
+    //while (l + 1 < r) {
+    while (l <= r) {
       int mid = (l + r) / 2;
       int col = findMax(mid, A);
       if (A[mid][col] < A[mid - 1][col]) {
@@ -49,7 +53,7 @@ public class FindPeakII {
   }
 
   private static int findMax(int i, int[][] A) {
-    int n = A.length;
+    int n = A[0].length;
     int col = 0;
     for (int j = 0; j < n; ++j) {
       if (A[i][j] > A[i][col]) {

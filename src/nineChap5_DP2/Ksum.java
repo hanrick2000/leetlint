@@ -1,5 +1,10 @@
 package nineChap5_DP2;
 
+/**
+ * http://www.lintcode.com/en/problem/k-sum/
+ * Created at 2:00 PM on 11/25/15.
+ */
+
 public class Ksum {
   public static void main(String[] args) {
     int[] A = {0, 1, 2, 3, 5};
