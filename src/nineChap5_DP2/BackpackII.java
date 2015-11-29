@@ -10,8 +10,8 @@ public class BackpackII {
     int ans = 0;
     int[] weight = {2, 3, 5, 7};
     int[] val = {1, 5, 2, 4};
-    int size = 13;
-    ans = backpackII1(size, weight, val);
+    int size = 10;
+    ans = backPackII2(size, weight, val);
     System.out.println("I use simple DP: " + ans);
   }
 
@@ -58,10 +58,29 @@ public class BackpackII {
 
   public static int backPackII2(int m, int[] A, int V[]) {
     // write your code here
-    int len = A.length;
-    int[][] F = new int[len + 1][m + 1];
-    //TODO
+    if (A == null || A.length == 0 || A.length != V.length) {
+      return 0;
+    }
 
-    return 0; // ttt
+    int[][] F = new int[A.length + 1][m + 1];
+    for (int i = 0; i < A.length + 1; ++i) {
+      F[i][0] = 0;
+    }
+    for (int i = 1; i < m + 1; ++i) {
+      F[0][i] = 0; //Integer.MIN_VALUE;
+    }
+
+    for (int i = 1; i < A.length + 1; ++i) {
+      for (int v = 0; v < m + 1; ++v) {
+        if (v < A[i - 1]) {
+          F[i][v] = F[i - 1][v];  // this is the key! Must init it too, I was directly continue, so wrong.
+          // continue;
+        } else {
+          F[i][v] = Math.max(F[i - 1][v], F[i - 1][v - A[i - 1]] + V[i - 1]);
+        }
+      }
+    }
+
+    return F[A.length][m];
   }
 }

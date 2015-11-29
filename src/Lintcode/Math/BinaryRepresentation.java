@@ -1,4 +1,4 @@
-package Lintcode.Bit;
+package Lintcode.Math;
 
 /**
  * It's also a CTCI problem: 5.2

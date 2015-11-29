@@ -1,7 +1,5 @@
 package nineChap5_DP2;
 
-import java.util.TreeSet;
-
 public class WildMatch {
   public static void main(String[] args) {
     String S = "mississippi";
@@ -69,7 +67,8 @@ public class WildMatch {
   }
 
   /**
-   * Take me an hour to debug!
+   * What's the algs? I should have written down the idea so I can review it easier later, eg, now...
+   * Took me an hour to debug!
    * @param s
    * @param p
    * @return

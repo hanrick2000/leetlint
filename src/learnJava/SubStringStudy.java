@@ -3,7 +3,7 @@ package learnJava;
 import java.util.*;
 
 /**
- * 只要是String题目, 都要熟练regX或者string的操作. 例如Restore IP 里面用到很多substring.
+ * 只要锟斤拷String锟斤拷目, 锟斤拷要锟斤拷锟斤拷regX锟斤拷锟斤拷string锟侥诧拷锟斤拷. 锟斤拷锟斤拷Restore IP 锟斤拷锟斤拷锟矫碉拷锟杰讹拷substring.
  * http://n00tc0d3r.blogspot.com/2013/05/restore-ip-addresses.html
  * 
  * @author tzhang
@@ -23,11 +23,11 @@ public class SubStringStudy {
     temp.add(sub2);
     temp.add(a);
     List<List<String>> listoflist = new LinkedList<List<String>>();
-    // listoflist.get(0).addAll(temp); // 这样是不对的.
+    // listoflist.get(0).addAll(temp); // 锟斤拷锟斤拷锟角诧拷锟皆碉拷.
     System.out.println(dp[0]);
     listoflist.add(0, temp);
     /*
-     * new an array != new the element of the array. 所以不要在不是int/bool之类的时候用array.
+     * new an array != new the element of the array. 锟斤拷锟皆诧拷要锟节诧拷锟斤拷int/bool之锟斤拷锟绞憋拷锟斤拷锟絘rray.
      * http://stackoverflow
      * .com/questions/13055895/java-null-pointer-exception-with-array-of-arraylist
      */
@@ -54,6 +54,16 @@ public class SubStringStudy {
     }
 
     System.out.println("\nlet me see " + "".equals(""));
+
+    // substring length
+    String s1 = "", s2 = "";
+    System.out.println(s1.length() + ", "  + s2.length());
+    //System.out.println("Char at 0: " + s1.charAt(0));
+
+    //s1 = "great";
+    //s2 = "rgtae";
+    //System.out.println(s1.substring(0, 4) + ", " + s1.substring(4));
+    //System.out.println(s2.substring(0, 1) + ", " + s2.substring(1));
 
   }
 }

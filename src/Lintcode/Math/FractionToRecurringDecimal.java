@@ -1,4 +1,4 @@
-package Lintcode.Bit;
+package Lintcode.Math;
 
 /**
  * http://www.cnblogs.com/grandyang/p/4238577.html

@@ -1,4 +1,4 @@
-package Lintcode.Bit;
+package Lintcode.Math;
 
 /**
  * http://www.lintcode.com/en/problem/a-b-problem/ Created at 11:13 PM on 11/16/15.

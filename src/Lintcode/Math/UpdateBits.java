@@ -1,4 +1,4 @@
-package Lintcode.Bit;
+package Lintcode.Math;
 
 /**
  * http://www.lintcode.com/en/problem/update-bits/

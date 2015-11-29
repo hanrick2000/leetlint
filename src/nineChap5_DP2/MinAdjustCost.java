@@ -106,7 +106,7 @@ public class MinAdjustCost {
   }
 
   /**
-   * 
+   * http://www.cnblogs.com/yuzhangcmu/p/4153927.html
    * @param A
    * @param target
    * @return
@@ -127,7 +127,7 @@ public class MinAdjustCost {
         F[i][j] = Integer.MAX_VALUE;
         for (int v = 1; v < 101; ++v) { // A[i-1] = v
           if (Math.abs(v - j) > target) {
-            continue; // am I looping v for F[i-1] or F[i]???
+            continue; // am I looping v for F[i-1] or F[i]? Ans: I'm looping v for F[i-1].
           }
           int dif = Math.abs(A.get(i - 1) - j);
           F[i][j] = Math.min(F[i - 1][v] + dif, F[i][j]);
