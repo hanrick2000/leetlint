@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import misc.BTtreePrinter;
-import freq1_tony.SerDesBinaryTree;
 import misc.TreeNode;
 
 public class ValidateBST {
@@ -30,7 +29,7 @@ public class ValidateBST {
     System.out.println(ans);
 
     List<String> ser = new ArrayList<String>();
-    SerDesBinaryTree.writeBinTree(yi, ser);
+    //SerDesBinaryTree.writeBinTree(yi, ser);
     // String a = serialize(sh);
     String a = SerializeBFS.serializehehejun(sh);
     System.out.println(a);

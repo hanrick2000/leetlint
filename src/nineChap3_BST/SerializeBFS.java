@@ -6,12 +6,11 @@ import misc.BTtreePrinter;
 import misc.TreeNode;
 
 /**
- * 题目�о接: http://www.lintcode.com/en/problem/binary-tree-serialization/ 分析:
- * Lintcode��Leetcode??Serialize��ͬ, 前��是BFS, 后��是Pre-order DFS. �آ�以Lint和Leet�Є题目表���ST�Є方式都不同! 搞的我的valid
- * BST���错�?
- * 
- * @author tzhang
+ * 题目�о接: http://www.lintcode.com/en/problem/binary-tree-serialization/ 分析:
+ * Lintcode��Leetcode??Serialize��ͬ, 前��是BFS, 后��是Pre-order DFS. �آ�以Lint和Leet�Є题目表���ST�Є方式都不同!
+ * 搞的我的valid BST���错�?
  *
+ * @author tzhang
  */
 public class SerializeBFS {
   public static void main(String[] args) {
@@ -27,7 +26,7 @@ public class SerializeBFS {
     ersh.right = qi;
     // bfsClient(root);
     String serstr = serializehehejun(root);
-    
+
     // test
     serstr = "1,#,2"; // "1,2,#,#,3,4,5,#,#,6,7,8,9, #,#";
     System.out.println(serstr);
@@ -36,11 +35,7 @@ public class SerializeBFS {
   }
 
   /**
-   * 学䷶�͵呵君的BFS写法, Կ�且使用了一个flag来判断是否是����后一�?
-   * http://hehejun.blogspot.com/2015/01/lintcodeserialization-and.html
-   * 
-   * @param root
-   * @return
+   * 学䷶�͵呵君的BFS写法, Կ�且使用了一个flag来判断是否是����后一�? http://hehejun.blogspot.com/2015/01/lintcodeserialization-and.html
    */
   public static String serializehehejun(TreeNode root) {
     if (root == null) {
@@ -57,7 +52,7 @@ public class SerializeBFS {
       for (int i = 0; i < size; ++i) {
         TreeNode cur = pre.poll();
         String thisnode = "";
-        if (cur == null) { // 体现了null node�Є作�?
+        if (cur == null) { // 体现了null node�Є作�?
           thisnode = "#";
         } else {
           thisnode = cur.val + "";
@@ -77,14 +72,12 @@ public class SerializeBFS {
   }
 
   /**
-   * 第二次在lintcode里����?
-   * 
-   * @param root
-   * @return
+   * 第二次在lintcode里����?
    */
   public static String serializeLintcode(TreeNode root) {
-    if (root == null)
+    if (root == null) {
       return "#";
+    }
     String result = "";
     Queue<TreeNode> parents = new LinkedList<TreeNode>();
     parents.offer(root);
@@ -105,8 +98,9 @@ public class SerializeBFS {
             result.length() == 0 ? result + thisnode : result + ", " + thisnode;
 
         // update the queue
-        if (head == null)
+        if (head == null) {
           continue;
+        }
         if (head.left != null) {
           end = false;
         }
@@ -124,16 +118,15 @@ public class SerializeBFS {
 
   /**
    * 第一次写. Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException.
-   * ա�因在于判断token[idx]�Є时��顤�理��4�? 可见代码�Є结构设计的不好�벯����问�?
-   * 
-   * @param ser
-   * @return
+   * ա�因在于判断token[idx]�Є时��顤�理��4�? 可见代码�Є结构设计的不好�벯����问�?
    */
   public static TreeNode deserializehehejun(String ser) {
-    if (ser == null || ser.length() == 0)
+    if (ser == null || ser.length() == 0) {
       return null;
-    if (ser.equals("#"))
+    }
+    if (ser.equals("#")) {
       return new TreeNode();
+    }
     String[] token = ser.split(",");
     for (int i = 0; i < token.length; ++i) {
       token[i] = token[i].trim();
@@ -168,17 +161,15 @@ public class SerializeBFS {
   }
 
   /**
-   * 第二次写Lintcode, 还是���很�벰����ﯯ
-   * 
-   * @param data
-   * @return
+   * 第二次写Lintcode, 还是���很�벰����ﯯ
    */
   public static TreeNode deserializeLintcode(String data) {
     if (data.equals("#")) {
       return null;
     }
-    if (data == null || data.length() == 0)
+    if (data == null || data.length() == 0) {
       return null;
+    }
 
     String[] token = data.split(",");
     for (int i = 0; i < token.length; ++i) {
@@ -193,8 +184,9 @@ public class SerializeBFS {
       int size = parents.size();
       for (int i = 0; i < size; ++i) {
         TreeNode head = parents.poll();
-        if (head == null)
+        if (head == null) {
           continue;
+        }
         head.left =
             token[idx].equals("#") ? null : new TreeNode(
                 Integer.parseInt(token[idx]));
@@ -212,17 +204,18 @@ public class SerializeBFS {
     return root;
   }
 
-
   /**
-   * 
+   *
    * @param ser
    * @return
    */
   public static TreeNode deserializeTTT(String ser) {
-    if (ser == null || ser.length() == 0)
+    if (ser == null || ser.length() == 0) {
       return null;
-    if (ser.equals("#"))
+    }
+    if (ser.equals("#")) {
       return new TreeNode();
+    }
     String[] token = ser.split(", ");
     // for (String s : token)
     // System.out.println(s);
@@ -260,15 +253,13 @@ public class SerializeBFS {
   }
 
   /**
-   * 第一次写: BFS 模版, 在这个基硢�上改�? 但比起呵�͵君�Є来说太复杂�?
-   * 
-   * @param root
-   * @return
+   * 第一次写: BFS 模版, 在这个基硢�上改�? 但比起呵�͵君�Є来说太复杂�?
    */
   public static List<List<Integer>> BFStemplate(TreeNode root) {
     List result = new ArrayList<>();
-    if (root == null)
+    if (root == null) {
       return result;
+    }
     Queue<TreeNode> queue = new LinkedList<>();
     queue.offer(root);
     TreeNode sentinalNode = new TreeNode(-99);

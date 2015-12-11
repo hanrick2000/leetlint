@@ -1,7 +1,6 @@
 package nineChap3_BST;
 
 import misc.BTtreePrinter;
-import freq1_tony.SerDesBinaryTree;
 import misc.TreeNode;
 import java.util.*;
 
@@ -31,7 +30,7 @@ public class LCA1 {
     System.out.println(ans.val);
 
     List<String> ser = new ArrayList<String>();
-    SerDesBinaryTree.writeBinTree(yi, ser);
+    //SerDesBinaryTree.writeBinTree(yi, ser);
     System.out.println(ser);
   }
 

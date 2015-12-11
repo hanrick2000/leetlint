@@ -8,6 +8,11 @@ public class Interval {
   public int start, end;  // if defined in misc package and used in another package, need to make
                             // method/field to be public so as to be package level accessible.
 
+  public Interval() {
+    this.start = 0;
+    this.end = 0;
+  }
+
   public Interval(int start, int end) {
     this.start = start;
     this.end = end;
