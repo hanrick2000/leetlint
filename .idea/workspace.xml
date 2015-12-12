@@ -2,303 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4612a18d-e875-4818-b6b6-8f215772b107" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Algs4/digraph/DepthFirstOrder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Algs4/digraph/Topological.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/JiuChap4_TwoPointers/SubarraySumII.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/JiuChap5_DynamicProgram/Candy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Leetcode/misc/AlienDictionary.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Leetcode/misc/AlienLeet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Leetcode/misc/ExcelSheetColNum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Leetcode/misc/FlipGame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Leetcode/misc/FlipGameII.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Leetcode/misc/MeetingRoom.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Leetcode/misc/MeetingRoomII.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Leetcode/misc/PaintHouse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/interview/CareerCup4783236498587648.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/interview/EvenOddThreads.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/interview/ImprovedHashMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/interview/TinyURL9chap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/interview/WeightedRandChooser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nineChap2_BinarySearch/KclosestNumbersInSortedArray.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nineChap3_BST/TweakedIdenticalBinaryTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nineChap6_LL/ReverseLinkedListYuanBin.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nineChap6_LL/ReverseNodesKGroup.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq1_tony/BestTimeStock1.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq1_tony/ConcatenationSubstr.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq1_tony/LenLastWord.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq1_tony/MaxBinaryTreeDepth.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq1_tony/MinBinaryTreeDepth.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq1_tony/PermuSequence.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq1_tony/SerDesBinaryTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq1_tony/SimplifyPath.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq1_tony/UniBST2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq1_tony/UniqueBST1.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/BinTreeHeightDiameter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/BinTreeMaxSum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/BucketSort.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/CoinChange.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/CountAndSay.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/FirstMissPos.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/FourSum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/Graycode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/InterleaveStr.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/IsSymmetric.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/JumpGame.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/LCA1337.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/LargestRecHisto.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/LargestRecHistoOneStack.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/LargestRecHistoTwoStack.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/LintMinAdjustmentCost.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/LongestContinuousSubstring.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/LongestNonRepeatedSubstr.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/MinWindowStr.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/NextPermutation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/NumDistinctSubstr.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/PalindromeNumber.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/PathSum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/PermutationII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/Plusone.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/RecoverBST.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/RemoveDupSorted.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/ReverseNodesKGroup.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/Scramble9Chap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/ScrambleString.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/SolveSudoku.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/SortColor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/SubsetGankerII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/SubsetI.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/SubsetIIN00t.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/SwapNodesPair.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/TextJustification.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/ThreeSum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/TrappingRainBrute.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/ValidSudoku.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/WashingtonSort.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq2_tony/WordBreakReview.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/BSTOrderRecursive.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/BinaryTreeInorder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/BinaryTreeMaxPathSum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/BinaryTreePostorder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/BinaryTreePreorder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/BinaryTreeZigzag.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/CombinationSum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/Combinations.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/ConstructBTPostIn.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/ConstructBTPreIn.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/DeepIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/Editdistance.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/FindAllPathSum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/FindKthSmallTwoSortedArray.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/FlattenBinaryTreeNineChapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/FlattenTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/FlattenTreebyStack.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/FlattenUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/FloodFill.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/HasPathSum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/LetterPhoneCombination.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/Levelorder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/LongestConsecutiveSequence.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/MaxSubarray.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/NqueenIGanker.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/PalindromePartitionIDPDP.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/PalindromePartitionIDPrecur.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/PartitionList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/PopulateNextRightPointer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/RegXMatching.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/RemoveDupSortArr.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/RemoveDupSortList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/RemoveDuplicate.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/RemoveNthElemList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/RestoreIP.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/RestoreIPAddrII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/ReverseInt.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/SearchMatrix.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/SearchSortArrInsert.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/SearchSortArrRange.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/SortArrayToBST.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/SortListToBST.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/StringMultiply.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/SumRootLeafNum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/SurroundRegion.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/TrianglePathSum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/TrianglePathSumN00tDFSDP.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/TrianglePathSumN00tDFSDummy.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/UniquePath.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/UniquePathN00t.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/WordBreak1DP.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/WordBreakDummy.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq3_tony/WordBreakIIDP.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq4_tony/AddTwoNumbers.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq4_tony/AddTwoNumbersPlainOrder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq4_tony/Anagrams.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq4_tony/Combination.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq4_tony/NumIslands.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq4_tony/Permutation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq4_tony/PermutationII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq4_tony/RemoveDuplicatesfromSortedArray.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq4_tony/RemoveDuplicatesfromSortedArrayII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq4_tony/RemoveElement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq4_tony/Subsets.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq4_tony/Subsets_n00tc.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq4_tony/testArrayList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq4_tony/testHashMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq4_tony/testRecursion.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq5_tony/ClimbStairs.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq5_tony/FourSum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq5_tony/InsertIntervals.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq5_tony/IsNumber.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq5_tony/LinkedListDemo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq5_tony/Merge2SortedLists.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq5_tony/MergeIntervals.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq5_tony/MergeSortedArray.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq5_tony/Pow.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq5_tony/SetMatrixZeros.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq5_tony/StrStr.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq5_tony/StringToInteger.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq5_tony/TestArrayList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq5_tony/ThreeSum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq5_tony/ThreeSumClosest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq5_tony/TwoSum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq5_tony/ValidParentheses.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq5_tony/ValidateBST.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq5_tony/ValidatePalindrome.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/freq5_tony/WordLadder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_1/BestTimetoBuyandSellStock.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_1/BestTimetoBuyandSellStockII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_1/BestTimetoBuyandSellStockIII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_1/BinaryTreeLevelOrderTraversalII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_1/LengthofLastWord.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_1/LongestCommonPrefix.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_1/LongestValidParentheses.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_1/MaximalRectangle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_1/MaximumDepthofBinaryTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_1/MinimumDepthofBinaryTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_1/PascalTriangle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_1/PascalsTriangleII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_1/SameTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_1/SimplifyPath.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_1/SubstringwithConcatenationofAllWords.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_1/ThreeSumClosest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_1/ThreeSumClosest.java.dump" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_1/Triangle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_1/UniqueBinarySearchTree2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_1/ZigZagConversion.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/BalancedBinaryTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/BinaryTreeMaximumPathSum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/CombinationSumII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/ContainerWithMostWater.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/CountAndSay.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/DistinctSubsequence.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/FirstMissingPositive.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/FourSum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/GrayCode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/InterleavingString.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/JumpGame.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/JumpGame2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/LargestRectangleinHistogram.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/LongestSubstringWithoutRepeatingCharacters.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/MinimumWindowSubstring.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/PalindromeNumber.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/PathSumII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/Permutations2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/PlusOne.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/PopulatingNextRightPointersinEachNodeII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/RecoverBinarySearchTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/RemoveDuplicatesFromSortedArrayII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/ReverseLinkedListII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/ReverseNodesinkGroup.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/RotateImage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/RotateList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/SearchInsertPosition.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/SortColors.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/SpiralMatrix.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/SpiralMatrixII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/SubsetsII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/SymmetricTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/TrappingRainWater.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/UniqueBinarySearchTrees.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_2/ValidSudoku.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/BinaryTreeInorderTraversal.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/BinaryTreeZigzagLevelOrderTraversal.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/CombinationSum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/ConstructBinaryTreefromInorderandPostorderTraversal.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/ConstructBinaryTreefromPreorderandInorderTraversal.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/ConvertSortedArraytoBinarySearchTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/ConvertSortedListtoBinarySearchTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/Divide2Integers.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/EditDistance.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/FlattenBinaryTreetoLinkedList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/LetterCombinationsofaPhoneNumber.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/LongestConsecutiveSequence.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/MaximumSubarray.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/MedianofTwoSortedArrays.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/MinimumPathSum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/MultiplyStrings.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/NQueen2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/NQueens.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/PalindromePartitioningII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/PartitionList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/PathSum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/PopulatingNextRightPointersinEachNode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/RegularExpressionMatching.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/RemoveDuplicatesfromSortedArray.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/RemoveDuplicatesfromSortedList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/RemoveDuplicatesfromSortedList2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/RemoveNthNodeFromEnd.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/RestoreIPAddresses.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/ReverseInteger.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/SearchA2DMatrix.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/SearchForARange.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/SearchinRotatedSortedArray.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/SearchinRotatedSortedArrayII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/SurroundedRegions.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/UniquePaths.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_3/UniquePaths2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_4/AddTwoNumbers.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_4/Anagrams.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_4/BinaryAdd.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_4/BinaryTreeLevelOrderTraversal.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_4/Combinations.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_4/DecodeWays.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_4/GenerateParentheses.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_4/IntegerToRoman.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_4/MergeKLists.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_4/PalindromePartitioning.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_4/Permutations.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_4/RemoveElement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_4/RomantoInteger.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_4/SingleNumber.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_4/Sqrt.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_4/Subsets.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_4/SumRoottoLeafNumbers.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_4/SwapNodesinPairs.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_4/WordSearch.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_5/ClimbStairs.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_5/ImptStrStr.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_5/InsertInterval.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_5/IsNumber.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_5/Merge2SortedList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_5/MergeInterval.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_5/MergeSortedArray.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_5/Pow.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_5/SetMatrixZeroes.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_5/StringtoInteger.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_5/ThreeSum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_5/ThreeSumClosest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_5/TwoSum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_5/ValidPalindrome.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_5/ValidParentheses.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_5/ValidateBST.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_5/WordLadder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/frequency_5/test.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/leetlint.iml" afterPath="$PROJECT_DIR$/leetlint.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Leetcode/misc/GameOfLife.java" afterPath="$PROJECT_DIR$/src/Leetcode/misc/GameOfLife.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/misc/Interval.java" afterPath="$PROJECT_DIR$/src/misc/Interval.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nineChap3_BST/LCA1.java" afterPath="$PROJECT_DIR$/src/nineChap3_BST/LCA1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nineChap3_BST/SerializeBFS.java" afterPath="$PROJECT_DIR$/src/nineChap3_BST/SerializeBFS.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nineChap3_BST/ValidateBST.java" afterPath="$PROJECT_DIR$/src/nineChap3_BST/ValidateBST.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nineChap5_DP2/RegularExpressionMatching.java" afterPath="$PROJECT_DIR$/src/nineChap5_DP2/RegularExpressionMatching.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nineChap3_BST/TweakedIdenticalBinaryTree.java" afterPath="$PROJECT_DIR$/src/nineChap3_BST/TweakedIdenticalBinaryTree.java" />
     </list>
     <ignored path="leetlint.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -320,7 +25,20 @@
     <favorites_list name="leetlint" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="TweakedIdenticalBinaryTree.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/nineChap3_BST/TweakedIdenticalBinaryTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4165342">
+              <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -380,7 +98,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -433,7 +151,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -930,12 +648,20 @@
       <option name="number" value="Default" />
       <updated>1449802921989</updated>
       <workItem from="1449802926049" duration="150000" />
-      <workItem from="1449803151440" duration="1983000" />
+      <workItem from="1449803151440" duration="2173000" />
+      <workItem from="1449884622283" duration="103000" />
     </task>
+    <task id="LOCAL-00001" summary="10 to go. Also start shua again, finish by 12/20.">
+      <created>1449805183350</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1449805183350</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2133000" />
+    <option name="totallyTimeSpent" value="2426000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="443" y="0" width="923" height="768" extended-state="0" />
@@ -951,7 +677,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4620061" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24913093" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24913093" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2653534" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -969,6 +695,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="10 to go. Also start shua again, finish by 12/20." />
+    <option name="LAST_COMMIT_MESSAGE" value="10 to go. Also start shua again, finish by 12/20." />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -982,7 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -990,7 +719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2031746">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1004,8 +732,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nineChap3_BST/TweakedIdenticalBinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17806041">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.4165342">
+          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

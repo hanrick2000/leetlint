@@ -27,19 +27,16 @@ public class TweakedIdenticalBinaryTree {
    */
   public boolean isTweakedIdentical(TreeNode a, TreeNode b) {
     // Write your code here
-    if (a == null && b == null) {
-      return true;
-    } else if (a == null && b != null || a != null && b == null) {
-      return false;
-    } else if (a.val != b.val) {
-      return false;
-    }
+    if (a == null && b == null)  return true;
+    if (a == null || b == null)  return false;
+
+    boolean vv = a.val == b.val;
     boolean ll = isTweakedIdentical(a.left, b.left);
     boolean lr = isTweakedIdentical(a.left, b.right);
     boolean rl = isTweakedIdentical(a.right, b.left);
     boolean rr = isTweakedIdentical(a.right, b.right);
 
-    boolean res = ll && rr || lr && rl;
+    boolean res = vv && (ll && rr || lr && rl);
     return res;
   }
 }
